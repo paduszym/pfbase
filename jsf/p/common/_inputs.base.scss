@@ -1,0 +1,6 @@
+.ui-inputfield {
+  margin: 0;
+  padding: ($p-common-input-vertical-padding - .1rem) ($p-common-input-horizontal-padding - .1rem);
+  font-size: $p-common-input-font-size;
+  line-height: $p-common-input-line-height;
+}

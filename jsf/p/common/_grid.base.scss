@@ -1,0 +1,58 @@
+.ui-g {
+  @include display-flex;
+  flex-wrap: wrap;
+}
+
+.ui-g::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+%ui-g-col {
+  float: left;
+  padding: $p-common-grid-gutter;
+}
+
+@for $i from 1 through $p-common-grid-columns {
+
+  .ui-g-#{$i} {
+    @extend %ui-g-col;
+  }
+
+  .ui-g-#{$i},
+  .ui-sm-#{$i} {
+    width: ($i / $p-common-grid-columns) * 100%;
+  }
+}
+
+@media screen and (min-width: 40.063em) {
+
+  @for $i from 1 through $p-common-grid-columns {
+    .ui-md-#{$i} {
+      width: ($i / $p-common-grid-columns) * 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 64.063em) {
+
+  @for $i from 1 through $p-common-grid-columns {
+    .ui-lg-#{$i} {
+      width: ($i / $p-common-grid-columns) * 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 90.063em) {
+
+  @for $i from 1 through $p-common-grid-columns {
+    .ui-xl-#{$i} {
+      width: ($i / $p-common-grid-columns) * 100%;
+    }
+  }
+}
+
+.ui-g-nopad {
+  padding: 0;
+}

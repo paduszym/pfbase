@@ -1,0 +1,36 @@
+.ui-megamenu td {
+  vertical-align: top;
+}
+
+.ui-menu.ui-megamenu .ui-menu-parent .ui-menu-child {
+  width: auto;
+}
+
+.ui-menu.ui-megamenu .ui-menu-child > table {
+  width: auto;
+}
+
+.ui-menu.ui-megamenu .ui-menu-child .ui-menu-list {
+  width: 12.5em;
+}
+
+.ui-megamenu-vertical {
+  width: 12.5em;
+}
+
+.ui-megamenu-vertical .ui-menu-parent {
+  clear: both;
+  width: 100%;
+}
+
+.ui-megamenu-vertical .ui-submenu-link.ui-menuitem-link {
+  width: 92%;
+}
+
+.ui-megamenu .ui-widget-header span {
+  display: block;
+  float: left;
+  font-size: 1em;
+  margin: 0 auto;
+  padding: .4em .3em;
+}

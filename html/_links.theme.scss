@@ -1,0 +1,16 @@
+a {
+
+  &:link {
+    color: $link-color-default;
+  }
+
+  &:visited {
+    color: $link-color-visited;
+  }
+
+  @include link-look--theme;
+
+  &:active {
+    color: $link-color-hover;
+  }
+}

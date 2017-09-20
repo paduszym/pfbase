@@ -1,0 +1,38 @@
+.ui-slidemenu .ui-slidemenu-wrapper {
+  position: relative;
+}
+
+.ui-slidemenu .ui-slidemenu-content {
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+
+.ui-slidemenu .ui-menu-list {
+  position: absolute;
+  top: 0;
+}
+
+.ui-slidemenu .ui-menu-parent {
+  position: static;
+}
+
+.ui-slidemenu .ui-menu-child {
+  box-shadow: none;
+  border: 0 none;
+  background: none repeat scroll 0 0 transparent;
+}
+
+.ui-slidemenu-backward {
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+  margin-bottom: .4em;
+  padding: .2em;
+  cursor: pointer;
+  display: none;
+}
+
+.ui-slidemenu-backward .ui-icon {
+  float: left;
+}

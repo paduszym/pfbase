@@ -1,0 +1,12 @@
+.ui-selectonebutton {
+  display: inline-flex;
+  max-width: 100%;
+}
+
+.ui-selectonebutton .ui-button {
+  border-right-width: 0;
+
+  &:last-child {
+    border-right-width: 1px;
+  }
+}

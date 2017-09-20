@@ -1,0 +1,116 @@
+//----------------------------------------------------------------------------------------------------------------------
+$_baseline: .6rem;
+
+$_font-family-sans: "Roboto", Arial, Helvetica, Tahoma;
+$_font-family-mono: Consolas, "Courier New";
+$_font-size-base: 1.3rem;
+
+$_font-size-small: .92 * $_font-size-base;
+$_font-size-large: 1.15 * $_font-size-base;
+$_font-size-xlarge: 1.23 * $_font-size-base;
+$_font-size-xxlarge: 1.38 * $_font-size-base;
+
+//----------------------------------------------------------------------------------------------------------------------
+
+// <body>
+$body-min-width: 64rem;
+$body-font-family: $_font-family-sans;
+$body-font-size: $_font-size-base;
+$body-line-height: bl(3);
+
+// <input>, <select>, <textarea>
+$input-text-line-height: bl(3);
+$input-text-singleline-height: bl(4);
+$input-text-horizontal-padding: bl(.5);
+
+// <h1>, ..., <h6>
+$headings-margin: bl(3);
+$headings-font-weight: 500;
+
+$h1-font-size: $_font-size-xxlarge;
+$h2-font-size: $_font-size-xlarge;
+$h3-font-size: $_font-size-large;
+$h4-font-size: $_font-size-base;
+$h5-font-size: $_font-size-small;
+
+// <small>
+$small-font-size: $_font-size-small;
+
+// <pre>, <code>
+$pre-and-code-font-family: $_font-family-mono;
+
+$code-padding: bl(3);
+
+// <fieldset>
+$fieldset-margin: bl(3);
+$fieldset-padding: bl(3);
+
+// misc
+$text-block-margin: bl(3);
+
+//----------------------------------------------------------------------------------------------------------------------
+
+/**
+ * p:* commons
+ */
+$p-common-corner-radius: 3px;
+
+$p-common-grid-columns: 12;
+$p-common-grid-gutter: bl(2);
+
+$p-common-input-font-size: $_font-size-base;
+$p-common-input-line-height: bl(3);
+$p-common-input-vertical-padding: bl(1);
+$p-common-input-horizontal-padding: bl(1);
+
+$p-common-state-disabled-opacity: .5;
+
+/**
+ * p:button, p:commandButton
+ */
+$p-button-height: bl(5);
+$p-button-horizontal-padding: bl(2);
+$p-button-icon-width: bl(3);
+$p-button-icon-font-size: $_font-size-base;
+$p-button-label-font-size: $_font-size-base;
+$p-button-label-font-weight: 500;
+
+/**
+ * p:selectOneMenu
+ */
+$p-select-one-menu-trigger-width: bl(4);
+
+//----------------------------------------------------------------------------------------------------------------------
+
+/**
+ * template:* commons
+ */
+
+/** _include/common-cookies.xhtml */
+$sedn-cookies-zindex: 3;
+$sedn-cookies-height: bl(2);
+$sedn-cookies-padding: bl(3);
+$sedn-cookies-close-button-size: bl(3);
+
+/**
+ * template:logged
+ */
+
+/** _include/logged-appbar.xhtml */
+$sedn-logged-appbar-zindex: 2;
+$sedn-logged-appbar-height: bl(9);
+
+/** _include/logged-sidebar.xhtml */
+$sedn-logged-sidebar-zindex: 3;
+$sedn-logged-sidebar-width: bl(39);
+
+/** _include/logged-footer.xhtml */
+$sedn-logged-footer-version-font-family: $_font-family-mono;
+$sedn-logged-footer-version-font-size: $_font-size-small;
+
+/** _include/logged-nav.xhtml */
+$sedn-logged-nav-vertical-padding: bl(1.5);
+$sedn-logged-nav-item-horizontal-padding: bl(3);
+
+/** _include/logged-content.xhtml */
+$sedn-logged-content-zindex: 1;

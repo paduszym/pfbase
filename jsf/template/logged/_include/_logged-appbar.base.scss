@@ -1,0 +1,27 @@
+#sedn-logged-appbar {
+  position: fixed;
+  z-index: $sedn-logged-appbar-zindex;
+  left: 0;
+  top: 0;
+  right: 0;
+  min-width: $body-min-width;
+  min-height: $sedn-logged-appbar-height;
+  border-left: $sedn-logged-sidebar-width solid transparent;
+
+  &::after {
+    content: "";
+    clear: both;
+  }
+}
+
+body.ui-dialog-opened #sedn-logged-appbar {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#sedn-logged-appbar-title {
+
+  &:empty {
+    display: none;
+  }
+}

@@ -1,0 +1,28 @@
+form {
+  margin-top: 0; // fix for <!DOCTYPE composition>
+  margin-bottom: 0; // fix for <!DOCTYPE composition>
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+}
+
+fieldset {
+  margin: $fieldset-margin;
+  padding: $fieldset-padding - .1rem;
+  border: 1px solid;
+
+  @include moz-only {
+    display: table-column;
+  }
+}
+
+fieldset legend {
+  position: relative;
+  top: -1px;
+  border-top: 1px solid transparent;
+}

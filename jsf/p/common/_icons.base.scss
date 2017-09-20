@@ -1,0 +1,82 @@
+.ui-icon {
+  @include fa-icon;
+  text-align: center;
+
+  &-carat-2-n-s {
+
+    &::before {
+      content: $fa-var-chevron-up;
+      display: block;
+      line-height: 6px;
+      padding-top: 2px;
+    }
+
+    &::after {
+      content: $fa-var-chevron-down;
+      display: block;
+      line-height: 6px;
+      padding-bottom: .2rem;
+    }
+  }
+
+  &-triangle-1-n::before {
+    content: $fa-var-chevron-up;
+  }
+
+  &-triangle-1-s::before {
+    content: $fa-var-chevron-down;
+  }
+
+  &-carat-1-w::before,
+  &-circle-triangle-w::before {
+    content: $fa-var-chevron-left;
+  }
+
+  &-triangle-1-e::before,
+  &-carat-1-e::before,
+  &-circle-triangle-e::before {
+    content: $fa-var-chevron-right;
+  }
+
+  &-search::before {
+    content: "\f002";
+  }
+
+  &-seek-first::before {
+    content: $fa-var-chevron-left$fa-var-chevron-left;
+    letter-spacing: -.3rem;
+  }
+
+  &-seek-prev::before {
+    content: $fa-var-chevron-left;
+  }
+
+  &-seek-next::before {
+    content: $fa-var-chevron-right;
+  }
+
+  &-seek-end::before {
+    content: $fa-var-chevron-right$fa-var-chevron-right;
+    letter-spacing: -.3rem;
+  }
+
+  &-check::before {
+    content: $fa-var-check;
+  }
+
+  &-close::before {
+    content: $fa-var-close;
+  }
+
+  &-plusthick::before {
+    content: $fa-var-plus;
+  }
+
+  &-minus::before {
+    content: $fa-var-minus;
+  }
+
+  &-home::before {
+    content: $fa-var-home;
+  }
+}

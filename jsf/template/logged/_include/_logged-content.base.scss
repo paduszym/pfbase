@@ -1,0 +1,31 @@
+#sedn-logged-content {
+  position: relative;
+  z-index: $sedn-logged-content-zindex;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+  border-top: $sedn-logged-appbar-height solid transparent;
+  border-left: 0 solid transparent;
+}
+
+body.rf-pp-opened #sedn-logged-content {
+  z-index: auto;
+}
+
+.sedn-logged-content-wrapper {
+  display: table-row;
+
+  &.sedn-logged-content-wrapper-expand {
+    height: 100%;
+  }
+}
+
+.sedn-logged-content-holder {
+  display: table-cell;
+  vertical-align: top;
+}
+
+#sedn-logged-content-top {
+  @include prevent-collapsing-margins;
+}

@@ -1,0 +1,186 @@
+.ui-selectcheckboxmenu {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  cursor: pointer;
+}
+
+.ui-selectcheckboxmenu .ui-selectcheckboxmenu-trigger {
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 0;
+  cursor: pointer;
+  width: 16px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0 3px;
+}
+
+.ui-selectcheckboxmenu .ui-selectcheckboxmenu-trigger .ui-icon {
+  margin-top: 3px;
+}
+
+.ui-selectcheckboxmenu .ui-selectcheckboxmenu-label {
+  display: block;
+  padding: 3px 26px 3px 5px;
+  width: auto;
+  border: 0;
+  cursor: pointer;
+}
+
+.ui-selectcheckboxmenu.ui-state-disabled .ui-selectcheckboxmenu-trigger, .ui-selectcheckboxmenu.ui-state-disabled .ui-selectcheckboxmenu-label {
+  cursor: auto;
+}
+
+.ui-selectcheckboxmenu-panel {
+  padding: .2em;
+  position: absolute;
+  overflow: hidden;
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+.ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-items-wrapper {
+  overflow: auto;
+  position: relative;
+  padding: .2em 0;
+}
+
+.ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-list {
+  border: 0 none;
+}
+
+.ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-list-item {
+  border: 0 none;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 1px 0;
+  padding: 3px 5px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-list-item {
+  display: block;
+  position: relative;
+}
+
+.ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-list-item .ui-chkbox {
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+}
+
+.ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-list-item label {
+  display: block;
+  padding-left: 2em;
+}
+
+.ui-selectcheckboxmenu-header {
+  margin-bottom: .3em;
+  padding: .3em 0 .3em .4em;
+}
+
+.ui-selectcheckboxmenu-header .ui-chkbox {
+  float: left;
+  cursor: pointer;
+}
+
+.ui-selectcheckboxmenu-header .ui-selectcheckboxmenu-filter-container {
+  float: left;
+  position: relative;
+  margin-left: 5px;
+}
+
+.ui-selectcheckboxmenu-header .ui-selectcheckboxmenu-filter-container .ui-icon {
+  position: absolute;
+  right: 5px;
+  top: 2px;
+}
+
+.ui-selectcheckboxmenu-header .ui-inputfield {
+  padding: 1px 20px 1px 2px;
+}
+
+.ui-selectcheckboxmenu-header span.ui-icon {
+  float: left;
+}
+
+.ui-selectcheckboxmenu-header a.ui-selectcheckboxmenu-all, .ui-selectcheckboxmenu-header a.ui-selectcheckboxmenu-none {
+  float: left;
+  margin-right: 10px;
+  display: block;
+}
+
+.ui-selectcheckboxmenu-header .ui-selectcheckboxmenu-close {
+  float: right;
+  padding: 1px;
+  margin-right: .2em;
+  display: block;
+}
+
+.ui-selectcheckboxmenu-header .ui-selectcheckboxmenu-close.ui-state-hover {
+  padding: 0;
+}
+
+.ui-selectcheckboxmenu-multiple-container {
+  clear: left;
+  cursor: pointer;
+  list-style-type: none;
+  margin: 0;
+  min-height: 24px;
+  overflow: hidden;
+  min-width: 100px;
+}
+
+.ui-selectcheckboxmenu-multiple-container.ui-inputfield {
+  padding: 0 22px 0 0;
+  border: 0;
+}
+
+.ui-selectcheckboxmenu-token {
+  cursor: default;
+  float: left;
+  overflow: hidden;
+  padding: 1px 3px;
+  white-space: nowrap;
+  position: relative;
+  margin: 2px;
+}
+
+.ui-selectcheckboxmenu-token-label {
+  display: block;
+  padding: 0 2.1em 0 .5em;
+}
+
+.ui-selectcheckboxmenu-token-icon {
+  margin-top: -9px;
+  position: absolute;
+  right: .2em;
+  top: 50%;
+  cursor: pointer;
+}
+
+.ui-selectcheckboxmenu-input-token {
+  float: left;
+  list-style-type: none;
+  margin: 1px;
+  padding: 0;
+}
+
+.ui-selectcheckboxmenu-input-token input {
+  border: 0 none;
+  width: 140px;
+  outline: medium none;
+  background-color: transparent;
+  margin: 2px;
+}
+
+.ui-selectcheckboxmenu-multiple .ui-selectcheckboxmenu-trigger .ui-icon {
+  position: relative;
+  top: 50%;
+  margin-top: -8px;
+}

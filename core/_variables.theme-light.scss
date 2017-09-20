@@ -1,0 +1,82 @@
+//----------------------------------------------------------------------------------------------------------------------
+
+// <a>
+$link-color-default: #1e88e5;
+$link-color-hover: #2196f3;
+$link-color-visited: #1e88e5;
+
+// <body>
+$body-color: #424242;
+$body-bg: #eee;
+
+// <input>, <select>, <textarea>
+$input-text-bg: #fff;
+$input-text-color: #424242;
+$input-text-border-color: #ccc;
+$input-text-disabled-bg: #fafafa;
+$input-text-disabled-color: #757575;
+$input-text-readonly-bg: #fafafa;
+
+// <pre>, <code>
+$code-bg: #424242;
+$code-color: #e0e0e0;
+
+// <fieldset>
+$fieldset-border-color: #bdbdbd;
+
+//----------------------------------------------------------------------------------------------------------------------
+
+/**
+ * p:* commons
+ */
+$p-common-widget-header-border-color: #d9d9d9;
+$p-common-widget-header-bg: #f6f7f9;
+$p-common-widget-header-color: #1b1d1f;
+$p-common-widget-content-border-color: #d5d5d5;
+$p-common-widget-content-bg: #fff;
+$p-common-widget-content-color: #222;
+
+/**
+ * p:button, p:commandButton
+ */
+$p-button-color: #424242;
+$p-button-bg: #fafafa;
+$p-button-border-color: #9e9e9e;
+$p-button-focus-border-color: #4da2e2;
+$p-button-disabled-opacity: .5;
+$p-button-hover-bg: darken($p-button-bg, 5%);
+
+//----------------------------------------------------------------------------------------------------------------------
+
+/**
+ * template:* commons
+ */
+
+/** _include/common-cookies.xhtml */
+$sedn-cookies-bg: #f8e19a;
+$sedn-cookies-color: #424242;
+
+/**
+ * template:logged
+ */
+
+/** _include/logged-appbar.xhtml */
+$sedn-logged-appbar-bg: #1db394;
+$sedn-logged-appbar-color: #fff;
+
+/** _include/logged-sidebar.xhtml */
+$sedn-logged-sidebar-bg: #2e4150;
+$sedn-logged-sidebar-border-color: #2e4150;
+$sedn-logged-sidebar-color: #fff;
+$sedn-logged-sidebar-color-active: #efce4a;
+$sedn-logged-sidebar-menu-item-hover-color: #fff;
+$sedn-logged-sidebar-menu-item-border-color: #595959;
+$sedn-logged-sidebar-menu-item-border-shadow-color: #363636;
+$sedn-logged-sidebar-submenu-bg: #535353;
+$sedn-logged-sidebar-submenu-item-border-color: #636363;
+
+/** _include/logged-footer.xhtml */
+$sedn-logged-footer-bg: #fff;
+$sedn-logged-footer-border-color: #e0e0e0;
+$sedn-logged-footer-version-color: #757575;
+

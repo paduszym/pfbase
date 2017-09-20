@@ -1,0 +1,62 @@
+.ui-button {
+  display: inline-block;
+  position: relative;
+  padding: 0 ($p-button-horizontal-padding - .1rem);
+  margin: 0;
+  text-decoration: none !important;
+  cursor: pointer;
+  text-align: center;
+  overflow: hidden;
+  line-height: $p-button-height - .2rem;
+  white-space: nowrap;
+  min-width: 2 * $p-button-height;
+  max-width: 100%;
+}
+
+.ui-button .ui-button-text {
+  display: block;
+  font-size: $p-button-label-font-size;
+  font-weight: $p-button-label-font-weight;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ui-button .ui-icon {
+  position: absolute;
+  width: $p-button-icon-width;
+  text-align: left;
+  font-size: $p-button-icon-font-size;
+  line-height: inherit;
+}
+
+.ui-button-text-icon-left .ui-button-text {
+  padding-left: $p-button-icon-width;
+}
+
+.ui-button-text-icon-right .ui-button-text {
+  padding-right: $p-button-icon-width;
+}
+
+.ui-button-icon-only {
+  padding: 0;
+  min-width: 0;
+  width: $p-button-height;
+}
+
+.ui-button-icon-only .ui-button-text {
+  text-indent: -9999999px;
+}
+
+.ui-button-icon-only .ui-icon {
+  left: 0;
+  width: $p-button-height - .2rem;
+  text-align: center;
+}
+
+.ui-button-text-icon-left .ui-button-icon-left {
+  left: ($p-button-horizontal-padding - .1rem);
+}
+
+.ui-button-text-icon-right .ui-button-icon-right {
+  right: ($p-button-horizontal-padding - .1rem);
+}

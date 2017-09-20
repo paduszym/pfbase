@@ -1,0 +1,12 @@
+.ui-state-default,
+.ui-state-hover,
+.ui-state-focus,
+.ui-state-active,
+.ui-state-highlight {
+  border: 1px solid;
+}
+
+.ui-state-disabled {
+  opacity: $p-common-state-disabled-opacity;
+  cursor: not-allowed !important;
+}

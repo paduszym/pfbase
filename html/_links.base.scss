@@ -1,0 +1,7 @@
+a {
+  @include link-look--base;
+
+  &:focus {
+    outline: 1px dotted;
+  }
+}

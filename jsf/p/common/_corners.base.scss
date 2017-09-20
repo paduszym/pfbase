@@ -1,0 +1,27 @@
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+  @include border-radius-lt($p-common-corner-radius);
+}
+
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+  @include border-radius-rt($p-common-corner-radius);
+}
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+  @include border-radius-lb($p-common-corner-radius);
+}
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+  @include border-radius-rb($p-common-corner-radius);
+}

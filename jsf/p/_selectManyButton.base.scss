@@ -1,0 +1,12 @@
+.ui-selectmanybutton {
+  display: inline-block;
+  padding: 1px;
+}
+
+.ui-selectmanybutton.ui-state-error {
+  padding: 0;
+}
+
+.ui-selectmanybutton .ui-button.ui-state-focus {
+  outline: 0;
+}

@@ -1,0 +1,111 @@
+h1, h2, h3, h4, h5, h6 {
+  margin: $headings-margin;
+  font-weight: $headings-font-weight;
+}
+
+h1 {
+  font-size: $h1-font-size;
+
+  small {
+    font-size: $h2-font-size;
+  }
+}
+
+h2 {
+  font-size: $h2-font-size;
+
+  small {
+    font-size: $h3-font-size;
+  }
+}
+
+h3 {
+  font-size: $h3-font-size;
+
+  small {
+    font-size: $h4-font-size;
+  }
+}
+
+h4 {
+  font-size: $h4-font-size;
+
+  small {
+    font-size: $h5-font-size;
+  }
+}
+
+h5,
+h6 {
+  font-size: $h5-font-size;
+}
+
+p, q, blockquote, pre, code, ul, ol {
+  margin: $text-block-margin;
+}
+
+ul,
+ol {
+  padding: 0 0 0 $text-block-margin;
+
+  li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+p + ul,
+p + ol,
+ul + p,
+ol + p {
+  margin-top: -$text-block-margin;
+}
+
+q, blockquote {
+  quotes: none;
+
+  &::before,
+  &::after {
+    content: "";
+  }
+}
+
+small {
+  font-size: $small-font-size;
+}
+
+sup, sub {
+  font-size: .8em;
+}
+
+label[for] {
+  cursor: pointer;
+}
+
+pre, code {
+  display: block;
+  font-family: $pre-and-code-font-family;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+code {
+  padding: .5*$code-padding $code-padding;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, q, blockquote, li {
+
+  pre,
+  code {
+    display: inline;
+    margin: 0;
+  }
+
+  code {
+    padding: .125*$code-padding .25*$code-padding;
+    @include border-radius(2px);
+  }
+}

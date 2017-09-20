@@ -1,0 +1,16 @@
+.ui-selectmanycheckbox label {
+  vertical-align: middle;
+  cursor: pointer;
+  margin: 0 16px 0 8px;
+  outline: medium none;
+  z-index: 1;
+  display: inline-block;
+}
+
+.ui-selectmanycheckbox .ui-chkbox .ui-chkbox-box {
+  display: block;
+}
+
+.ui-selectmanycheckbox .ui-selectmanycheckbox-item-group {
+  font-weight: bold;
+}

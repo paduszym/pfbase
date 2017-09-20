@@ -1,0 +1,25 @@
+table {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: inherit; // fix for <!DOCTYPE composition>
+  font-size: inherit; // fix for <!DOCTYPE composition>
+  line-height: inherit; // fix for <!DOCTYPE composition>
+}
+
+tbody,
+thead,
+tfoot,
+tr,
+td,
+th {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+th {
+  font-weight: inherit;
+}
