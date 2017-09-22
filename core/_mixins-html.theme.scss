@@ -18,7 +18,7 @@
 
 /**/
 @mixin d-1($color: #000) {
-  @include box-shadow(0 1px 3px rgba($color, .13) inset);
+  @include box-shadow(0 0 2px 1px rgba($color, .13) inset);
 }
 
 /**/

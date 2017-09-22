@@ -1,0 +1,12 @@
+#sedn-logged-sidebar-account-info {
+  background: $sedn-logged-sidebar-account-info-bg;
+}
+
+#sedn-logged-sidebar-account-info-actions {
+
+  a,
+  a:link,
+  a:visited {
+    color: $sedn-logged-sidebar-account-info-action-link-color;
+  }
+}

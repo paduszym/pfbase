@@ -1,0 +1,37 @@
+#sedn-logged-sidebar-menu {
+  border: 0;
+  width: auto;
+  @include border-radius(0);
+}
+
+#sedn-menu-item-zdarzenia {
+
+  .ui-icon-triangle-1-s::before,
+  .ui-icon-triangle-1-e::before {
+    content: $fa-var-flag;
+  }
+}
+
+#sedn-menu-item-anj {
+
+  .ui-icon-triangle-1-s::before,
+  .ui-icon-triangle-1-e::before {
+    content: $fa-var-pencil-square-o;
+  }
+}
+
+#sedn-menu-item-wniosek {
+
+  .ui-icon-triangle-1-s::before,
+  .ui-icon-triangle-1-e::before {
+    content: $fa-var-bolt;
+  }
+}
+
+#sedn-menu-item-admin {
+
+  .ui-icon-triangle-1-s::before,
+  .ui-icon-triangle-1-e::before {
+    content: $fa-var-wrench;
+  }
+}

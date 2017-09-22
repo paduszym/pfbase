@@ -1,0 +1,20 @@
+#sedn-sidebar {
+  position: fixed;
+  z-index: $sedn-sidebar-zindex;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: $sedn-sidebar-width;
+  border-right: 1px solid;
+  overflow: hidden;
+
+  + #sedn-content {
+    border-left-width: $sedn-sidebar-width;
+  }
+}
+
+#sedn-sidebar-content {
+  max-height: 100%;
+  overflow: auto;
+  width: $sedn-sidebar-width;
+}

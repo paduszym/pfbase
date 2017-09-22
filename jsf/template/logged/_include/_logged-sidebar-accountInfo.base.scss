@@ -1,0 +1,25 @@
+#sedn-logged-sidebar-account-info {
+  padding: bl(4) bl(2);
+  text-align: center;
+}
+
+#sedn-logged-sidebar-account-avatar {
+  display: block;
+}
+
+#sedn-logged-sidebar-account-info-user {
+  display: block;
+  margin: bl(2) 0 bl(.5);
+  font-size: $_font-size-xlarge;
+  font-weight: $headings-font-weight;
+}
+
+#sedn-logged-sidebar-account-info-context {
+  display: block;
+  font-size: $_font-size-small;
+  line-height: .9 * $body-line-height;
+}
+
+#sedn-logged-sidebar-account-info-actions {
+  margin: bl(1) 0 0;
+}

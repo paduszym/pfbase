@@ -1,0 +1,32 @@
+#sedn-appbar {
+  position: fixed;
+  z-index: $sedn-appbar-zindex;
+  left: 0;
+  top: 0;
+  right: 0;
+  min-width: $body-min-width;
+  min-height: $sedn-appbar-height;
+  border-left: $sedn-sidebar-width solid transparent;
+
+  + #sedn-sidebar + #sedn-content,
+  + #sedn-content {
+    border-top-width: $sedn-appbar-height;
+  }
+
+  &::after {
+    content: "";
+    clear: both;
+  }
+}
+
+body.ui-dialog-opened #sedn-appbar {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#sedn-appbar-title {
+
+  &:empty {
+    display: none;
+  }
+}

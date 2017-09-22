@@ -1,0 +1,11 @@
+#sedn-footer {
+  display: block;
+  border-top: 1px solid;
+  @include prevent-collapsing-margins;
+}
+
+#sedn-footer-version {
+  font-family: $sedn-footer-version-font-family;
+  font-size: $sedn-footer-version-font-size;
+  text-align: center;
+}

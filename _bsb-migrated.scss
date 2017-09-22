@@ -1,0 +1,355 @@
+/* fixy primefaces */
+.ui-messages-info, .ui-messages-warn, .ui-messages-error, .ui-messages-fatal {
+  margin: 0;
+}
+
+.ui-messages-info-detail, .ui-messages-warn-detail, .ui-messages-error-detail, .ui-messages-fatal-detail,
+.ui-message-info-detail, .ui-message-warn-detail, .ui-message-error-detail, .ui-message-fatal-detail,
+.ui-messages-info-summary, .ui-messages-warn-summary, .ui-messages-error-summary, .ui-messages-fatal-summary,
+.ui-message-info-summary, .ui-message-warn-summary, .ui-message-error-summary, .ui-message-fatal-summary {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding-left: 5px;
+}
+
+.ui-messages-info-detail:empty, .ui-messages-warn-detail:empty, .ui-messages-error-detail:empty, .ui-messages-fatal-detail:empty,
+.ui-message-info-detail:empty, .ui-message-warn-detail:empty, .ui-message-error-detail:empty, .ui-message-fatal-detail:empty,
+.ui-messages-info-summary:empty, .ui-messages-warn-summary:empty, .ui-messages-error-summary:empty, .ui-messages-fatal-summary:empty,
+.ui-message-info-summary:empty, .ui-message-warn-summary:empty, .ui-message-error-summary:empty, .ui-message-fatal-summary:empty {
+  display: none;
+}
+
+.ui-growl-item-container {
+  opacity: .95;
+}
+
+.ui-growl-message {
+  text-shadow: none;
+}
+
+.ui-growl-message p {
+  font-size: 15px !important;
+  font-weight: bold !important;
+}
+
+.ui-growl-warn,
+.ui-messages-warn, .ui-message-warn {
+  color: #61491f;
+  background: #fcf8e3;
+  border-color: #d6c3a0;
+}
+
+.ui-growl-info {
+  color: #fff;
+  background: #186918;
+  border-color: #114711;
+}
+
+.ui-outputlabel-rfi {
+  display: none;
+}
+
+.ui-chkbox .ui-chkbox-label {
+  margin: 0 0 0 .5em;
+}
+
+.ui-treetable thead th, .ui-treetable tbody td, .ui-treetable tfoot td {
+  white-space: normal;
+}
+
+.ui-dialog .ui-dialog-footer {
+  padding: .5em 1em;
+}
+
+.ui-dialog .ui-dialog-footer .ui-button {
+  margin-right: 4px;
+}
+
+.ui-selectonemenu-panel .ui-selectonemenu-table td,
+.ui-selectonemenu-panel .ui-selectonemenu-table tr {
+  border: 0;
+}
+
+/* p:accordion z filtrami */
+.sedn-event-accordion.ui-accordion {
+  max-width: 960px;
+}
+
+.sedn-filters-accordion-footer {
+  border-top: 1px solid #d6d6d6;
+  background: #fafafa;
+  padding: bl(2);
+}
+
+.sedn-filters-accordion-footer .ui-button {
+  margin-right: .5em;
+}
+
+/* sedn:tooltipIcon */
+a.sedn-tooltip-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #fff !important;
+  border-radius: 100%;
+  background: #3fa258;
+  margin: 0 .25em;
+  text-decoration: none !important;
+}
+
+/* sedn:input */
+.sedn-input .ui-inputtext,
+.sedn-input .ui-inputtextarea,
+.sedn-input .ui-selectonemenu,
+.sedn-input .ui-autocomplete,
+.sedn-input .ui-autocomplete > input {
+  width: 100% !important;
+}
+
+.sedn-input .ui-calendar {
+  display: block;
+}
+
+.sedn-input .ui-calendar > .ui-inputfield {
+  width: 100%;
+}
+
+.sedn-input .sedn-input-label {
+  display: inline-block;
+  padding-bottom: 2px;
+  font-weight: bold;
+}
+
+.sedn-input-auto-width,
+.sedn-input-auto-width .ui-inputtext {
+  width: auto !important;
+}
+
+.ui-dialog-content .sedn-input {
+  margin: 1em 0;
+}
+
+.sedn-zdarzenie-typ-input {
+  display: table;
+}
+
+.sedn-zdarzenie-typ-input-dropdown {
+  display: table-cell;
+  padding-left: 4px;
+}
+
+.sedn-zdarzenie-typ-input-dropdown:first-child {
+  padding-left: 0;
+}
+
+.sedn-zdarzenie-typ-input-dropdown:empty {
+  display: none;
+}
+
+.sedn-zdarzenie-typ-input-dropdown .ui-selectonemenu {
+  width: auto !important;
+}
+
+/* sedn:crudToolbar */
+#content .ui-toolbar.sedn-crud-toolbar {
+  max-width: none;
+}
+
+/* tabela szczegółów karty oceny */
+.sedn-mark-table th.id {
+  width: 110px;
+}
+
+.sedn-mark-table td.id {
+  text-align: right;
+}
+
+.sedn-mark-table th.punktacja {
+  width: 110px;
+}
+
+.sedn-mark-table td.punktacja {
+  text-align: right;
+}
+
+/* tabela konfiguracji */
+.sedn-config-action-col a {
+  display: block;
+  color: #3fa258;
+}
+
+.sedn-config-ddl-col {
+  width: 240px;
+}
+
+.sedn-config-ddl-col .ui-selectonemenu {
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+/**/
+.sedn-input-cell .ui-inputtext,
+.sedn-input-cell .ui-inputtextarea,
+.sedn-input-cell .ui-password,
+.sedn-input-cell .ui-inputmask,
+.sedn-input-cell .ui-selectonemenu {
+  width: 100% !important;
+}
+
+.sedn-input-cell .ui-calendar {
+  display: block;
+}
+
+.sedn-input-cell .ui-calendar > .ui-inputfield {
+  width: 100%;
+}
+
+.sedn-card > .ui-panel-content > .ui-panel {
+  background: transparent;
+  border: 1px solid #ccc;
+  margin: -1px 0 0;
+  padding: 1em;
+}
+
+.sedn-card > .ui-panel-content > .ui-panel > .ui-panel-content {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.sedn-card-table {
+  border: 1px double transparent;
+  border-spacing: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.sedn-card .ui-panelgrid-cell {
+  line-height: 1.25;
+  padding: .5em 1em;
+  vertical-align: top;
+}
+
+.sedn-card .ui-panelgrid-cell .ui-inputtext,
+.sedn-card .ui-panelgrid-cell .ui-selectonemenu {
+  width: 100% !important;
+}
+
+.sedn-card-table .key {
+  background: #fafafa;
+  font-weight: bold;
+  width: 250px;
+}
+
+.sedn-card-datatable.layout-auto table {
+  table-layout: auto;
+}
+
+.sedn-card-datatable table .index {
+  text-align: right;
+  width: 40px;
+}
+
+.sedn-card-datatable table .n {
+  text-align: right;
+  width: 80px;
+}
+
+.sedn-card-datatable table .bool {
+  width: 80px;
+}
+
+.sedn-card-datatable table td.number {
+  text-align: right;
+}
+
+.sedn-card ._100px {
+  width: 100px !important;
+}
+
+.sedn-card ._150px {
+  width: 150px !important;
+}
+
+.sedn-card ._200px {
+  width: 200px !important;
+}
+
+.sedn-card ._250px {
+  width: 250px !important;
+}
+
+.sedn-card .ui-panel-content > .ui-grid {
+  box-shadow: none;
+  display: table;
+  padding: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-bottom: -1px;
+  padding-right: 1em;
+}
+
+.sedn-card .ui-grid-col-8 > .sedn-card-datatable,
+.sedn-card .ui-grid-col-8 > .sedn-card-table {
+  margin: .5em 0;
+}
+
+.sedn-card .ui-grid.table {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  box-shadow: 0 1px 0 #ccc;
+  display: table;
+  padding: 0;
+  width: 100%;
+}
+
+.sedn-card .ui-panel-content > .ui-grid > div {
+  display: table-cell;
+  float: none;
+  padding: .5em 1em;
+  vertical-align: top;
+}
+
+.sedn-card .ui-panel-content > .ui-grid > .ui-grid-col-12 {
+  padding: .5em 0;
+}
+
+.sedn-card .ui-grid.table > div {
+  float: left;
+  padding: .5em 1em;
+  vertical-align: top;
+}
+
+.sedn-card .ui-grid.table hr {
+  margin: 0;
+}
+
+.sedn-card .ui-panel-content > .ui-grid > .ui-grid-col-4 {
+  border: 0;
+  width: 250px;
+  background: #fafafa;
+  border-right: 1px solid #ccc;
+  text-align: left;
+}
+
+.sedn-card .ui-panel-content > .ui-grid > .ui-grid-col-8 {
+  width: auto;
+}
+
+.sedn-card .ui-panel-content > .ui-grid > .ui-grid-col-4 label {
+  float: none;
+}
+
+.sedn-card .ui-panel-content > .ui-grid > .ui-grid-col-8 ul {
+  margin: 0;
+  padding: 0 0 0 1em;
+}
+
+.sedn-details-field .ui-grid:before,
+.sedn-details-field .ui-grid:after {
+  display: none;
+}

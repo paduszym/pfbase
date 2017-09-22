@@ -1,0 +1,19 @@
+#sedn-logged-sidebar-menu {
+  background: none;
+
+  li.ui-widget-header,
+  .ui-menuitem-link {
+    color: $sedn-sidebar-color;
+  }
+
+  li.ui-widget-header {
+    background: none;
+    border: 0;
+  }
+
+  li.ui-widget-header.ui-state-hover,
+  .ui-state-hover {
+    background: $sedn-logged-sidebar-menu-item-hover-bg;
+    color: $sedn-sidebar-color;
+  }
+}

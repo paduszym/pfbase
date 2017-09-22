@@ -2,62 +2,48 @@
   @include fa-icon;
   text-align: center;
 
-  &-carat-2-n-s {
-
-    &::before {
-      content: $fa-var-chevron-up;
-      display: block;
-      line-height: 6px;
-      padding-top: 2px;
-    }
-
-    &::after {
-      content: $fa-var-chevron-down;
-      display: block;
-      line-height: 6px;
-      padding-bottom: .2rem;
-    }
+  &-carat-2-n-s::before {
+    content: $fa-var-sort;
   }
 
   &-triangle-1-n::before {
-    content: $fa-var-chevron-up;
+    content: $fa-var-caret-up;
   }
 
   &-triangle-1-s::before {
-    content: $fa-var-chevron-down;
+    content: $fa-var-caret-down;
   }
 
+  &-triangle-1-w::before,
   &-carat-1-w::before,
   &-circle-triangle-w::before {
-    content: $fa-var-chevron-left;
+    content: $fa-var-caret-left;
   }
 
   &-triangle-1-e::before,
   &-carat-1-e::before,
   &-circle-triangle-e::before {
-    content: $fa-var-chevron-right;
+    content: $fa-var-caret-right;
   }
 
   &-search::before {
-    content: "\f002";
+    content: $fa-var-search;
   }
 
   &-seek-first::before {
-    content: $fa-var-chevron-left$fa-var-chevron-left;
-    letter-spacing: -.3rem;
+    content: $fa-var-fast-backward;
   }
 
   &-seek-prev::before {
-    content: $fa-var-chevron-left;
+    content: $fa-var-backward;
   }
 
   &-seek-next::before {
-    content: $fa-var-chevron-right;
+    content: $fa-var-forward;
   }
 
   &-seek-end::before {
-    content: $fa-var-chevron-right$fa-var-chevron-right;
-    letter-spacing: -.3rem;
+    content: $fa-var-fast-forward;
   }
 
   &-check::before {
@@ -78,5 +64,9 @@
 
   &-home::before {
     content: $fa-var-home;
+  }
+
+  &-cancel::before {
+    content: $fa-var-ban;
   }
 }

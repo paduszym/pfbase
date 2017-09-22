@@ -1,2 +1,11 @@
-@import "_include/plain-content.base";
-@import "_include/plain-main.base";
+body.sedn-template-plain {
+
+  .sedn-content-wrapper-expand .sedn-content-holder {
+    vertical-align: middle;
+  }
+
+  #sedn-main {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,3 +1,7 @@
+.ui-datatable {
+  margin: $p-data-table-margin;
+}
+
 .ui-datatable table {
   border-collapse: collapse;
   width: 100%;
@@ -8,7 +12,8 @@
   overflow: auto;
 }
 
-.ui-datatable .ui-datatable-header, .ui-datatable .ui-datatable-footer {
+.ui-datatable .ui-datatable-header,
+.ui-datatable .ui-datatable-footer {
   text-align: center;
   padding: 4px 10px;
 }
@@ -137,10 +142,6 @@
 .ui-datatable-scrollable-theadclone th span.ui-column-title {
   display: block;
   height: 0;
-}
-
-.ui-datatable .ui-paginator, .ui-datatable .ui-paginator {
-  padding: 2px;
 }
 
 .ui-datatable .ui-datatable-virtualscroll-wrapper {

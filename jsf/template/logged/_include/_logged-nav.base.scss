@@ -1,3 +1,8 @@
 #sedn-logged-nav {
+  padding: bl(1) (bl(2) - .1rem) (bl(1) - .1rem) (bl(2) - .1rem);
+  border-bottom: 1px solid;
 
+  &:empty {
+    display: none;
+  }
 }

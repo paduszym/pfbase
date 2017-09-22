@@ -1,21 +1,13 @@
 //----------------------------------------------------------------------------------------------------------------------
 
 // <a>
-$link-color-default: #1e88e5;
-$link-color-hover: #2196f3;
-$link-color-visited: #1e88e5;
+$link-color-default: #1ab394;
+$link-color-hover: #1bcbaa;
+$link-color-visited: #1ab394;
 
 // <body>
-$body-color: #424242;
-$body-bg: #eee;
-
-// <input>, <select>, <textarea>
-$input-text-bg: #fff;
-$input-text-color: #424242;
-$input-text-border-color: #ccc;
-$input-text-disabled-bg: #fafafa;
-$input-text-disabled-color: #757575;
-$input-text-readonly-bg: #fafafa;
+$body-color: #222;
+$body-bg: #f5f5f5;
 
 // <pre>, <code>
 $code-bg: #424242;
@@ -51,32 +43,31 @@ $p-button-hover-bg: darken($p-button-bg, 5%);
 /**
  * template:* commons
  */
+/** _include/common-appbar.xhtml */
+$sedn-appbar-bg: #1db394;
+$sedn-appbar-color: #fff;
 
 /** _include/common-cookies.xhtml */
 $sedn-cookies-bg: #f8e19a;
 $sedn-cookies-color: #424242;
 
+/** _include/common-footer.xhtml */
+$sedn-footer-bg: #fff;
+$sedn-footer-border-color: #e0e0e0;
+$sedn-footer-version-color: #757575;
+
+/** _include/common-sidebar.xhtml */
+$sedn-sidebar-bg: #2e4150;
+$sedn-sidebar-border-color: #2e4150;
+$sedn-sidebar-color: #fff;
+
 /**
  * template:logged
  */
 
-/** _include/logged-appbar.xhtml */
-$sedn-logged-appbar-bg: #1db394;
-$sedn-logged-appbar-color: #fff;
+/** _include/logged-sidebar-menu.xhtml */
+$sedn-logged-sidebar-menu-item-hover-bg: rgba(#000, .5);
 
-/** _include/logged-sidebar.xhtml */
-$sedn-logged-sidebar-bg: #2e4150;
-$sedn-logged-sidebar-border-color: #2e4150;
-$sedn-logged-sidebar-color: #fff;
-$sedn-logged-sidebar-color-active: #efce4a;
-$sedn-logged-sidebar-menu-item-hover-color: #fff;
-$sedn-logged-sidebar-menu-item-border-color: #595959;
-$sedn-logged-sidebar-menu-item-border-shadow-color: #363636;
-$sedn-logged-sidebar-submenu-bg: #535353;
-$sedn-logged-sidebar-submenu-item-border-color: #636363;
-
-/** _include/logged-footer.xhtml */
-$sedn-logged-footer-bg: #fff;
-$sedn-logged-footer-border-color: #e0e0e0;
-$sedn-logged-footer-version-color: #757575;
-
+/** _include/logged-sidebar-accountInfo.xhtml */
+$sedn-logged-sidebar-account-info-bg: rgba(#000, .25);
+$sedn-logged-sidebar-account-info-action-link-color: lighten($link-color-default, 10%);
