@@ -1,20 +1,25 @@
 .ui-overlaypanel {
-  padding: 0;
-  margin: 0;
   position: absolute;
-}
-
-.ui-overlaypanel-content {
-  padding: .5em 1em;
 }
 
 .ui-overlaypanel-close {
   position: absolute;
-  top: -10px;
-  right: -10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
+  top: -.5 * $p-overlay-panel-close-size;
+  right: -.5 * $p-overlay-panel-close-size;
+  width: $p-overlay-panel-close-size;
+  height: $p-overlay-panel-close-size;
+  line-height: $p-overlay-panel-close-size - .2rem;
+  @include border-radius(50%);
+
+  &,
+  &:hover {
+    text-decoration: none;
+  }
+
+  .ui-icon {
+    display: block;
+    line-height: inherit;
+  }
 }
 
 .ui-overlaypanel-mask {
