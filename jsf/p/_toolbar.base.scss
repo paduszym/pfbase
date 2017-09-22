@@ -1,16 +1,38 @@
 .ui-toolbar {
-  padding: .2em;
+  display: flex;
+
+  &::after {
+    display: none;
+  }
+}
+
+.ui-toolbar,
+.ui-toolbar-group-left,
+.ui-toolbar-group-right {
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.ui-toolbar-group-left,
+.ui-toolbar-group-right {
+  display: inline-flex;
+  padding: $p-toolbar-group-padding - .1rem;
+
+  > * {
+    margin-right: $p-toolbar-item-margin;
+  }
+}
+
+.ui-toolbar-group-left + .ui-toolbar-group-right {
+  margin-left: auto;
 }
 
 .ui-toolbar .ui-separator {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.ui-toolbar-group-left {
-  float: left;
-}
-
-.ui-toolbar-group-right {
-  float: right;
+  width: 1px;
+  height: $p-toolbar-item-separator-height;
+  margin: 0 (2 * $p-toolbar-item-margin) 0 $p-toolbar-item-margin;
+  border: 0;
+  border-left: 2px dotted;
+  border-right: 2px dotted;
+  @include border-radius(0);
 }
