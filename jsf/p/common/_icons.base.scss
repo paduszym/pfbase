@@ -50,15 +50,18 @@
     content: $fa-var-check;
   }
 
-  &-close::before {
+  &-close::before,
+  &-closethick::before {
     content: $fa-var-close;
   }
 
+  &-plus::before,
   &-plusthick::before {
     content: $fa-var-plus;
   }
 
-  &-minus::before {
+  &-minus::before,
+  &-minusthick::before {
     content: $fa-var-minus;
   }
 
@@ -68,5 +71,9 @@
 
   &-cancel::before {
     content: $fa-var-ban;
+  }
+
+  &-gear::before {
+    content: $fa-var-cog;
   }
 }

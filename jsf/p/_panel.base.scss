@@ -1,25 +1,49 @@
 .ui-panel {
   margin: $p-panel-margin;
+  overflow: hidden;
 }
 
 .ui-panel .ui-panel-titlebar {
+  display: flex;
+  flex-wrap: nowrap;
   padding: ($p-panel-header-vertical-padding) ($p-panel-header-horizontal-padding - .1rem) ($p-panel-header-vertical-padding - .1rem) ($p-panel-header-horizontal-padding - .1rem);
   border-left: 0;
   border-right: 0;
   border-top: 0;
-  @include border-radius-lb(0);
-  @include border-radius-rb(0);
+  line-height: $p-panel-header-line-height;
+  @include border-radius(0);
+
+  &::after {
+    display: none;
+  }
 }
 
 .ui-panel .ui-panel-title {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .ui-panel .ui-panel-titlebar-icon {
+  width: $p-panel-header-line-height;
+  line-height: $p-panel-header-line-height - .2rem;
+  margin-left: $p-panel-header-icon-horizontal-margin;
+
+  .ui-icon {
+    display: block;
+    line-height: inherit;
+  }
+
+  &,
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
 }
 
-.ui-panel .ui-panel-titlebar-icon,
-.ui-panel .ui-panel-titlebar-icon:hover,
-.ui-panel .ui-panel-titlebar-icon:focus {
+.ui-panel .ui-panel-title + .ui-panel-titlebar-icon {
+  margin-left: 3 * $p-panel-header-icon-horizontal-margin;
 }
 
 .ui-panel .ui-panel-content {
@@ -32,14 +56,19 @@
   text-align: left;
 }
 
-.ui-panel-collapsed-h .ui-panel-titlebar-icon,
-.ui-panel-collapsed-h .ui-panel-titlebar-icon:hover,
-.ui-panel-collapsed-h .ui-panel-titlebar-icon:focus {
-}
-
 .ui-panel.ui-panel-collapsed-h {
-}
+  width: 42px;
 
-.ui-panel.ui-panel-collapsed-h .ui-panel-title {
-  display: none;
+  .ui-panel-titlebar-icon {
+    display: none;
+    margin: 0;
+  }
+
+  .ui-panel-title {
+    display: none;
+  }
+
+  .ui-panel-title + .ui-panel-titlebar-icon {
+    display: block;
+  }
 }

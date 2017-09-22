@@ -66,6 +66,8 @@ $p-common-state-disabled-opacity: .5;
 $p-panel-margin: bl(3);
 $p-panel-header-vertical-padding: bl(1);
 $p-panel-header-horizontal-padding: bl(2);
+$p-panel-header-line-height: $body-line-height;
+$p-panel-header-icon-horizontal-margin: bl(.5);
 
 /**
  * p:accordionPanel
