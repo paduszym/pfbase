@@ -59,6 +59,7 @@
 .ui-paginator .ui-paginator-last .ui-icon {
   font-size: 0;
   line-height: inherit;
+  text-align: center;
 
   &::before {
     font-size: $p-paginator-button-font-size;

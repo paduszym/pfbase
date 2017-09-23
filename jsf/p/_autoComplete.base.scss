@@ -6,14 +6,8 @@
 }
 
 .ui-autocomplete-input.ui-autocomplete-dd-input {
-  padding-right: 2.4em;
-}
-
-.ui-autocomplete .ui-autocomplete-dropdown {
-  position: absolute;
-  height: 100%;
-  width: 2.4em;
-  right: -2px;
+  @include border-radius-rt(0);
+  @include border-radius-rb(0);
 }
 
 .ui-autocomplete-query {
@@ -52,10 +46,6 @@
   border-style: solid;
   border-color: inherit;
   padding: 4px 10px 4px 10px;
-}
-
-.ui-autocomplete .ui-button-icon-only .ui-button-text {
-  padding: .29em;
 }
 
 .ui-autocomplete-panel .ui-autocomplete-moretext {

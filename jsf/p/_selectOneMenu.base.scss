@@ -32,6 +32,7 @@
   overflow: hidden;
   width: 100%;
   text-align: left;
+  @include border-radius(0);
 }
 
 .ui-selectonemenu label.ui-selectonemenu-label {

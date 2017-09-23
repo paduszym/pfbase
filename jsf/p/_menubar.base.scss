@@ -9,7 +9,7 @@
 }
 
 .ui-menubar .ui-menu-child {
-  top: 25px;
+  top: 2 * $p-menu-item-vertical-padding + $body-line-height;
   left: 0;
 }
 
