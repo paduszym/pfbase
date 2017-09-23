@@ -105,6 +105,13 @@ $p-select-checkbox-menu-token-icon-width: bl(3);
 $p-select-checkbox-menu-token-font-size: $_font-size-small;
 
 /**
+ * p:radioButton
+ */
+$p-radio-button-size: bl(3);
+$p-radio-button-padding: bl(.5);
+$p-radio-button-bullet-size: 1rem;
+
+/**
  * p:selectOneMenu
  */
 $p-select-one-menu-trigger-width: bl(4);

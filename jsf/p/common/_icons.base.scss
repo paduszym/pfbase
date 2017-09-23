@@ -81,4 +81,8 @@
   &-gear::before {
     content: $fa-var-cog;
   }
+
+  &-bullet::before {
+    content: $fa-var-circle;
+  }
 }
