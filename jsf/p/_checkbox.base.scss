@@ -1,26 +1,30 @@
 .ui-chkbox {
+  position: relative;
   display: inline-block;
   vertical-align: middle;
+  min-width: $p-checkbox-size + 2 * $p-checkbox-padding;
+  min-height: $p-checkbox-size + 2 * $p-checkbox-padding;
+  padding: $p-checkbox-padding 0 $p-checkbox-padding ($p-checkbox-size + 2 * $p-checkbox-padding);
+  cursor: pointer;
 }
 
 .ui-chkbox .ui-chkbox-box {
-  width: 16px;
-  height: 16px;
-  display: inline-block;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-}
-
-.ui-chkbox-icon.ui-icon {
-  overflow: visible;
+  display: block;
+  position: absolute;
+  width: $p-checkbox-size;
+  height: $p-checkbox-size;
+  left: $p-checkbox-padding;
+  top: $p-checkbox-padding;
 }
 
 .ui-chkbox .ui-chkbox-label {
-  cursor: pointer;
-  margin: 0 16px 0 8px;
-  outline: medium none;
-  z-index: 1;
   display: inline-block;
   vertical-align: top;
+  padding: 0 $p-checkbox-label-horizontal-padding;
+  z-index: 1;
+}
+
+.ui-chkbox .ui-chkbox-icon {
+  display: block;
+  text-align: center;
 }

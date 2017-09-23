@@ -1,14 +1,18 @@
-.ui-selectmanycheckbox label {
-  vertical-align: middle;
-  cursor: pointer;
-  margin: 0 16px 0 8px;
-  outline: medium none;
-  z-index: 1;
-  display: inline-block;
+.ui-selectmanycheckbox {
+
+  td,
+  .ui-chkbox {
+    vertical-align: top;
+  }
 }
 
-.ui-selectmanycheckbox .ui-chkbox .ui-chkbox-box {
+.ui-selectmanycheckbox label {
   display: block;
+  cursor: pointer;
+  padding: $p-checkbox-padding (3 * $p-checkbox-label-horizontal-padding) $p-checkbox-padding $p-checkbox-label-horizontal-padding;
+  z-index: 1;
+  margin-left: $p-checkbox-size + 2 * $p-checkbox-padding;
+  margin-top: -($p-checkbox-size + 2 * $p-checkbox-padding);
 }
 
 .ui-selectmanycheckbox .ui-selectmanycheckbox-item-group {
