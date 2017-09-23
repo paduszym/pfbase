@@ -1,31 +1,31 @@
 .ui-state-default {
-  border-color: #d6d6d6;
-  background: #fff;
-  color: #555;
+  border-color: $p-common-state-default-border-color;
+  background: $p-common-state-default-bg;
+  color: $p-common-state-default-color;
 }
 
 .ui-state-hover {
-  border-color: #c0c0c0;
-  background: #eee;
-  color: #212121;
+  border-color: $p-common-state-hover-border-color;
+  background: $p-common-state-hover-bg;
+  color: $p-common-state-hover-color;
 }
 
 .ui-state-focus {
-  border-color: #c0c0c0;
-  background: #eee;
-  color: #212121;
+  border-color: $p-common-state-focus-border-color;
+  background: $p-common-state-focus-bg;
+  color: $p-common-state-focus-color;
 }
 
 .ui-state-active {
-  border-color: #bebebe;
-  background: #d6d6d6;
-  color: #212121;
+  border-color: $p-common-state-active-border-color;
+  background: $p-common-state-active-bg;
+  color: $p-common-state-active-color;
 }
 
 .ui-state-highlight {
-  border-color: #156090;
-  background: #186ba0;
-  color: #fff;
+  border-color: $p-common-state-highlight-border-color;
+  background: $p-common-state-highlight-bg;
+  color: $p-common-state-highlight-color;
 }
 
 .ui-state-error {

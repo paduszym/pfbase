@@ -56,6 +56,10 @@
     content: $fa-var-close;
   }
 
+  &-circle-close::before {
+    content: $fa-var-times-circle;
+  }
+
   &-plus::before,
   &-plusthick::before {
     content: $fa-var-plus;

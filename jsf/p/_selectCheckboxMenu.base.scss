@@ -1,5 +1,6 @@
 .ui-selectcheckboxmenu {
   display: inline-block;
+  padding-right: $p-select-one-menu-trigger-width;
   position: relative;
   width: auto;
   cursor: pointer;
@@ -10,177 +11,152 @@
   border-top: 0;
   border-bottom: 0;
   cursor: pointer;
-  width: 16px;
+  width: $p-select-one-menu-trigger-width;
   height: 100%;
   position: absolute;
   right: 0;
   top: 0;
-  padding: 0 3px;
-}
+  padding: 0;
 
-.ui-selectcheckboxmenu .ui-selectcheckboxmenu-trigger .ui-icon {
-  margin-top: 3px;
+  .ui-icon {
+    width: 100%;
+    line-height: $p-common-input-line-height + 2 * $p-common-input-vertical-padding;
+    text-align: center;
+  }
 }
 
 .ui-selectcheckboxmenu .ui-selectcheckboxmenu-label {
   display: block;
-  padding: 3px 26px 3px 5px;
+  padding: $p-common-input-vertical-padding $p-common-input-horizontal-padding;
   width: auto;
   border: 0;
+  line-height: $p-common-input-line-height;
   cursor: pointer;
-}
-
-.ui-selectcheckboxmenu.ui-state-disabled .ui-selectcheckboxmenu-trigger, .ui-selectcheckboxmenu.ui-state-disabled .ui-selectcheckboxmenu-label {
-  cursor: auto;
+  @include border-radius-rt(0);
+  @include border-radius-rb(0);
 }
 
 .ui-selectcheckboxmenu-panel {
-  padding: .2em;
   position: absolute;
   overflow: hidden;
-  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
 }
 
 .ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-items-wrapper {
   overflow: auto;
   position: relative;
-  padding: .2em 0;
 }
 
 .ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-list {
-  border: 0 none;
-}
-
-.ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-list-item {
-  border: 0 none;
-  cursor: pointer;
-  font-weight: normal;
-  margin: 1px 0;
-  padding: 3px 5px;
-  text-align: left;
-  white-space: nowrap;
+  border: 0;
+  padding: $p-select-checkbox-menu-panel-padding 0;
 }
 
 .ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-list-item {
   display: block;
   position: relative;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0;
+  padding: 0 $p-select-checkbox-menu-panel-padding;
+  text-align: left;
 }
 
 .ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-list-item .ui-chkbox {
   position: absolute;
-  top: 50%;
-  margin-top: -8px;
 }
 
 .ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-list-item label {
   display: block;
-  padding-left: 2em;
-}
-
-.ui-selectcheckboxmenu-header {
-  margin-bottom: .3em;
-  padding: .3em 0 .3em .4em;
-}
-
-.ui-selectcheckboxmenu-header .ui-chkbox {
-  float: left;
+  padding: $p-checkbox-padding $p-checkbox-label-horizontal-padding $p-checkbox-padding ($p-checkbox-size + 2 * $p-checkbox-padding + $p-checkbox-label-horizontal-padding);
   cursor: pointer;
 }
 
-.ui-selectcheckboxmenu-header .ui-selectcheckboxmenu-filter-container {
-  float: left;
+.ui-selectcheckboxmenu-header {
+  display: flex;
+  align-items: center;
   position: relative;
-  margin-left: 5px;
+  padding: $p-select-checkbox-menu-panel-padding;
+  border-width: 0 0 1px;
+  @include border-radius(0);
+
+  &::after {
+    display: none;
+  }
+}
+
+.ui-selectcheckboxmenu-header .ui-selectcheckboxmenu-filter-container {
+  position: relative;
+  flex: 1;
+  margin: 0 $p-checkbox-label-horizontal-padding;
+}
+
+.ui-selectcheckboxmenu-header .ui-selectcheckboxmenu-filter-container .ui-inputfield {
+  width: 100%;
+  padding-right: $p-common-input-horizontal-padding + $p-common-input-line-height;
 }
 
 .ui-selectcheckboxmenu-header .ui-selectcheckboxmenu-filter-container .ui-icon {
   position: absolute;
-  right: 5px;
-  top: 2px;
-}
-
-.ui-selectcheckboxmenu-header .ui-inputfield {
-  padding: 1px 20px 1px 2px;
-}
-
-.ui-selectcheckboxmenu-header span.ui-icon {
-  float: left;
-}
-
-.ui-selectcheckboxmenu-header a.ui-selectcheckboxmenu-all, .ui-selectcheckboxmenu-header a.ui-selectcheckboxmenu-none {
-  float: left;
-  margin-right: 10px;
-  display: block;
+  right: $p-common-input-horizontal-padding;
+  top: $p-common-input-vertical-padding;
+  line-height: $p-common-input-line-height;
+  opacity: .7;
 }
 
 .ui-selectcheckboxmenu-header .ui-selectcheckboxmenu-close {
-  float: right;
-  padding: 1px;
-  margin-right: .2em;
+  display: block;
+  width: $p-select-checkbox-menu-filter-close-size;
+  height: $p-select-checkbox-menu-filter-close-size;
+  line-height: $p-select-checkbox-menu-filter-close-size - .2rem;
+  border: 1px solid;
+  text-decoration: none;
+
+  .ui-icon {
+    display: block;
+    text-align: center;
+  }
+}
+
+.ui-selectcheckboxmenu-header a.ui-selectcheckboxmenu-all,
+.ui-selectcheckboxmenu-header a.ui-selectcheckboxmenu-none {
   display: block;
 }
 
-.ui-selectcheckboxmenu-header .ui-selectcheckboxmenu-close.ui-state-hover {
-  padding: 0;
-}
-
 .ui-selectcheckboxmenu-multiple-container {
-  clear: left;
-  cursor: pointer;
   list-style-type: none;
   margin: 0;
-  min-height: 24px;
   overflow: hidden;
-  min-width: 100px;
 }
 
 .ui-selectcheckboxmenu-multiple-container.ui-inputfield {
-  padding: 0 22px 0 0;
+  display: block;
   border: 0;
+  min-height: $p-common-input-line-height + 2 * $p-common-input-vertical-padding - .2rem;
+  @include border-radius-rt(0);
+  @include border-radius-rb(0);
 }
 
 .ui-selectcheckboxmenu-token {
   cursor: default;
-  float: left;
   overflow: hidden;
-  padding: 1px 3px;
   white-space: nowrap;
   position: relative;
-  margin: 2px;
 }
 
 .ui-selectcheckboxmenu-token-label {
   display: block;
-  padding: 0 2.1em 0 .5em;
 }
 
 .ui-selectcheckboxmenu-token-icon {
-  margin-top: -9px;
   position: absolute;
-  right: .2em;
-  top: 50%;
   cursor: pointer;
 }
 
 .ui-selectcheckboxmenu-input-token {
-  float: left;
   list-style-type: none;
-  margin: 1px;
-  padding: 0;
+  margin: 0;
 }
 
 .ui-selectcheckboxmenu-input-token input {
-  border: 0 none;
-  width: 140px;
-  outline: medium none;
-  background-color: transparent;
-  margin: 2px;
-}
-
-.ui-selectcheckboxmenu-multiple .ui-selectcheckboxmenu-trigger .ui-icon {
-  position: relative;
-  top: 50%;
-  margin-top: -8px;
+  border: 0;
 }

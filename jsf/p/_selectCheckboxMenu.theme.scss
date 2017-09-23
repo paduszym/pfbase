@@ -1,0 +1,19 @@
+.ui-selectcheckboxmenu .ui-selectcheckboxmenu-label {
+  @include d-1;
+}
+
+.ui-selectcheckboxmenu-panel {
+  @include z-2;
+}
+
+.ui-selectcheckboxmenu-header .ui-selectcheckboxmenu-close {
+  background: $p-common-state-default-bg;
+  border-color: $p-common-state-default-border-color;
+  color: $p-common-state-default-color;
+
+  &.ui-state-hover {
+    border-color: $p-common-state-hover-border-color;
+    background: $p-common-state-hover-bg;
+    color: $p-common-state-hover-color;
+  }
+}
