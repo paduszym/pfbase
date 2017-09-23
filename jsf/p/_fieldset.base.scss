@@ -1,15 +1,17 @@
-.ui-fieldset, .ui-fieldset .ui-fieldset-legend {
-  padding: .6em 1em;
-}
-
-.ui-fieldset-toggleable .ui-fieldset-legend {
-  padding: .5em 1em .5em .5em;
-  cursor: pointer;
-  outline: 0;
+.ui-fieldset .ui-fieldset-legend {
+  position: relative;
+  padding: 0 ($p-button-horizontal-padding - .1rem);
+  line-height: $p-button-height - .2rem;
 }
 
 .ui-fieldset .ui-fieldset-toggler {
-  padding-right: .1em;
-  margin-top: -0.1em;
-  float: left;
+  position: absolute;
+  left: $p-button-horizontal-padding;
+  line-height: inherit;
+  text-align: left;
+}
+
+.ui-fieldset-toggleable .ui-fieldset-legend {
+  cursor: pointer;
+  padding-left: ($p-button-horizontal-padding + $p-button-icon-width - .1rem);
 }
