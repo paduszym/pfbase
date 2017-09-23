@@ -2,23 +2,30 @@
   width: auto;
 }
 
-.ui-panelmenu .ui-panelmenu-panel {
-  padding: 0;
-  margin: 0;
-}
-
 .ui-panelmenu .ui-panelmenu-header {
-  cursor: pointer;
   position: relative;
+  padding: ($p-menu-item-vertical-padding - .1rem) ($p-menu-item-horizontal-padding - .1rem) ($p-menu-item-vertical-padding - .1rem) ($p-menu-item-horizontal-padding + $p-menu-item-icon-width - .1rem);
   margin: 0;
+  font-size: 1em;
+  cursor: pointer;
+
+  a {
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
-.ui-panelmenu .ui-panelmenu-header a {
-  display: block;
-  padding: .5em .5em .5em 2.2em;
+.ui-panelmenu .ui-icon {
+  position: absolute;
+  left: $p-menu-item-horizontal-padding;
+  line-height: inherit;
+  text-align: left;
 }
 
-.ui-panelmenu .ui-panelmenu-header .ui-icon {
+.ui-panelmenu .ui-menuitem-link {
+  cursor: pointer;
 }
 
 .ui-panelmenu .ui-panelmenu-content {
@@ -27,14 +34,21 @@
   overflow: auto;
 }
 
-.ui-panelmenu .ui-menu-parent .ui-menuitem-link-hasicon {
-}
-
-.ui-panelmenu .ui-menu-parent > .ui-menuitem-link > .ui-icon {
+.ui-panelmenu .ui-menu-parent > .ui-menuitem-link {
+  padding-right: ($p-menu-item-horizontal-padding + $p-menu-item-icon-width);
 }
 
 .ui-panelmenu .ui-menu-parent .ui-panelmenu-icon.ui-icon {
+  left: auto;
+  right: $p-menu-item-horizontal-padding;
+  width: $p-menu-item-icon-width;
+  text-align: right;
 }
 
-.ui-panelmenu .ui-menu-parent .ui-menu-list {
+.ui-panelmenu .ui-menu-parent .ui-menu-list .ui-menuitem-link {
+  border-left: bl(2) solid transparent;
+}
+
+.ui-panelmenu-icon.ui-icon-triangle-1-e.ui-icon-triangle-1-s::before {
+  content: $fa-var-caret-down;
 }
