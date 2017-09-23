@@ -1,10 +1,16 @@
-.ui-selectoneradio label {
-  cursor: pointer;
-  display: inline-block;
-  margin: 0 16px 0 8px;
-  vertical-align: middle;
+.ui-selectoneradio {
+
+  td,
+  .ui-radiobutton {
+    vertical-align: top;
+  }
 }
 
-.ui-selectoneradio-native label {
-  margin: 0;
+.ui-selectoneradio label {
+  display: block;
+  cursor: pointer;
+  padding: $p-radio-button-padding (3 * $p-radio-button-label-horizontal-padding) $p-radio-button-padding $p-radio-button-label-horizontal-padding;
+  z-index: 1;
+  margin-left: $p-radio-button-size + 2 * $p-radio-button-padding;
+  margin-top: -($p-radio-button-size + 2 * $p-radio-button-padding);
 }
