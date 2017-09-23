@@ -1,12 +1,12 @@
 .ui-selectmanybutton {
-  display: inline-block;
-  padding: 1px;
+  display: inline-flex;
+  max-width: 100%;
 }
 
-.ui-selectmanybutton.ui-state-error {
-  padding: 0;
-}
+.ui-selectmanybutton .ui-button {
+  border-right-width: 0;
 
-.ui-selectmanybutton .ui-button.ui-state-focus {
-  outline: 0;
+  &:last-child {
+    border-right-width: 1px;
+  }
 }
