@@ -131,25 +131,35 @@
 .ui-selectcheckboxmenu-multiple-container.ui-inputfield {
   display: block;
   border: 0;
+  min-width: 5em;
   min-height: $p-common-input-line-height + 2 * $p-common-input-vertical-padding - .2rem;
+  padding: ($p-common-input-vertical-padding - .2rem) ($p-common-input-horizontal-padding - $p-select-checkbox-menu-token-margin - .1rem) ($p-common-input-vertical-padding - $p-select-checkbox-menu-token-margin - .2rem) ($p-common-input-horizontal-padding - .2rem);
   @include border-radius-rt(0);
   @include border-radius-rb(0);
 }
 
 .ui-selectcheckboxmenu-token {
-  cursor: default;
-  overflow: hidden;
-  white-space: nowrap;
+  display: inline-block;
+  vertical-align: top;
   position: relative;
+  margin: 0 $p-select-checkbox-menu-token-margin $p-select-checkbox-menu-token-margin 0;
+  overflow: hidden;
+  cursor: default;
+  white-space: nowrap;
 }
 
 .ui-selectcheckboxmenu-token-label {
   display: block;
+  padding: 0 $p-select-checkbox-menu-token-horizontal-padding 0 (.5 * $p-select-checkbox-menu-token-horizontal-padding + $p-select-checkbox-menu-token-icon-width);
+  font-size: $p-select-checkbox-menu-token-font-size;
 }
 
 .ui-selectcheckboxmenu-token-icon {
+  display: block;
   position: absolute;
   cursor: pointer;
+  width: $p-select-checkbox-menu-token-icon-width;
+  text-align: center;
 }
 
 .ui-selectcheckboxmenu-input-token {
