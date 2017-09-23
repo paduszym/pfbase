@@ -18,21 +18,30 @@
 }
 
 .ui-slidemenu .ui-menu-child {
-  box-shadow: none;
   border: 0 none;
-  background: none repeat scroll 0 0 transparent;
+  background: none;
+  @include box-shadow(none);
 }
 
 .ui-slidemenu-backward {
   position: absolute;
-  bottom: 0;
-  width: 95%;
-  margin-bottom: .4em;
-  padding: .2em;
+  left: -1px;
+  bottom: -1px;
+  right: -1px;
+  padding: ($p-menu-item-vertical-padding - .1rem) ($p-menu-item-horizontal-padding - .1rem) ($p-menu-item-vertical-padding - .1rem) ($p-menu-item-horizontal-padding + $p-menu-item-icon-width - .1rem);
   cursor: pointer;
   display: none;
-}
+  @include border-radius-lt(0);
+  @include border-radius-rt(0);
 
-.ui-slidemenu-backward .ui-icon {
-  float: left;
+  &::after {
+    display: none;
+  }
+
+  .ui-icon {
+    position: absolute;
+    left: $p-menu-item-horizontal-padding;
+    line-height: inherit;
+    text-align: left;
+  }
 }
