@@ -10,3 +10,9 @@
     color: $p-common-state-hover-color;
   }
 }
+
+.ui-datepicker .ui-datepicker-buttonpane {
+  background: $p-common-widget-header-bg;
+  border-color: $p-common-widget-header-border-color;
+  color: $p-common-widget-header-color;
+}

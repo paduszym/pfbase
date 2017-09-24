@@ -115,7 +115,8 @@
 
 .ui-datepicker .ui-datepicker-buttonpane button {
   cursor: pointer;
-  padding: 0 ($p-calendar-button-padding - .1rem);
+  padding: 0 (2 * $p-calendar-button-padding - .1rem);
+  font-size: $p-calendar-item-font-size;
   line-height: $p-calendar-button-size - .2rem;
 }
 
