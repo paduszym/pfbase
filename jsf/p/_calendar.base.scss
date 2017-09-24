@@ -103,28 +103,20 @@
   display: block;
   line-height: $p-calendar-button-size - .2rem;
   text-decoration: none;
-  padding: 0 ($p-calendar-button-padding - .1rem)
+  padding: 0 ($p-calendar-button-padding - .1rem);
 }
 
 .ui-datepicker .ui-datepicker-buttonpane {
-  margin: .7em 0 0 0;
-  padding: 0 .2em;
+  padding: ($p-calendar-content-padding - .1rem);
   border-left: 0;
   border-right: 0;
   border-bottom: 0;
 }
 
 .ui-datepicker .ui-datepicker-buttonpane button {
-  float: right;
-  margin: .5em .2em .4em;
   cursor: pointer;
-  padding: .2em .6em .3em .6em;
-  width: auto;
-  overflow: visible;
-}
-
-.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
-  float: left;
+  padding: 0 ($p-calendar-button-padding - .1rem);
+  line-height: $p-calendar-button-size - .2rem;
 }
 
 .ui-datepicker.ui-datepicker-multi {
@@ -164,72 +156,40 @@
   clear: left;
 }
 
-.ui-datepicker-row-break {
-  clear: both;
-  width: 100%;
-  font-size: 0;
-}
-
 .ui-datepicker-rtl {
   direction: rtl;
 }
 
 .ui-datepicker-rtl .ui-datepicker-prev {
-  right: 2px;
-  left: auto;
+
 }
 
 .ui-datepicker-rtl .ui-datepicker-next {
-  left: 2px;
-  right: auto;
-}
 
-.ui-datepicker-rtl .ui-datepicker-prev:hover {
-  right: 1px;
-  left: auto;
-}
-
-.ui-datepicker-rtl .ui-datepicker-next:hover {
-  left: 1px;
-  right: auto;
 }
 
 .ui-datepicker-rtl .ui-datepicker-buttonpane {
-  clear: right;
+
 }
 
 .ui-datepicker-rtl .ui-datepicker-buttonpane button {
-  float: left;
+
 }
 
 .ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current {
-  float: right;
+
 }
 
 .ui-datepicker-rtl .ui-datepicker-group {
-  float: right;
+
 }
 
 .ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header {
-  border-right-width: 0;
-  border-left-width: 1px;
+
 }
 
 .ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
-  border-right-width: 0;
-  border-left-width: 1px;
-}
 
-.ui-datepicker-cover {
-  display: none;
-  display: block;
-  position: absolute;
-  z-index: -1;
-  filter: mask();
-  top: -4px;
-  left: -4px;
-  width: 200px;
-  height: 200px;
 }
 
 .ui-timepicker-div .ui-widget-header {
@@ -255,7 +215,6 @@
 }
 
 .ui-tpicker-grid-label {
-  background: 0;
   border: 0;
   margin: 0;
   padding: 0;
