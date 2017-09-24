@@ -108,7 +108,7 @@
 }
 
 .ui-tree.ui-tree-horizontal .ui-treenode {
-  background: url("/sedn-odw/javax.faces.resource/tree/images/line.gif.xhtml?ln=primefaces&v=6.1") repeat-x scroll center center transparent;
+  background: url(jsf-resource-url("primefaces", "tree/images/line.gif")) repeat-x scroll center center transparent;
   padding: 5px 40px;
 }
 
@@ -131,7 +131,7 @@
 }
 
 .ui-tree.ui-tree-horizontal .ui-treenode-connector-line {
-  background: url("/sedn-odw/javax.faces.resource/tree/images/line.gif.xhtml?ln=primefaces&v=6.1") repeat-y scroll 0 0 transparent;
+  background: url(jsf-resource-url("primefaces", "tree/images/line.gif")) repeat-y scroll 0 0 transparent;
   width: 1px;
 }
 

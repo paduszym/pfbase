@@ -28,7 +28,7 @@
 }
 
 .ui-lightbox-loading {
-  background: url("/sedn-odw/javax.faces.resource/lightbox/images/loading.gif.xhtml?ln=primefaces&v=6.1") #000 center center no-repeat;
+  background: url(jsf-resource-url("primefaces", "lightbox/images/loading.gif")) #000 center center no-repeat;
 }
 
 .ui-lightbox-caption {

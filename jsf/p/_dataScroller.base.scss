@@ -28,7 +28,7 @@
 }
 
 .ui-datascroller .ui-datascroller-loading {
-  background: url("/sedn-odw/javax.faces.resource/datascroller/images/loading.gif.xhtml?ln=primefaces&v=6.1") center center no-repeat;
+  background: url(jsf-resource-url("primefaces", "datascroller/images/loading.gif")) center no-repeat;
   width: 220px;
   height: 19px;
   padding: 0;

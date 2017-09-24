@@ -54,7 +54,7 @@
   margin: 0;
   padding: 0;
   display: block;
-  background: url("/sedn-odw/javax.faces.resource/messages/messages.png.xhtml?ln=primefaces&v=6.1") no-repeat;
+  background: url(jsf-resource-url("primefaces", "messages/messages.png")) no-repeat;
 }
 
 .ui-growl-image-info {

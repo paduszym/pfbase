@@ -9,7 +9,7 @@
   width: 16px;
   height: 15px;
   display: block;
-  background: url("/sedn-odw/javax.faces.resource/rating/rating.png.xhtml?ln=primefaces&v=6.1") no-repeat 0 0;
+  background: url(jsf-resource-url("primefaces", "rating/rating.png")) no-repeat 0 0;
 }
 
 .ui-rating-star a {

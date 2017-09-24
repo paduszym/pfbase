@@ -80,7 +80,7 @@
   height: 20px;
   padding: 0;
   cursor: col-resize;
-  background-image: url("/sedn-odw/javax.faces.resource/spacer/dot_clear.gif.xhtml?ln=primefaces&v=6.1");
+  background-image: url(jsf-resource-url("primefaces", "spacer/dot_clear.gif"));
   margin: -4px -10px -4px 0;
   float: right;
 }
