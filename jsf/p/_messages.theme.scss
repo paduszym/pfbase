@@ -1,0 +1,30 @@
+.ui-message {
+
+  &s-info,
+  &-info {
+    color: #3a87ad;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+  }
+
+  &s-warn,
+  &-warn {
+    color: #c09853;
+    background-color: #fcf8e3;
+    border-color: #fbeed5;
+  }
+
+  &s-error,
+  &-error {
+    color: #b94a48;
+    background-color: #f2dede;
+    border-color: #eed3d7;
+  }
+
+  &s-fatal,
+  &-fatal {
+    color: #b94a48;
+    background-color: #f2dede;
+    border-color: #eed3d7;
+  }
+}
