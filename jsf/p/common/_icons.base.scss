@@ -85,4 +85,8 @@
   &-bullet::before {
     content: $fa-var-circle;
   }
+
+  &-calendar::before {
+    content: $fa-var-calendar;
+  }
 }

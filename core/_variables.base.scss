@@ -118,6 +118,15 @@ $p-radio-button-label-horizontal-padding: bl(.5);
 $p-select-one-menu-trigger-width: bl(4);
 
 /**
+ * p:calendar
+ */
+$p-calendar-content-padding: bl(.5);
+$p-calendar-button-size: bl(4);
+$p-calendar-button-padding: bl(.5);
+$p-calendar-item-font-size: $_font-size-small;
+$p-calendar-item-spacing: bl(.5);
+
+/**
  * p:dataTable
  */
 $p-data-table-margin: bl(3);
