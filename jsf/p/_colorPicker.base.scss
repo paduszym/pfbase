@@ -1,0 +1,9 @@
+.ui-colorpicker > .ui-button > .ui-button-text > span {
+  display: inline-block !important;
+  vertical-align: top !important;
+  width: $p-color-picker-button-preview-square-size !important;
+  height: $p-color-picker-button-preview-square-size !important;
+  margin: (.5 * ($p-button-height - $p-color-picker-button-preview-square-size) - .1rem)  0;
+  text-indent: 0 !important;
+  font-size: 0 !important;
+}
