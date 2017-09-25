@@ -4,16 +4,6 @@
   align-items: flex-start;
 }
 
-.ui-messages-info, .ui-messages-warn, .ui-messages-error, .ui-messages-fatal {
-  display: flex;
-  padding: bl(1) bl(2);
-}
-
-.ui-message-info, .ui-message-error, .ui-message-warn, .ui-message-fatal {
-  display: inline-flex;
-  padding: bl(.5) bl(1);
-}
-
 .ui-messages-info-summary, .ui-messages-warn-summary, .ui-messages-error-summary, .ui-messages-fatal-summary,
 .ui-message-info-summary, .ui-message-warn-summary, .ui-message-error-summary, .ui-message-fatal-summary {
   display: block;
@@ -27,9 +17,9 @@
 
 .ui-messages-info-icon, .ui-messages-warn-icon, .ui-messages-error-icon, .ui-messages-fatal-icon,
 .ui-message-info-icon, .ui-message-warn-icon, .ui-message-error-icon, .ui-message-fatal-icon {
-  order: 0;
-  margin-right: bl(1);
   @include ui-icon;
+  order: 0;
+  text-align: center;
 }
 
 .ui-message-info-icon,
@@ -52,7 +42,7 @@
 .ui-messages-error-icon {
 
   &::before {
-    content: $fa-var-close;
+    content: $fa-var-exclamation-circle;
   }
 }
 
@@ -64,16 +54,43 @@
   }
 }
 
+/**/
+.ui-message-info, .ui-message-error, .ui-message-warn, .ui-message-fatal {
+  display: inline-flex;
+}
+
+.ui-message-info-icon, .ui-message-warn-icon, .ui-message-error-icon, .ui-message-fatal-icon {
+
+}
+
+/**/
 .ui-messages ul {
   flex: 1;
   order: 1;
+  align-self: center;
   margin: 0;
-  padding: 0;
+  padding: 0 (.5 * $p-messages-horizontal-padding);
   list-style-type: none;
+}
+
+.ui-messages-info, .ui-messages-warn, .ui-messages-error, .ui-messages-fatal {
+  display: flex;
+  padding: ($p-messages-vertical-padding - .1rem) (.5 * $p-messages-horizontal-padding - .1rem);
+}
+
+.ui-messages-info-icon, .ui-messages-warn-icon, .ui-messages-error-icon, .ui-messages-fatal-icon {
+  width: $p-messages-icon-size;
+  height: $p-messages-icon-size;
+  font-size: $p-messages-icon-font-size;
+  line-height: $p-messages-icon-size;
 }
 
 .ui-messages .ui-messages-close {
   order: 2;
+  width: $p-messages-close-size;
+  height: $p-messages-close-size;
+  line-height: $p-messages-close-size;
+  text-align: center;
 
   &:hover {
     opacity: .5;
