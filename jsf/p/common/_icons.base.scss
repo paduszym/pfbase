@@ -1,7 +1,5 @@
 .ui-icon {
-  @include fa-icon;
-  line-height: inherit;
-  text-align: left;
+  @include ui-icon;
 
   &-carat-2-n-s::before {
     content: $fa-var-sort;

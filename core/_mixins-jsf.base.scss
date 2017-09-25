@@ -1,4 +1,11 @@
 /**/
+@mixin ui-icon {
+  @include fa-icon;
+  line-height: inherit;
+  text-align: left;
+}
+
+/**/
 @mixin ui-helper-hidden-accessible {
   border: 0;
   clip: rect(0 0 0 0);
