@@ -1,0 +1,8 @@
+table.ui-panelgrid {
+  border-color: $p-common-widget-content-border-color;
+}
+
+.ui-panelgrid-content .ui-grid-row,
+.ui-panelgrid .ui-panelgrid-cell {
+  border-color: inherit;
+}
