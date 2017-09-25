@@ -159,6 +159,14 @@
 }
 
 /**/
+@mixin animation-delay($animation-delay) {
+  -webkit-animation-delay: $animation-delay;
+  -moz-animation-delay: $animation-delay;
+  -o-animation-delay: $animation-delay;
+  animation-delay: $animation-delay;
+}
+
+/**/
 @mixin moz-only {
   @media screen and (-moz-images-in-menus: 0) {
     @content;

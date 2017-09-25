@@ -2,6 +2,26 @@
   border: 0;
   width: auto;
   @include border-radius(0);
+
+  .ui-widget-header h3 {
+    font-weight: inherit;
+  }
+
+  .ui-submenu-child {
+    display: none;
+  }
+
+  .ui-menuitem-text {
+    white-space: normal;
+  }
+
+  .ui-submenu-child .ui-menuitem-text {
+    padding-left: $p-menu-item-horizontal-padding;
+  }
+
+  .ui-state-highlight {
+    font-weight: 700;
+  }
 }
 
 #sedn-menu-item-zdarzenia {

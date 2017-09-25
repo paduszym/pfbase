@@ -1,3 +1,7 @@
-#loadingPopup_container {
-  @include z-0;
+#sedn-status-overlay {
+  background: $p-common-overlay-bg;
+
+  .spinner > span {
+    background: $sedn-status-indicator-bar-bg;
+  }
 }

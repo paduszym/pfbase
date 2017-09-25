@@ -1,6 +1,7 @@
 @import "jsf/placeholders-jsf.theme";
 
 @import "jsf/p/common/shadows.theme";
+@import "jsf/p/common/overlays.theme";
 @import "jsf/p/common/widgets.theme";
 @import "jsf/p/common/states.theme";
 @import "jsf/p/common/inputs.theme";
@@ -22,7 +23,6 @@
 @import "jsf/p/dataScroller.theme";
 @import "jsf/p/dataTable.theme";
 @import "jsf/p/dialog.theme";
-@import "jsf/p/dropdown.theme";
 @import "jsf/p/editor.theme";
 @import "jsf/p/fieldset.theme";
 @import "jsf/p/fileUpload.theme";
@@ -33,13 +33,12 @@
 @import "jsf/p/inputText.theme";
 @import "jsf/p/inputTextarea.theme";
 @import "jsf/p/lightbox.theme";
-@import "jsf/p/listbox.theme";
 @import "jsf/p/megaMenu.theme";
 @import "jsf/p/menu.theme";
 @import "jsf/p/menubar.theme";
 @import "jsf/p/menuButton.theme";
 @import "jsf/p/messages.theme";
-@import "jsf/p/multiSelect.theme";
+@import "jsf/p/multiSelectListbox.theme";
 @import "jsf/p/notificationBar.theme";
 @import "jsf/p/orderList.theme";
 @import "jsf/p/outputLabel.theme";

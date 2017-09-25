@@ -1,9 +1,9 @@
 //----------------------------------------------------------------------------------------------------------------------
 
 // <a>
-$link-color-default: #1ab394;
-$link-color-hover: #1bcbaa;
-$link-color-visited: #1ab394;
+$link-color-default: #199577;
+$link-color-hover: #1aa182;
+$link-color-visited: #199577;
 
 // <body>
 $body-color: #222;
@@ -45,19 +45,11 @@ $p-common-state-active-border-color: #bebebe;
 $p-common-state-active-bg: #d6d6d6;
 $p-common-state-active-color: #212121;
 
-$p-common-state-highlight-border-color: #156090;
-$p-common-state-highlight-bg: #186ba0;
+$p-common-state-highlight-border-color: #1c9577;
+$p-common-state-highlight-bg: #1db394;
 $p-common-state-highlight-color: #fff;
 
-/**
- * p:button, p:commandButton
- */
-$p-button-color: #424242;
-$p-button-bg: #fafafa;
-$p-button-border-color: #9e9e9e;
-$p-button-focus-border-color: #4da2e2;
-$p-button-disabled-opacity: .5;
-$p-button-hover-bg: darken($p-button-bg, 5%);
+$p-common-overlay-bg: rgba(#000, .5);
 
 //----------------------------------------------------------------------------------------------------------------------
 
@@ -82,6 +74,9 @@ $sedn-sidebar-bg: #2e4150;
 $sedn-sidebar-border-color: #2e4150;
 $sedn-sidebar-color: #fff;
 
+/** _include/common-status.xhtml */
+$sedn-status-indicator-bar-bg: #fff;
+
 /**
  * template:logged
  */
@@ -91,4 +86,4 @@ $sedn-logged-sidebar-menu-item-hover-bg: rgba(#000, .5);
 
 /** _include/logged-sidebar-accountInfo.xhtml */
 $sedn-logged-sidebar-account-info-bg: rgba(#000, .25);
-$sedn-logged-sidebar-account-info-action-link-color: lighten($link-color-default, 10%);
+$sedn-logged-sidebar-account-info-action-link-color: lighten($link-color-default, 20%);

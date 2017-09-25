@@ -1,70 +1,61 @@
-.ui-selectonelistbox, .ui-selectmanymenu, .ui-multiselectlistbox-listcontainer {
-  padding: 2px;
-  width: 150px;
-}
-
-.ui-selectonelistbox .ui-selectlistbox-listcontainer, .ui-selectmanymenu .ui-selectlistbox-listcontainer, .ui-multiselectlistbox-listcontainer {
-  overflow: auto;
-}
-
-.ui-selectonelistbox.ui-state-disabled .ui-selectlistbox-listcontainer, .ui-selectmanymenu.ui-state-disabled .ui-selectlistbox-listcontainer {
+.ui-selectonelistbox,
+.ui-selectmanymenu {
+  display: inline-block;
+  padding: 0;
   overflow: hidden;
 }
 
-.ui-selectonelistbox .ui-selectlistbox-list, .ui-selectmanymenu .ui-selectlistbox-list, .ui-multiselectlistbox .ui-multiselectlistbox-list {
+.ui-selectlistbox-listcontainer {
+  overflow: auto;
+}
+
+.ui-state-disabled .ui-selectlistbox-listcontainer {
+  overflow: hidden;
+}
+
+.ui-selectlistbox-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
-.ui-selectonelistbox .ui-selectlistbox-item, .ui-selectmanymenu .ui-selectlistbox-item, .ui-multiselectlistbox .ui-multiselectlistbox-item {
-  margin: 2px;
-  border: 0 none;
+.ui-selectlistbox-item {
+  border: 0;
+  padding: $p-select-one-listbox-item-vertical-padding $p-select-one-listbox-item-horizontal-padding;
   cursor: pointer;
-  font-weight: normal;
+  @include border-radius(0);
 }
 
-.ui-selectonelistbox table.ui-selectlistbox-list, .ui-selectmanymenu table.ui-selectlistbox-list {
-  border-collapse: collapse;
-  width: 100%;
+table.ui-selectlistbox-list {
+
+  &,
+  & tbody,
+  & td {
+    display: block;
+  }
 }
 
-.ui-selectlistbox-filter.ui-inputfield {
-  padding-right: 12%;
-  padding-left: 2%;
-  width: 85%;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+tr.ui-selectlistbox-item {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .ui-selectlistbox-filter-container {
   position: relative;
-  margin: .1em 0 .1em 0;
-  padding: 0;
+  padding: ($p-select-one-listbox-filter-padding - .1rem);
+  border-bottom: 1px solid;
+}
+
+.ui-selectlistbox-filter.ui-inputfield {
+  padding-right: $p-common-input-horizontal-padding + $p-common-input-line-height;
 }
 
 .ui-selectlistbox-filter-container .ui-icon {
   position: absolute;
-  top: 5px;
-  right: 2px;
-}
-
-.ui-multiselectlistbox .ui-multiselectlistbox-listcontainer {
-  float: left;
-  margin-right: 4px;
-}
-
-.ui-multiselectlistbox .ui-multiselectlistbox-item {
-  white-space: nowrap;
-}
-
-.ui-multiselectlistbox.ui-state-disabled .ui-multiselectlistbox-item {
-  cursor: default;
-}
-
-.ui-multiselectlistbox .ui-multiselectlistbox-header {
+  right: $p-select-one-listbox-filter-padding;
   text-align: center;
-  padding: 2px 10px;
-  border-bottom: 0 none;
+  width: $p-common-input-horizontal-padding + $p-common-input-line-height;
+  line-height: 2 * $p-common-input-vertical-padding + $p-common-input-line-height;
+  opacity: .5;
 }
