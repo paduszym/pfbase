@@ -1,0 +1,20 @@
+.ui-tooltip .ui-tooltip-text {
+  background: $p-tooltip-bg;
+  color: $p-tooltip-color;
+}
+
+.ui-tooltip-right .ui-tooltip-arrow {
+  border-right-color: $p-tooltip-bg;
+}
+
+.ui-tooltip-left .ui-tooltip-arrow {
+  border-left-color: $p-tooltip-bg;
+}
+
+.ui-tooltip-top .ui-tooltip-arrow {
+  border-top-color: $p-tooltip-bg;
+}
+
+.ui-tooltip-bottom .ui-tooltip-arrow {
+  border-bottom-color: $p-tooltip-bg;
+}
