@@ -1,5 +1,10 @@
+.ui-panelgrid {
+  margin: $p-panel-grid-margin;
+}
+
 table.ui-panelgrid {
   border: 1px double;
+  width: calc(100% - #{2 * $p-panel-grid-margin});
 }
 
 .ui-panelgrid .ui-panelgrid-cell {
