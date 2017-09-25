@@ -1,0 +1,18 @@
+.ui-selectmanymenu {
+  display: inline-block;
+  padding: 0;
+  overflow: hidden;
+}
+
+.ui-selectmanymenu .ui-selectlistbox-list {
+  display: block;
+}
+
+.ui-selectmanymenu li.ui-selectlistbox-item {
+  display: flex;
+  align-items: center;
+}
+
+.ui-selectmanymenu li.ui-selectlistbox-item > .ui-chkbox:first-child {
+  margin: 0 $p-checkbox-label-horizontal-padding 0 (-$p-checkbox-padding);
+}

@@ -1,5 +1,4 @@
-.ui-selectonelistbox,
-.ui-selectmanymenu {
+.ui-selectonelistbox {
   display: inline-block;
   padding: 0;
   overflow: hidden;
@@ -22,23 +21,28 @@
 
 .ui-selectlistbox-item {
   border: 0;
-  padding: $p-select-one-listbox-item-vertical-padding $p-select-one-listbox-item-horizontal-padding;
   cursor: pointer;
   @include border-radius(0);
 }
 
-table.ui-selectlistbox-list {
-
-  &,
-  & tbody,
-  & td {
-    display: block;
-  }
+li.ui-selectlistbox-item {
+  padding: $p-select-one-listbox-item-vertical-padding $p-select-one-listbox-item-horizontal-padding;
 }
 
-tr.ui-selectlistbox-item {
-  display: flex;
-  flex-wrap: nowrap;
+table.ui-selectlistbox-list {
+  width: 100%;
+}
+
+tr.ui-selectlistbox-item td {
+  padding: $p-select-one-listbox-item-vertical-padding 0;
+
+  &:first-child {
+    padding-left: $p-select-one-listbox-item-horizontal-padding;
+  }
+
+  &:last-child {
+    padding-right: $p-select-one-listbox-item-horizontal-padding;
+  }
 }
 
 .ui-selectlistbox-filter-container {
@@ -49,6 +53,7 @@ tr.ui-selectlistbox-item {
 
 .ui-selectlistbox-filter.ui-inputfield {
   padding-right: $p-common-input-horizontal-padding + $p-common-input-line-height;
+  width: 100%;
 }
 
 .ui-selectlistbox-filter-container .ui-icon {
