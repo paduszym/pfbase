@@ -1,0 +1,54 @@
+.ui-messages-info, .ui-messages-warn, .ui-messages-error, .ui-messages-fatal,
+.ui-message-info, .ui-message-error, .ui-message-warn, .ui-message-fatal {
+  border: 1px solid;
+}
+
+.ui-messages-info-summary, .ui-messages-warn-summary, .ui-messages-error-summary, .ui-messages-fatal-summary,
+.ui-message-info-summary, .ui-message-warn-summary, .ui-message-error-summary, .ui-message-fatal-summary {
+  display: block;
+  font-weight: 700;
+}
+
+.ui-messages-info-detail, .ui-messages-warn-detail, .ui-messages-error-detail, .ui-messages-fatal-detail,
+.ui-message-info-detail, .ui-message-warn-detail, .ui-message-error-detail, .ui-message-fatal-detail {
+  display: block;
+}
+
+.ui-messages-info-icon, .ui-messages-warn-icon, .ui-messages-error-icon, .ui-messages-fatal-icon,
+.ui-message-info-icon, .ui-message-warn-icon, .ui-message-error-icon, .ui-message-fatal-icon {
+  @include ui-icon;
+  order: 0;
+  text-align: center;
+}
+
+.ui-message-info-icon,
+.ui-messages-info-icon {
+
+  &::before {
+    content: $fa-var-info-circle;
+  }
+}
+
+.ui-message-warn-icon,
+.ui-messages-warn-icon {
+
+  &::before {
+    content: $fa-var-exclamation-triangle;
+  }
+}
+
+.ui-message-error-icon,
+.ui-messages-error-icon {
+
+  &::before {
+    content: $fa-var-exclamation-circle;
+  }
+}
+
+.ui-message-fatal-icon,
+.ui-messages-fatal-icon {
+
+  &::before {
+    content: $fa-var-ban;
+  }
+}

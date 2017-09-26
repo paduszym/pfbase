@@ -51,6 +51,22 @@ $p-common-state-highlight-color: #fff;
 
 $p-common-overlay-bg: rgba(#000, .5);
 
+$p-common-messages-info-color: #3a87ad;
+$p-common-messages-info-bg: #d9edf7;
+$p-common-messages-info-border-color: #bce8f1;
+
+$p-common-messages-warn-color: #c09853;
+$p-common-messages-warn-bg: #fcf8e3;
+$p-common-messages-warn-border-color: #fbeed5;
+
+$p-common-messages-error-color: #b94a48;
+$p-common-messages-error-bg: #f2dede;
+$p-common-messages-error-border-color: #eed3d7;
+
+$p-common-messages-fatal-color: #b94a48;
+$p-common-messages-fatal-bg: #f2dede;
+$p-common-messages-fatal-border-color: #eed3d7;
+
 /**
  * p:tooltip
  */
@@ -62,6 +78,7 @@ $p-tooltip-color: #fff;
 /**
  * template:* commons
  */
+
 /** _include/common-appbar.xhtml */
 $sedn-appbar-bg: #1db394;
 $sedn-appbar-color: #fff;

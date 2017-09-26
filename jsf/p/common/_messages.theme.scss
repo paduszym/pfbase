@@ -1,0 +1,34 @@
+.ui-message {
+
+  &s-info,
+  &-info {
+    color: $p-common-messages-info-color;
+    background: $p-common-messages-info-bg;
+    border-color: $p-common-messages-info-border-color;
+  }
+
+  &s-warn,
+  &-warn {
+    color: $p-common-messages-warn-color;
+    background: $p-common-messages-warn-bg;
+    border-color: $p-common-messages-warn-border-color;
+  }
+
+  &s-error,
+  &-error {
+    color: $p-common-messages-error-color;
+    background: $p-common-messages-error-bg;
+    border-color: $p-common-messages-error-border-color;
+  }
+
+  &s-fatal,
+  &-fatal {
+    color: $p-common-messages-fatal-color;
+    background: $p-common-messages-fatal-bg;
+    border-color: $p-common-messages-fatal-border-color;
+  }
+}
+
+.ui-messages .ui-messages-close {
+  color: inherit;
+}

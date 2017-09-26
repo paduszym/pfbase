@@ -1,0 +1,32 @@
+.ui-message-info, .ui-message-error, .ui-message-warn, .ui-message-fatal {
+  display: inline-block;
+  padding: ($p-message-vertical-padding - .1rem) (.5 * $p-message-horizontal-padding - .1rem);
+  min-width: $p-message-horizontal-padding + $p-message-icon-size;
+  min-height: 2 * $p-message-vertical-padding + $p-message-icon-size;
+  font-size: $_font-size-small;
+}
+
+.ui-message-info-icon, .ui-message-warn-icon, .ui-message-error-icon, .ui-message-fatal-icon {
+  position: absolute;
+  width: $p-message-icon-size;
+  height: $p-message-icon-size;
+  font-size: $p-message-icon-font-size;
+  line-height: $p-message-icon-size;
+
+  + span,
+  + span + span {
+    margin: 0 0 0 $p-message-icon-size;
+  }
+}
+
+.ui-message-info-summary, .ui-message-warn-summary, .ui-message-error-summary, .ui-message-fatal-summary,
+.ui-message-info-detail, .ui-message-warn-detail, .ui-message-error-detail, .ui-message-fatal-detail {
+  padding: 0 (.5 * $p-message-horizontal-padding);
+}
+
+.ui-message.ui-message-icon-only {
+
+  &::after {
+    display: none;
+  }
+}
