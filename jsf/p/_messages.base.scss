@@ -1,7 +1,6 @@
 .ui-messages-info, .ui-messages-warn, .ui-messages-error, .ui-messages-fatal,
 .ui-message-info, .ui-message-error, .ui-message-warn, .ui-message-fatal {
   border: 1px solid;
-  align-items: flex-start;
 }
 
 .ui-messages-info-summary, .ui-messages-warn-summary, .ui-messages-error-summary, .ui-messages-fatal-summary,
@@ -56,14 +55,52 @@
 
 /**/
 .ui-message-info, .ui-message-error, .ui-message-warn, .ui-message-fatal {
-  display: inline-flex;
+  display: inline-block;
+  padding: ($p-message-vertical-padding - .1rem) (.5 * $p-message-horizontal-padding - .1rem);
+  min-width: $p-message-horizontal-padding + $p-message-icon-size;
+  min-height: 2 * $p-message-vertical-padding + $p-message-icon-size;
+  font-size: $_font-size-small;
 }
 
 .ui-message-info-icon, .ui-message-warn-icon, .ui-message-error-icon, .ui-message-fatal-icon {
+  position: absolute;
+  width: $p-message-icon-size;
+  height: $p-message-icon-size;
+  font-size: $p-message-icon-font-size;
+  line-height: $p-message-icon-size;
 
+  + span,
+  + span + span {
+    margin: 0 0 0 $p-message-icon-size;
+  }
+}
+
+.ui-message-info-summary, .ui-message-warn-summary, .ui-message-error-summary, .ui-message-fatal-summary,
+.ui-message-info-detail, .ui-message-warn-detail, .ui-message-error-detail, .ui-message-fatal-detail {
+  padding: 0 (.5 * $p-message-horizontal-padding);
+}
+
+.ui-message.ui-message-icon-only {
+
+  &::after {
+    display: none;
+  }
 }
 
 /**/
+.ui-messages-info, .ui-messages-warn, .ui-messages-error, .ui-messages-fatal {
+  display: flex;
+  align-items: flex-start;
+  padding: ($p-messages-vertical-padding - .1rem) (.5 * $p-messages-horizontal-padding - .1rem);
+}
+
+.ui-messages-info-icon, .ui-messages-warn-icon, .ui-messages-error-icon, .ui-messages-fatal-icon {
+  width: $p-messages-icon-size;
+  height: $p-messages-icon-size;
+  font-size: $p-messages-icon-font-size;
+  line-height: $p-messages-icon-size;
+}
+
 .ui-messages ul {
   flex: 1;
   order: 1;
@@ -73,16 +110,12 @@
   list-style-type: none;
 }
 
-.ui-messages-info, .ui-messages-warn, .ui-messages-error, .ui-messages-fatal {
-  display: flex;
-  padding: ($p-messages-vertical-padding - .1rem) (.5 * $p-messages-horizontal-padding - .1rem);
-}
+.ui-messages ul li {
+  padding: 0 0 $p-messages-item-vertical-padding;
 
-.ui-messages-info-icon, .ui-messages-warn-icon, .ui-messages-error-icon, .ui-messages-fatal-icon {
-  width: $p-messages-icon-size;
-  height: $p-messages-icon-size;
-  font-size: $p-messages-icon-font-size;
-  line-height: $p-messages-icon-size;
+  &:last-child {
+    padding: 0;
+  }
 }
 
 .ui-messages .ui-messages-close {
