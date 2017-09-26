@@ -1,0 +1,14 @@
+.sedn-zdarzenie-details-field {
+
+  &.TABLE .sedn-zdarzenie-details-field-content {
+    padding: 0;
+
+    .ui-datatable {
+      margin: -1px;
+    }
+  }
+}
+
+.sedn-zdarzenie-details-field-label {
+  width: 250px;
+}

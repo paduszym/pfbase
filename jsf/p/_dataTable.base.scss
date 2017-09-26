@@ -14,8 +14,7 @@
 
 .ui-datatable .ui-datatable-header,
 .ui-datatable .ui-datatable-footer {
-  text-align: center;
-  padding: 4px 10px;
+  padding: bl(1) (bl(2) - .1rem) (bl(1) - .1rem);
 }
 
 .ui-datatable .ui-datatable-header {

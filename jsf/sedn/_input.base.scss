@@ -1,0 +1,26 @@
+.sedn-input .ui-inputtext,
+.sedn-input .ui-inputtextarea,
+.sedn-input .ui-selectonemenu,
+.sedn-input .ui-autocomplete,
+.sedn-input .ui-autocomplete > input {
+  width: 100% !important;
+}
+
+.sedn-input .ui-calendar {
+  display: block;
+}
+
+.sedn-input .ui-calendar > .ui-inputfield {
+  width: 100%;
+}
+
+.sedn-input .sedn-input-label {
+  display: inline-block;
+  padding-bottom: 2px;
+  font-weight: bold;
+}
+
+.sedn-input-auto-width,
+.sedn-input-auto-width .ui-inputtext {
+  width: auto !important;
+}

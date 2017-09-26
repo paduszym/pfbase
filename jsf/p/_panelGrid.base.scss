@@ -1,10 +1,19 @@
 .ui-panelgrid {
   margin: $p-panel-grid-margin;
+
+  td, th {
+    vertical-align: top;
+  }
 }
 
 table.ui-panelgrid {
   border: 1px double;
+  width: 98%;
   width: calc(100% - #{2 * $p-panel-grid-margin});
+}
+
+thead.ui-panelgrid-header td {
+  padding: $p-panel-grid-cell-vertical-padding ($p-panel-grid-cell-horizontal-padding - .1rem) ($p-panel-grid-cell-vertical-padding - .1rem);
 }
 
 .ui-panelgrid .ui-panelgrid-cell {

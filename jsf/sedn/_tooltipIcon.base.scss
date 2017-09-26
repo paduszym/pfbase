@@ -1,0 +1,10 @@
+a.sedn-tooltip-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  @include border-radius(100%);
+  margin: 0 .25em;
+  text-decoration: none !important;
+}

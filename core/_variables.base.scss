@@ -19,7 +19,7 @@ $body-font-size: $_font-size-base;
 $body-line-height: bl(3);
 
 // <h1>, ..., <h6>
-$headings-margin: bl(3) bl(2);
+$headings-margin: bl(3);
 $headings-font-weight: 500;
 
 $h1-font-size: $_font-size-xxlarge;
@@ -41,7 +41,7 @@ $fieldset-margin: bl(2);
 $fieldset-padding: bl(2);
 
 // misc
-$text-block-margin: bl(2);
+$text-block-margin: bl(3);
 
 //----------------------------------------------------------------------------------------------------------------------
 
