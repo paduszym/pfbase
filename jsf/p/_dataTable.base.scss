@@ -3,6 +3,7 @@
 }
 
 .ui-datatable table {
+  border: 1px solid;
   border-collapse: collapse;
   width: 100%;
   table-layout: fixed;
@@ -14,25 +15,29 @@
 
 .ui-datatable .ui-datatable-header,
 .ui-datatable .ui-datatable-footer {
-  padding: bl(1) (bl(2) - .1rem) (bl(1) - .1rem);
+  padding: $p-data-table-header-vertical-padding ($p-data-table-header-horizontal-padding - .1rem) ($p-data-table-header-vertical-padding - .1rem);
 }
 
 .ui-datatable .ui-datatable-header {
-  border-bottom: 0 none;
+  border-bottom: 0;
 }
 
 .ui-datatable .ui-datatable-footer {
-  border-top: 0 none;
+  border-top: 0;
 }
 
-.ui-datatable thead th, .ui-datatable tfoot td {
+.ui-datatable thead th,
+.ui-datatable tfoot td {
   text-align: center;
 }
 
-.ui-datatable thead th, .ui-datatable tbody td, .ui-datatable tfoot td, .ui-datatable tfoot th {
-  padding: 4px 10px;
+.ui-datatable thead th,
+.ui-datatable tbody td,
+.ui-datatable tfoot td,
+.ui-datatable tfoot th {
+  padding: $p-data-table-cell-vertical-padding ($p-data-table-cell-horizontal-padding - .1rem) ($p-data-table-cell-vertical-padding - .1rem);
   overflow: hidden;
-  border-width: 1px;
+  border-width: 0 0 1px 1px;
   border-style: solid;
 }
 
@@ -78,7 +83,8 @@
   height: 16px;
 }
 
-.ui-datatable-scrollable table, .ui-datatable-sticky table {
+.ui-datatable-scrollable table,
+.ui-datatable-sticky table {
   table-layout: fixed;
 }
 
@@ -86,12 +92,14 @@
   overflow: auto;
 }
 
-.ui-datatable-scrollable-header, .ui-datatable-scrollable-footer {
+.ui-datatable-scrollable-header,
+.ui-datatable-scrollable-footer {
   overflow: hidden;
-  border: 0 none;
+  border: 0;
 }
 
-.ui-datatable-scrollable .ui-datatable-scrollable-header, .ui-datatable-scrollable .ui-datatable-scrollable-footer {
+.ui-datatable-scrollable .ui-datatable-scrollable-header,
+.ui-datatable-scrollable .ui-datatable-scrollable-footer {
   position: relative;
 }
 
@@ -123,7 +131,7 @@
   border-top-width: 0;
   padding-top: 0;
   padding-bottom: 0;
-  outline: 0 none;
+  outline: 0;
 }
 
 .ui-datatable-scrollable-theadclone th span.ui-column-title {
@@ -165,15 +173,18 @@
   display: none;
 }
 
-.ui-datatable .ui-row-editor .ui-row-editor-check, .ui-datatable .ui-row-editor .ui-row-editor-close {
+.ui-datatable .ui-row-editor .ui-row-editor-check,
+.ui-datatable .ui-row-editor .ui-row-editor-close {
   display: none;
 }
 
-.ui-datatable .ui-row-editing .ui-row-editor .ui-row-editor-check, .ui-datatable .ui-row-editing .ui-row-editor .ui-row-editor-close {
+.ui-datatable .ui-row-editing .ui-row-editor .ui-row-editor-check,
+.ui-datatable .ui-row-editing .ui-row-editor .ui-row-editor-close {
   display: inline-block;
 }
 
-.ui-datatable .ui-datatable-data tr.ui-row-editing td.ui-editable-column, .ui-datatable .ui-datatable-data td.ui-cell-editing {
+.ui-datatable .ui-datatable-data tr.ui-row-editing td.ui-editable-column,
+.ui-datatable .ui-datatable-data td.ui-cell-editing {
   padding: 0;
   margin: 0;
 }
@@ -207,7 +218,9 @@
   overflow: auto;
 }
 
-.ui-datatable-resizable thead th, .ui-datatable-resizable tbody td, .ui-datatable-resizable tfoot td {
+.ui-datatable-resizable thead th,
+.ui-datatable-resizable tbody td,
+.ui-datatable-resizable tfoot td {
   white-space: nowrap;
 }
 
@@ -224,17 +237,20 @@
   direction: rtl;
 }
 
-.ui-datatable-rtl.ui-datatable thead th, .ui-datatable-rtl.ui-datatable tfoot td {
+.ui-datatable-rtl.ui-datatable thead th,
+.ui-datatable-rtl.ui-datatable tfoot td {
   text-align: right;
 }
 
 .ui-datatable table.ui-datatable-fs {
+  border: 0;
   width: auto;
 }
 
-.ui-datatable .ui-datatable-frozenlayout-left, .ui-datatable .ui-datatable-frozenlayout-right {
+.ui-datatable .ui-datatable-frozenlayout-left,
+.ui-datatable .ui-datatable-frozenlayout-right {
   padding: 0;
-  border: 0 none;
+  border: 0;
   vertical-align: top;
 }
 
@@ -264,7 +280,8 @@
   display: none;
 }
 
-.ui-datatable-reflow .ui-reflow-label, .ui-datatable-reflow .ui-reflow-dropdown {
+.ui-datatable-reflow .ui-reflow-label,
+.ui-datatable-reflow .ui-reflow-dropdown {
   margin-bottom: 10px;
   display: none;
 }
@@ -281,82 +298,100 @@
   margin: auto 0;
 }
 
-@media(max-width: 640px) {
+@media (max-width: 640px) {
+
   .ui-datatable-reflow thead th, .ui-datatable-reflow tfoot td {
     display: none;
   }
+
   .ui-datatable-reflow .ui-datatable-data td[role="gridcell"] {
     text-align: left;
     display: block;
-    border: 0 none;
+    border: 0;
     width: 100%;
     float: left;
     clear: left;
   }
+
   .ui-datatable-reflow .ui-datatable-data.ui-widget-content {
-    border: 0 none;
+    border: 0;
   }
+
   .ui-datatable-reflow .ui-datatable-data tr.ui-widget-content {
-    border-left: 0 none;
-    border-right: 0 none;
+    border-left: 0;
+    border-right: 0;
   }
+
   .ui-datatable-reflow .ui-datatable-data td[role="gridcell"] .ui-column-title {
     padding: .4em;
     min-width: 30%;
     display: inline-block;
     margin: -.4em 1em -.4em -.4em;
   }
-  .ui-datatable-reflow .ui-reflow-label, .ui-datatable-reflow .ui-reflow-dropdown {
+
+  .ui-datatable-reflow .ui-reflow-label,
+  .ui-datatable-reflow .ui-reflow-dropdown {
     display: inline-block;
   }
+
   .ui-datatable-reflow .ui-reflow-dropdown {
     margin-left: 5px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
   }
+
   .ui-datatable-reflow tr.ui-datatable-empty-message > td {
     display: block;
-    border: 0 none;
+    border: 0;
   }
 }
 
-@media only all {
-  th.ui-column-p-6, td.ui-column-p-6, th.ui-column-p-5, td.ui-column-p-5, th.ui-column-p-4, td.ui-column-p-4, th.ui-column-p-3, td.ui-column-p-3, th.ui-column-p-2, td.ui-column-p-2, th.ui-column-p-1, td.ui-column-p-1 {
-    display: none;
-  }
+th.ui-column-p-6, td.ui-column-p-6,
+th.ui-column-p-5, td.ui-column-p-5,
+th.ui-column-p-4, td.ui-column-p-4,
+th.ui-column-p-3, td.ui-column-p-3,
+th.ui-column-p-2, td.ui-column-p-2,
+th.ui-column-p-1, td.ui-column-p-1 {
+  display: none;
 }
 
 @media screen and (min-width: 20em) {
+
   th.ui-column-p-1, td.ui-column-p-1 {
     display: table-cell;
   }
 }
 
 @media screen and (min-width: 30em) {
+
   th.ui-column-p-2, td.ui-column-p-2 {
     display: table-cell;
   }
 }
 
 @media screen and (min-width: 40em) {
+
   th.ui-column-p-3, td.ui-column-p-3 {
     display: table-cell;
   }
 }
 
 @media screen and (min-width: 50em) {
+
   th.ui-column-p-4, td.ui-column-p-4 {
     display: table-cell;
   }
 }
 
 @media screen and (min-width: 60em) {
+
   th.ui-column-p-5, td.ui-column-p-5 {
     display: table-cell;
   }
 }
 
 @media screen and (min-width: 70em) {
+
   th.ui-column-p-6, td.ui-column-p-6 {
     display: table-cell;
   }
