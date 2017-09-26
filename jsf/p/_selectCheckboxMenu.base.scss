@@ -131,7 +131,7 @@
 .ui-selectcheckboxmenu-multiple-container.ui-inputfield {
   display: block;
   border: 0;
-  min-width: 5em;
+  min-width: 5 * $p-common-input-line-height;
   min-height: $p-common-input-line-height + 2 * $p-common-input-vertical-padding - .2rem;
   padding: ($p-common-input-vertical-padding - .2rem) ($p-common-input-horizontal-padding - $p-select-checkbox-menu-token-margin - .1rem) ($p-common-input-vertical-padding - $p-select-checkbox-menu-token-margin - .2rem) ($p-common-input-horizontal-padding - .2rem);
   @include border-radius-rt(0);
