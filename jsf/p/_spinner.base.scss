@@ -1,54 +1,43 @@
 .ui-spinner {
   display: inline-block;
-  overflow: visible;
-  padding: 0;
   position: relative;
-  vertical-align: middle;
+  padding-right: $p-common-input-line-height + 2 * $p-common-input-vertical-padding;;
 }
 
 .ui-spinner-input {
-  vertical-align: middle;
+  border-right: 0;
+  vertical-align: top;
   text-align: right;
-  padding-right: 20px;
+  @include border-radius-rt(0);
+  @include border-radius-rb(0);
 }
 
 .ui-spinner-button {
-  cursor: default;
-  display: block;
-  font-size: .5em;
-  height: 50%;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
+  cursor: pointer;
   position: absolute;
   right: 0;
-  text-align: center;
-  vertical-align: middle;
-  width: 16px;
+  width: $p-common-input-line-height + 2 * $p-common-input-vertical-padding;
+  height: .5 * $p-common-input-line-height + $p-common-input-vertical-padding;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+  line-height: .5 * $p-common-input-line-height + $p-common-input-vertical-padding - .2rem;
   z-index: 100;
 }
 
-.ui-spinner .ui-icon {
-  left: 0;
-  margin-top: -8px;
-  position: absolute;
-  top: 50%;
+.ui-spinner-button.ui-button .ui-icon {
+  position: static;
+  width: 100%;
+  text-align: center;
 }
 
 .ui-spinner-up {
   top: 0;
+  border-bottom: 0;
 }
 
 .ui-spinner-down {
   bottom: 0;
-}
-
-.ui-spinner .ui-icon-triangle-1-s {
-  background-position: -65px -16px;
-}
-
-.ui-spinner .ui-icon-triangle-1-n {
-  margin-top: -9px;
 }
 
 .ui-spinner-input::-ms-clear {
