@@ -29,4 +29,7 @@
 }
 
 .ui-state-error {
+  border-color: $p-common-state-error-border-color;
+  background: $p-common-state-error-bg;
+  color: $p-common-state-error-color;
 }
