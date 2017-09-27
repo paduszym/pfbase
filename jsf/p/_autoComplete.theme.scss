@@ -1,0 +1,11 @@
+.ui-autocomplete-panel .ui-autocomplete-moretext {
+  color: rgba($p-common-state-default-color, .85);
+
+  &.ui-state-hover {
+    color: rgba($p-common-state-hover-color, .85);
+  }
+
+  &.ui-state-highlight {
+    color: rgba($p-common-state-highlight-color, .85);
+  }
+}

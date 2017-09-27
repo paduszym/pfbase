@@ -5,9 +5,8 @@
   display: inline-block;
 }
 
-.ui-autocomplete-input.ui-autocomplete-dd-input {
-  @include border-radius-rt(0);
-  @include border-radius-rb(0);
+.ui-autocomplete-dropdown.ui-button {
+  border-left: 0;
 }
 
 .ui-autocomplete-query {
@@ -19,107 +18,48 @@
   overflow: auto;
 }
 
+.ui-autocomplete-panel .ui-autocomplete-list {
+  border: 0;
+}
+
 .ui-autocomplete-panel .ui-autocomplete-item {
   cursor: pointer;
-}
-
-.ui-autocomplete-panel .ui-autocomplete-list {
-  padding: .4em;
-  border: 0;
-}
-
-.ui-autocomplete-panel .ui-autocomplete-list-item {
   border: 0;
   font-weight: 400;
-  margin: 1px 0;
-  padding: 3px 5px;
   text-align: left;
 }
 
+.ui-autocomplete-panel li.ui-autocomplete-item {
+  padding: $p-auto-complete-item-vertical-padding $p-auto-complete-item-horizontal-padding;
+  @include border-radius(0);
+}
+
 .ui-autocomplete-panel .ui-autocomplete-table {
+  border: 0;
   border-collapse: collapse;
   width: 100%;
 }
 
-.ui-autocomplete-panel .ui-autocomplete-table th, .ui-autocomplete-panel .ui-autocomplete-table td {
-  border-width: 1px;
-  border-style: solid;
-  border-color: inherit;
-  padding: 4px 10px 4px 10px;
+.ui-autocomplete-panel .ui-autocomplete-table th,
+.ui-autocomplete-panel .ui-autocomplete-table td {
+  padding: $p-auto-complete-item-vertical-padding 0;
+
+  &:first-child {
+    padding-left: $p-auto-complete-item-horizontal-padding;
+  }
+
+  &:last-child {
+    padding-right: $p-auto-complete-item-horizontal-padding;
+  }
 }
 
 .ui-autocomplete-panel .ui-autocomplete-moretext {
-  font-size: 90%;
+  font-style: italic;
+}
+
+.ui-autocomplete-panel .ui-autocomplete-group {
   font-weight: 700;
-}
-
-.ui-autocomplete-list .ui-autocomplete-moretext {
-  margin: 1px 0;
-  padding: 3px 5px;
-  text-align: left;
-  border: 0;
-}
-
-.ui-autocomplete-multiple-container {
-  clear: left;
-  cursor: text;
-  list-style-type: none;
-  margin: 0;
-  min-height: 1px;
-  overflow: hidden;
-  width: 400px;
-}
-
-.ui-autocomplete-dd-multiple-container {
-  float: left;
-  padding-right: 2.4em !important;
-}
-
-.ui-autocomplete-multiple-container.ui-inputfield {
-  padding: 0;
-}
-
-.ui-autocomplete-token {
   cursor: default;
-  float: left;
-  overflow: hidden;
-  padding: 1px 3px;
-  white-space: nowrap;
-  position: relative;
-  margin: 2px;
-}
-
-.ui-autocomplete-token-label {
-  display: block;
-  padding: 0 2.1em 0 .5em;
-}
-
-.ui-autocomplete-token-label-disabled {
-  display: block;
-  padding: 0 .5em 0 .5em;
-}
-
-.ui-autocomplete-token-icon {
-  margin-top: -9px;
-  position: absolute;
-  right: .2em;
-  top: 50%;
-  cursor: pointer;
-}
-
-.ui-autocomplete-input-token {
-  float: left;
-  list-style-type: none;
-  margin: 1px;
-  padding: 0;
-}
-
-.ui-autocomplete-input-token input {
-  border: 0;
-  width: 140px;
-  outline: medium none;
-  background-color: transparent;
-  margin: 2px;
 }
 
 .ui-autocomplete-itemtip-content {
@@ -129,14 +69,59 @@
 .ui-autocomplete-itemtip {
   position: absolute;
   display: none;
-  padding: .4em;
 }
 
 .ui-autocomplete-emptyMessage {
-  padding: 3px 5px;
+
 }
 
-.ui-autocomplete-panel .ui-autocomplete-group {
-  font-weight: 700;
+.ui-autocomplete-dd-multiple-container {
+  padding-right: 2.4em !important;
+}
+
+.ui-autocomplete-multiple-container.ui-inputfield {
+  display: inline-block;
+  vertical-align: top;
+  cursor: text;
+  list-style-type: none;
+  margin: 0;
+  padding: ($p-common-input-vertical-padding - .2rem) ($p-common-input-horizontal-padding - $p-select-checkbox-menu-token-margin - .1rem) ($p-common-input-vertical-padding - $p-select-checkbox-menu-token-margin - .2rem) ($p-common-input-horizontal-padding - .2rem);
+  overflow: hidden;
+}
+
+.ui-autocomplete-token,
+.ui-autocomplete-input-token {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 $p-select-checkbox-menu-token-margin $p-select-checkbox-menu-token-margin 0;
+}
+
+.ui-autocomplete-input-token input {
+  border: 1px solid transparent;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  background: none;
+  line-height: inherit;
+}
+
+.ui-autocomplete-token {
   cursor: default;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.ui-autocomplete-token-label {
+  display: block;
+  padding: 0 $p-select-checkbox-menu-token-horizontal-padding 0 (.5 * $p-select-checkbox-menu-token-horizontal-padding + $p-select-checkbox-menu-token-icon-width);
+  font-size: $p-select-checkbox-menu-token-font-size;
+}
+
+.ui-autocomplete-token-icon {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  width: $p-select-checkbox-menu-token-icon-width;
+  text-align: center;
 }
