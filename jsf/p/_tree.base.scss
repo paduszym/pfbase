@@ -48,8 +48,8 @@
 }
 
 .ui-tree .ui-treenode-label.ui-state-hover, .ui-tree .ui-treenode-label.ui-state-highlight {
-  font-weight: normal;
-  border: 0 none;
+  font-weight: 400;
+  border: 0;
 }
 
 .ui-tree .ui-treenode-leaf-icon {
@@ -87,7 +87,7 @@
 }
 
 .ui-tree-horizontal .ui-treenode-content {
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .ui-tree-horizontal .ui-treenode-content.ui-tree-selectable {
@@ -95,7 +95,7 @@
 }
 
 .ui-tree-horizontal .ui-treenode-parent .ui-treenode-content {
-  font-weight: normal;
+  font-weight: 400;
   white-space: nowrap;
 }
 
@@ -160,7 +160,7 @@
 }
 
 .ui-tree-droppoint.ui-state-hover {
-  border: 0 none;
+  border: 0;
 }
 
 .ui-treenode-content.ui-state-hover {
