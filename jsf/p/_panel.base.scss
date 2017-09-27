@@ -52,6 +52,7 @@
 }
 
 .ui-panel .ui-panel-footer {
+  padding: ($p-panel-header-vertical-padding - .1rem) ($p-panel-header-horizontal-padding - .1rem) $p-panel-header-vertical-padding;
   border-width: 1px 0 0;
   text-align: left;
 }

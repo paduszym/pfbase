@@ -2,7 +2,9 @@
 .sedn-input .ui-inputtextarea,
 .sedn-input .ui-selectonemenu,
 .sedn-input .ui-autocomplete,
-.sedn-input .ui-autocomplete > input {
+.sedn-input .ui-autocomplete > input,
+.sedn-input .ui-password {
+  display: block !important;
   width: 100% !important;
 }
 
@@ -23,4 +25,8 @@
 .sedn-input-auto-width,
 .sedn-input-auto-width .ui-inputtext {
   width: auto !important;
+}
+
+.ui-panel-content > .sedn-input {
+  margin: bl(2);
 }

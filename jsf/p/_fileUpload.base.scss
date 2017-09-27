@@ -1,3 +1,151 @@
 .ui-fileupload-upload .ui-icon::before {
   content: $fa-var-upload;
 }
+
+.ui-fileupload-buttonbar .ui-fileupload-choose input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  font-size: 20rem;
+  direction: ltr;
+  cursor: pointer;
+}
+
+.ui-fileupload-buttonbar .ui-fileupload-choose.ui-state-disabled input {
+  cursor: default;
+}
+
+.ui-fileupload-choose {
+  position: relative;
+  overflow: hidden;
+  outline: 0;
+}
+
+.ui-fileupload-buttonbar {
+  padding: $p-toolbar-group-padding - .1rem;
+}
+
+.ui-fileupload-buttonbar .ui-button {
+  vertical-align: middle;
+  margin-right: $p-toolbar-item-margin;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.ui-fileupload-content {
+  padding: 0;
+  border-top-width: 0;
+  overflow: hidden;
+}
+
+.ui-fileupload-content .ui-progressbar {
+  width: $p-file-upload-progress-bar-width;
+}
+
+.ui-fileupload-files {
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.ui-fileupload-files > div {
+  display: table-row-group;
+  vertical-align: top;
+
+  &:empty {
+    display: block;
+    padding: $p-toolbar-group-padding $p-toolbar-group-padding ($p-toolbar-group-padding - .1rem);
+  }
+
+  &:empty::before {
+    content: "Nie wybrano plików.";
+    opacity: $p-common-state-disabled-opacity;
+  }
+}
+
+.ui-fileupload-row {
+  display: table-row;
+}
+
+.ui-fileupload-row > div {
+  display: table-cell;
+  padding: $p-file-upload-item-padding;
+}
+
+.ui-fileupload-row > .ui-widget-content {
+  display: none;
+}
+
+.ui-fileupload-row .ui-fileupload-preview {
+  width: $p-file-upload-image-preview-size + 2 * $p-file-upload-item-padding;
+  text-align: right;
+
+  canvas {
+    vertical-align: middle;
+  }
+
+  &:empty::before {
+    @include ui-icon;
+    vertical-align: middle;
+    content: $fa-var-file;
+    width: $p-file-upload-image-preview-size;
+    height: $p-file-upload-image-preview-size;
+    text-align: center;
+    font-size: .5 * $p-file-upload-image-preview-size;
+    line-height: $p-file-upload-image-preview-size - .2rem;
+    opacity: .5;
+  }
+}
+
+.ui-fileupload-row .ui-fileupload-preview + div + div {
+  width: $p-file-upload-size-cell-width;
+  text-align: right;
+}
+
+.ui-fileupload-row .ui-fileupload-progress {
+  width: $p-file-upload-progress-bar-width + 2 * $p-file-upload-item-padding;
+
+  .ui-progressbar {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.ui-fileupload-row .ui-fileupload-progress + div {
+  width: $p-button-height + 2 * $p-file-upload-item-padding;
+}
+
+.ui-fileupload-messages > div {
+  border: 0;
+  @include border-radius(0);
+}
+
+.ui-fileupload-simple {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ui-fileupload-simple input[type="file"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 10rem;
+  text-align: right;
+  opacity: 0;
+  outline: 0;
+  background: white;
+  cursor: inherit;
+  display: block;
+}
+
+.ui-fileupload-simple .ui-fileupload-filename {
+  margin-left: .5em;
+}

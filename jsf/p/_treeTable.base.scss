@@ -1,31 +1,39 @@
+.ui-treetable {
+  margin: $p-data-table-margin;
+}
+
 .ui-treetable table {
+  border: 1px solid;
   border-collapse: collapse;
   width: 100%;
   table-layout: fixed;
 }
 
-.ui-treetable .ui-treetable-header, .ui-treetable .ui-treetable-footer {
-  text-align: center;
-  padding: 4px 10px;
+.ui-treetable .ui-treetable-header,
+.ui-treetable .ui-treetable-footer {
+  padding: $p-data-table-header-vertical-padding ($p-data-table-header-horizontal-padding - .1rem) ($p-data-table-header-vertical-padding - .1rem);
 }
 
 .ui-treetable .ui-treetable-header {
-  border-bottom: 0 none;
+  border-bottom: 0;
 }
 
 .ui-treetable .ui-treetable-footer {
-  border-top: 0 none;
+  border-top: 0;
 }
 
-.ui-treetable th, .ui-treetable tfoot td {
+.ui-treetable th,
+.ui-treetable tfoot td {
   text-align: center;
 }
 
-.ui-treetable thead th, .ui-treetable tbody td, .ui-treetable tfoot td {
-  padding: 4px 10px;
+.ui-treetable thead th,
+.ui-treetable tbody td,
+.ui-treetable tfoot td {
+  padding: $p-data-table-cell-vertical-padding ($p-data-table-cell-horizontal-padding - .1rem) ($p-data-table-cell-vertical-padding - .1rem);
   overflow: hidden;
-  white-space: nowrap;
-  border-width: 1px;
+  text-overflow: ellipsis;
+  border-width: 0 0 1px 1px;
   border-style: solid;
 }
 
@@ -35,12 +43,14 @@
 
 .ui-treetable .ui-treetable-toggler {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   cursor: pointer;
-  margin-top: -5px;
+  width: bl(3);
+  text-align: center;
 }
 
-.ui-treetable .ui-treetable-data tr.ui-state-highlight, .ui-treetable .ui-treetable-data tr.ui-state-hover {
+.ui-treetable .ui-treetable-data tr.ui-state-highlight,
+.ui-treetable .ui-treetable-data tr.ui-state-hover {
   cursor: pointer;
 }
 
@@ -48,16 +58,18 @@
   overflow: auto;
 }
 
-.ui-treetable-scrollable-header, .ui-treetable-scrollable-footer {
+.ui-treetable-scrollable-header,
+.ui-treetable-scrollable-footer {
   overflow: hidden;
-  border: 0 none;
+  border: 0;
 }
 
 .ui-treetable.ui-treetable-scrollable table {
   table-layout: fixed;
 }
 
-.ui-treetable-scrollable .ui-treetable-scrollable-header, .ui-treetable-scrollable .ui-treetable-scrollable-footer {
+.ui-treetable-scrollable .ui-treetable-scrollable-header,
+.ui-treetable-scrollable .ui-treetable-scrollable-footer {
   position: relative;
 }
 
@@ -137,7 +149,7 @@
   border-top-width: 0;
   padding-top: 0;
   padding-bottom: 0;
-  outline: 0 none;
+  outline: 0;
 }
 
 .ui-treetable-scrollable-theadclone th span {
@@ -150,24 +162,30 @@
 }
 
 @media(max-width: 640px) {
-  .ui-treetable-reflow thead th, .ui-treetable-reflow tfoot td {
+
+  .ui-treetable-reflow thead th,
+  .ui-treetable-reflow tfoot td {
     display: none;
   }
+
   .ui-treetable-reflow .ui-treetable-data td {
     text-align: left;
     display: block;
-    border: 0 none;
+    border: 0;
     width: 100%;
     float: left;
     clear: left;
   }
+
   .ui-treetable-reflow .ui-treetable-data.ui-widget-content {
-    border: 0 none;
+    border: 0;
   }
+
   .ui-treetable-reflow .ui-treetable-data tr.ui-widget-content {
-    border-left: 0 none;
-    border-right: 0 none;
+    border-left: 0;
+    border-right: 0;
   }
+
   .ui-treetable-reflow .ui-treetable-data td .ui-column-title {
     padding: .4em;
     min-width: 30%;
@@ -179,10 +197,6 @@
 .ui-treetable .ui-editable-column .ui-cell-editor {
   display: inline-block;
   vertical-align: middle;
-}
-
-.ui-treetable .ui-editable-column .ui-treetable-toggler {
-  margin-top: 0;
 }
 
 .ui-treetable .ui-cell-editor-input {
@@ -210,19 +224,23 @@
   display: none;
 }
 
-.ui-treetable .ui-row-editor .ui-icon-check, .ui-treetable .ui-row-editor .ui-icon-close {
+.ui-treetable .ui-row-editor .ui-icon-check,
+.ui-treetable .ui-row-editor .ui-icon-close {
   display: none;
 }
 
-.ui-treetable .ui-row-editing .ui-row-editor .ui-icon-check, .ui-treetable .ui-row-editing .ui-row-editor .ui-icon-close {
+.ui-treetable .ui-row-editing .ui-row-editor .ui-icon-check,
+.ui-treetable .ui-row-editing .ui-row-editor .ui-icon-close {
   display: inline-block;
 }
 
-.ui-treetable .ui-treetable-data tr.ui-row-editing td.ui-editable-column, .ui-treetable .ui-treetable-data td.ui-cell-editing {
+.ui-treetable .ui-treetable-data tr.ui-row-editing td.ui-editable-column,
+.ui-treetable .ui-treetable-data td.ui-cell-editing {
   padding: 0;
   margin: 0;
 }
 
-.ui-treetable .ui-treetable-data tr.ui-row-editing td.ui-editable-column:first-child, .ui-treetable .ui-treetable-data td.ui-cell-editing:first-child {
+.ui-treetable .ui-treetable-data tr.ui-row-editing td.ui-editable-column:first-child,
+.ui-treetable .ui-treetable-data td.ui-cell-editing:first-child {
   padding-left: 10px;
 }

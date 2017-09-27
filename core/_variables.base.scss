@@ -221,6 +221,19 @@ $p-message-horizontal-padding: bl(1);
 $p-message-icon-size: bl(3);
 $p-message-icon-font-size: bl(2);
 
+/**
+ * p:progressBar
+ */
+$p-progress-bar-height: bl(3);
+
+/**
+ * p:fileUpload
+ */
+$p-file-upload-progress-bar-width: bl(20);
+$p-file-upload-item-padding: bl(1);
+$p-file-upload-image-preview-size: bl(5);
+$p-file-upload-size-cell-width: bl(15);
+
 //----------------------------------------------------------------------------------------------------------------------
 
 /**
