@@ -1,33 +1,31 @@
-.ui-rating-star, .ui-rating-cancel {
-  display: inline-block;
-  overflow: hidden;
-  text-indent: -999em;
+.ui-rating {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  max-width: 100%;
+}
+
+.ui-rating-star,
+.ui-rating-cancel {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.ui-rating-star a,
+.ui-rating-cancel a {
+  vertical-align: top;
   cursor: pointer;
+  text-decoration: none;
+  @include ui-icon;
 }
 
-.ui-rating-star a, .ui-rating-cancel a {
-  width: 16px;
-  height: 15px;
-  display: block;
-  background: url(jsf-resource-url("primefaces", "rating/rating.png")) no-repeat 0 0;
+.ui-rating-cancel a::before {
+  content: $fa-var-ban;
 }
 
-.ui-rating-star a {
-  background-position: 0 -32px;
+.ui-rating-star a::before {
+  content: $fa-var-star-o;
 }
 
-.ui-rating-star-on a {
-  background-position: 0 -48px;
-}
-
-.ui-rating-star-hover a {
-  background-position: 0 -64px;
-}
-
-.ui-rating-cancel-hover a {
-  background-position: 0 -16px;
-}
-
-.ui-rating.ui-state-disabled .ui-rating-star, .ui-rating.ui-state-disabled .ui-rating-cancel {
-  cursor: default;
+.ui-rating-star-on a::before {
+  content: $fa-var-star;
 }
