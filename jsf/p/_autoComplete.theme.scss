@@ -1,5 +1,9 @@
-.ui-autocomplete-panel .ui-autocomplete-moretext {
+.ui-autocomplete-panel .ui-autocomplete-moretext,
+.ui-autocomplete-emptyMessage {
   color: rgba($p-common-state-default-color, .85);
+}
+
+.ui-autocomplete-panel .ui-autocomplete-moretext {
 
   &.ui-state-hover {
     color: rgba($p-common-state-hover-color, .85);

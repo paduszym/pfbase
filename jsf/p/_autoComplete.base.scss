@@ -72,11 +72,8 @@
 }
 
 .ui-autocomplete-emptyMessage {
-
-}
-
-.ui-autocomplete-dd-multiple-container {
-  padding-right: 2.4em !important;
+  padding: $p-auto-complete-item-vertical-padding $p-auto-complete-item-horizontal-padding;
+  font-style: italic;
 }
 
 .ui-autocomplete-multiple-container.ui-inputfield {
