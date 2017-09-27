@@ -49,6 +49,7 @@
 .ui-selectonemenu-panel {
   position: absolute;
   height: auto;
+  overflow: hidden;
 }
 
 .ui-selectonemenu-panel .ui-selectonemenu-items-wrapper {
@@ -56,44 +57,51 @@
 }
 
 .ui-selectonemenu-panel .ui-selectonemenu-item {
-  font-weight: 400;
   cursor: pointer;
-}
-
-.ui-selectonemenu-panel .ui-selectonemenu-item-group {
-  font-weight: 700;
-}
-
-.ui-selectonemenu-panel .ui-selectonemenu-list {
-  padding: .4em;
   border: 0;
-}
-
-.ui-selectonemenu-panel .ui-selectonemenu-list-item {
-  border: 0;
-  margin: 1px 0;
-  padding: 3px 5px;
+  font-weight: 400;
   text-align: left;
   white-space: nowrap;
 }
 
+.ui-selectonemenu-panel .ui-selectonemenu-list {
+  border: 0;
+  overflow: hidden;
+  @include border-radius(0);
+}
+
+.ui-selectonemenu-panel .ui-selectonemenu-item-group,
+.ui-selectonemenu-panel li.ui-selectonemenu-item {
+  padding: $p-auto-complete-item-vertical-padding $p-auto-complete-item-horizontal-padding;
+  @include border-radius(0);
+}
+
+.ui-selectonemenu-panel .ui-selectonemenu-item-group {
+  padding-left: .5 * $p-auto-complete-item-horizontal-padding;
+  font-weight: 700;
+}
+
 .ui-selectonemenu-panel .ui-selectonemenu-table {
+  border: 0;
   border-collapse: collapse;
   width: 100%;
 }
 
+.ui-selectonemenu-panel .ui-selectonemenu-table th,
 .ui-selectonemenu-panel .ui-selectonemenu-table td {
-  border-color: inherit;
-}
+  padding: $p-auto-complete-item-vertical-padding 0;
 
-.ui-selectonemenu-panel .ui-selectonemenu-table th, .ui-selectonemenu-panel .ui-selectonemenu-table td {
-  border-width: 1px;
-  border-style: solid;
-  padding: 4px 10px 4px 10px;
+  &:first-child {
+    padding-left: $p-auto-complete-item-horizontal-padding;
+  }
+
+  &:last-child {
+    padding-right: $p-auto-complete-item-horizontal-padding;
+  }
 }
 
 .ui-selectonemenu-panel .ui-selectonemenu-filter {
-  width: 85%;
+  width: 100%;
 }
 
 .ui-selectonemenu-panel .ui-selectonemenu-filter-container {
