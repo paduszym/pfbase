@@ -13,6 +13,7 @@
   align-items: center;
 }
 
-.ui-selectmanymenu li.ui-selectlistbox-item > .ui-chkbox:first-child {
+.ui-selectmanymenu li.ui-selectlistbox-item > .ui-chkbox:first-child,
+.ui-selectmanymenu tr.ui-selectlistbox-item td:first-child > .ui-chkbox {
   margin: 0 $p-checkbox-label-horizontal-padding 0 (-$p-checkbox-padding);
 }
