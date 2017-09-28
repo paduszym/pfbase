@@ -2,6 +2,11 @@
   color: $p-common-state-default-border-color;
 }
 
+.ui-rating-star:hover a {
+  color: $p-common-state-hover-border-color;
+}
+
+.ui-rating-star-on:hover a,
 .ui-rating-star-on a {
   color: $p-common-state-highlight-bg;
 }

@@ -6,16 +6,19 @@
 
 .ui-rating-star,
 .ui-rating-cancel {
-  width: 2.4rem;
-  height: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $p-rating-star-width;
+  height: $p-rating-star-height;
 }
 
 .ui-rating-star a,
 .ui-rating-cancel a {
-  vertical-align: top;
+  @include ui-icon;
   cursor: pointer;
   text-decoration: none;
-  @include ui-icon;
+  font-size: $p-rating-star-font-size;
 }
 
 .ui-rating-cancel a::before {
