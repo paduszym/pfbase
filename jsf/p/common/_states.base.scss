@@ -6,6 +6,11 @@
   border: 1px solid;
 }
 
+.ui-state-focus,
+.ui-state-focus * {
+  outline: 0 !important;
+}
+
 .ui-state-disabled {
   opacity: $p-common-state-disabled-opacity;
 

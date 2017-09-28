@@ -12,11 +12,6 @@
   + #sedn-content {
     border-top-width: $sedn-appbar-height;
   }
-
-  &::after {
-    content: "";
-    clear: both;
-  }
 }
 
 body.ui-dialog-opened #sedn-appbar {

@@ -1,0 +1,13 @@
+.sedn-karta-oceny-tree-table {
+
+  tr[data-rk*="_"] {
+    border-color: lighten($p-common-state-default-border-color, 3%);
+    background: darken($p-common-state-default-bg, 3%);
+    color: lighten($p-common-state-default-color, 3%);
+
+    &.ui-state-hover {
+      background: $p-common-state-hover-bg;
+      color: $p-common-state-hover-color;
+    }
+  }
+}

@@ -30,6 +30,7 @@
 .ui-treetable thead th,
 .ui-treetable tbody td,
 .ui-treetable tfoot td {
+  vertical-align: top;
   padding: $p-data-table-cell-vertical-padding ($p-data-table-cell-horizontal-padding - .1rem) ($p-data-table-cell-vertical-padding - .1rem);
   overflow: hidden;
   text-overflow: ellipsis;

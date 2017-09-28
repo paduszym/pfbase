@@ -3,4 +3,18 @@
   &-label {
     background: #fafafa;
   }
+
+  &.TABLE .sedn-zdarzenie-details-field-content {
+
+    .ui-datatable {
+      @include z-0;
+    }
+  }
+
+  &.PANEL .sedn-zdarzenie-details-field-content {
+
+    .ui-accordion {
+      @include z-0;
+    }
+  }
 }

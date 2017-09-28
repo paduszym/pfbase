@@ -1,3 +1,7 @@
+.ui-datatable {
+  @include z-1;
+}
+
 .ui-datatable table {
   border-color: $p-common-widget-content-border-color;
 }

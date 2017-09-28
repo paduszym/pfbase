@@ -1,4 +1,5 @@
 #sedn-appbar {
   background: $sedn-appbar-bg;
   color: $sedn-appbar-color;
+  @include z-2;
 }

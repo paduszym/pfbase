@@ -10,11 +10,13 @@
   font-weight: 700;
 }
 
-.text-right {
+.text-right,
+thead th.text-right {
   text-align: right;
 }
 
-.text-left {
+.text-left,
+thead th.text-left {
   text-align: left;
 }
 
@@ -24,6 +26,33 @@
 
 .text-justify {
   text-align: justify;
+}
+
+.key {
+  background: #fafafa;
+  font-weight: bold;
+  width: 250px;
+}
+
+.index {
+  text-align: right;
+  width: 40px;
+}
+
+.n {
+  width: 80px;
+}
+
+td.n {
+  text-align: right;
+}
+
+.bool {
+  width: 80px;
+}
+
+td.number {
+  text-align: right;
 }
 
 //----
@@ -60,4 +89,52 @@
 // 10 15 ... 95 100
 @for $i from 0 through 18 {
   @include pct-width-class(10 + $i*5);
+}
+
+//---
+// Table cell classes
+//---
+.ui-datatable,
+.ui-treetable {
+
+  thead th.sedn-dtc-id {
+    text-align: right;
+    width: bl(19);
+  }
+
+  table td.sedn-dtc-id {
+    text-align: right;
+  }
+
+  /**/
+  thead th.sedn-dtc {
+
+    &-data,
+    &-dataUzyskania,
+    &-dataRozpoczeciaUdzialu,
+    &-dataZakonczeniaUdzialu {
+      text-align: center;
+      width: bl(27);
+    }
+  }
+
+  table td.sedn-dtc {
+
+    &-data,
+    &-dataUzyskania,
+    &-dataRozpoczeciaUdzialu,
+    &-dataZakonczeniaUdzialu {
+      text-align: center;
+    }
+  }
+
+  /**/
+  thead th.sedn-dtc-punktacja {
+    text-align: right;
+    width: bl(19);
+  }
+
+  table td.sedn-dtc-punktacja {
+    text-align: right;
+  }
 }

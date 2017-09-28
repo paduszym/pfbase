@@ -1,0 +1,18 @@
+.sedn-karta-oceny-tree-table {
+
+  th.ui-treetable-toggler-cell {
+    width: bl(8);
+  }
+
+  td.ui-treetable-toggler-cell {
+    text-align: center;
+  }
+
+  tr[data-rk*="_"] td {
+    font-size: $_font-size-small;
+
+    &.sedn-karta-oceny-tree-table-name-cell {
+      padding-left: 2 * $p-data-table-cell-horizontal-padding;
+    }
+  }
+}

@@ -1,9 +1,12 @@
 //----------------------------------------------------------------------------------------------------------------------
+$_sedn-brand-color: #00a0dc;
+
+//----------------------------------------------------------------------------------------------------------------------
 
 // <a>
-$link-color-default: #199577;
-$link-color-hover: #1aa182;
-$link-color-visited: #199577;
+$link-color-default: darken($_sedn-brand-color, 5%);
+$link-color-hover: darken($_sedn-brand-color, 2.5%);
+$link-color-visited: $link-color-default;
 
 // <body>
 $body-color: #222;
@@ -21,32 +24,32 @@ $fieldset-border-color: #bdbdbd;
 /**
  * p:* commons
  */
-$p-common-widget-header-border-color: #d9d9d9;
-$p-common-widget-header-bg: #f6f7f9;
-$p-common-widget-header-color: #1b1d1f;
+$p-common-widget-header-border-color: #ccc;
+$p-common-widget-header-bg: #efefef;
+$p-common-widget-header-color: #111;
 
-$p-common-widget-content-border-color: #d5d5d5;
+$p-common-widget-content-border-color: #ccc;
 $p-common-widget-content-bg: #fff;
-$p-common-widget-content-color: #222;
+$p-common-widget-content-color: #111;
 
-$p-common-state-default-border-color: #d6d6d6;
+$p-common-state-default-border-color: #ccc;
 $p-common-state-default-bg: #fff;
-$p-common-state-default-color: #555;
+$p-common-state-default-color: #222;
 
 $p-common-state-hover-border-color: #c0c0c0;
 $p-common-state-hover-bg: #eee;
-$p-common-state-hover-color: #212121;
+$p-common-state-hover-color: #222;
 
-$p-common-state-focus-border-color: #c0c0c0;
-$p-common-state-focus-bg: #eee;
-$p-common-state-focus-color: #212121;
+$p-common-state-focus-border-color: #bac8cd;
+$p-common-state-focus-bg: #d3e1e6;
+$p-common-state-focus-color: #2a2e35;
 
-$p-common-state-active-border-color: #bebebe;
-$p-common-state-active-bg: #d6d6d6;
-$p-common-state-active-color: #212121;
+$p-common-state-active-border-color: #bac8cd;
+$p-common-state-active-bg: #d3e1e6;
+$p-common-state-active-color: #2a2e35;
 
-$p-common-state-highlight-border-color: #1c9577;
-$p-common-state-highlight-bg: #1db394;
+$p-common-state-highlight-border-color: darken($_sedn-brand-color, 3%);
+$p-common-state-highlight-bg: $_sedn-brand-color;
 $p-common-state-highlight-color: #fff;
 
 $p-common-state-error-color: #b94a48;
@@ -84,7 +87,7 @@ $p-tooltip-color: #fff;
  */
 
 /** _include/common-appbar.xhtml */
-$sedn-appbar-bg: #1db394;
+$sedn-appbar-bg: $_sedn-brand-color;
 $sedn-appbar-color: #fff;
 
 /** _include/common-cookies.xhtml */
@@ -92,9 +95,9 @@ $sedn-cookies-bg: #f8e19a;
 $sedn-cookies-color: #424242;
 
 /** _include/common-footer.xhtml */
-$sedn-footer-bg: #fff;
-$sedn-footer-border-color: #e0e0e0;
-$sedn-footer-version-color: #757575;
+$sedn-footer-bg: $p-common-widget-content-bg;
+$sedn-footer-border-color: $p-common-widget-content-border-color;
+$sedn-footer-version-color: rgba($p-common-widget-content-color, .7);
 
 /** _include/common-sidebar.xhtml */
 $sedn-sidebar-bg: #2e4150;
