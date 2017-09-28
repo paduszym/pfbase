@@ -1,0 +1,19 @@
+/**/
+@mixin ui-button--theme {
+
+  &.ui-state-default {
+    @include background-gradient(to bottom, $p-common-state-default-bg 0, darken($p-common-state-default-bg, 5%) 100%);
+  }
+
+  &.ui-state-hover {
+    @include background-gradient(to bottom, $p-common-state-hover-bg 0, darken($p-common-state-hover-bg, 5%) 100%);
+  }
+
+  &.ui-state-active {
+    @include background-gradient(to bottom, $p-common-state-active-bg 0, darken($p-common-state-active-bg, 5%) 100%);
+  }
+
+  &.ui-state-focus {
+    @include background-gradient(to bottom, $p-common-state-focus-bg 0, darken($p-common-state-focus-bg, 5%) 100%);
+  }
+}

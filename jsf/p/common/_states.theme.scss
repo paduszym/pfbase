@@ -1,34 +1,40 @@
-.ui-state-default {
+.ui-state-default,
+a.ui-state-default {
   border-color: $p-common-state-default-border-color;
   background: $p-common-state-default-bg;
   color: $p-common-state-default-color;
 }
 
-.ui-state-hover {
+.ui-state-hover,
+a.ui-state-hover {
   border-color: $p-common-state-hover-border-color;
   background: $p-common-state-hover-bg;
   color: $p-common-state-hover-color;
 }
 
-.ui-state-focus {
+.ui-state-focus,
+a.ui-state-focus {
   border-color: $p-common-state-focus-border-color;
   background: $p-common-state-focus-bg;
   color: $p-common-state-focus-color;
 }
 
-.ui-state-active {
+.ui-state-active,
+a.ui-state-active {
   border-color: $p-common-state-active-border-color;
   background: $p-common-state-active-bg;
   color: $p-common-state-active-color;
 }
 
-.ui-state-highlight {
+.ui-state-highlight,
+a.ui-state-highlight {
   border-color: $p-common-state-highlight-border-color;
   background: $p-common-state-highlight-bg;
   color: $p-common-state-highlight-color;
 }
 
-.ui-state-error {
+.ui-state-error,
+a.ui-state-error {
   border-color: $p-common-state-error-border-color;
   background: $p-common-state-error-bg;
   color: $p-common-state-error-color;

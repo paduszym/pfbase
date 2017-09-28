@@ -1,0 +1,7 @@
+a.ui-menuitem-link {
+  color: $p-common-state-default-color;
+
+  &.ui-state-hover {
+    color: $p-common-state-hover-color;
+  }
+}

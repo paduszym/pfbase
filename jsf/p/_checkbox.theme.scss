@@ -1,0 +1,7 @@
+.ui-chkbox-box {
+  @include d-1;
+
+  &.ui-state-active {
+    @include z-0;
+  }
+}

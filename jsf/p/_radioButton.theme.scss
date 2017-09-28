@@ -1,3 +1,11 @@
+.ui-radiobutton-box {
+  @include d-1;
+
+  &.ui-state-active {
+    @include z-0;
+  }
+}
+
 .ui-radiobutton-icon.ui-icon {
 
   &.ui-icon-bullet {

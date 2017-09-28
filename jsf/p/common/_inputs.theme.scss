@@ -1,3 +1,13 @@
 .ui-inputfield {
   @include d-1;
+
+  &.ui-state-hover,
+  &.ui-state-focus {
+    background: $p-common-state-default-bg;
+  }
+
+  &.ui-state-focus {
+    border-color: $p-common-state-highlight-border-color;
+    @include d-1($p-common-state-highlight-border-color);
+  }
 }

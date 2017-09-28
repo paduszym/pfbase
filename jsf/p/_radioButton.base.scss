@@ -1,25 +1,25 @@
 .ui-radiobutton {
   display: inline-block;
   vertical-align: middle;
-  padding: $p-radio-button-padding;
+  padding: $p-radio-button-padding + .1rem;
 }
 
 .ui-radiobutton-box {
   position: relative;
-  width: $p-radio-button-size;
-  height: $p-radio-button-size;
+  width: $p-radio-button-size - .2rem;
+  height: $p-radio-button-size - .2rem;
   cursor: pointer;
-  @include border-radius($p-radio-button-size);
+  @include border-radius($p-radio-button-size - .2rem);
 }
 
 .ui-radiobutton-icon.ui-icon {
   position: absolute;
   left: 50%;
   top: 50%;
-  margin: (-.5 * $p-radio-button-bullet-size) 0 0 (-.5 * $p-radio-button-bullet-size);
-  width: $p-radio-button-bullet-size;
-  height: $p-radio-button-bullet-size;
-  @include border-radius($p-radio-button-bullet-size);
+  margin: (-.5 * $p-radio-button-bullet-size + .1rem) 0 0 (-.5 * $p-radio-button-bullet-size + .1rem);
+  width: $p-radio-button-bullet-size - .2rem;
+  height: $p-radio-button-bullet-size - .2rem;
+  @include border-radius($p-radio-button-bullet-size - .2rem);
 
   &::before {
     display: none;

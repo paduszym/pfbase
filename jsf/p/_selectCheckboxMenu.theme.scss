@@ -2,6 +2,10 @@
   @include d-1;
 }
 
+.ui-selectcheckboxmenu .ui-selectcheckboxmenu-trigger {
+  @include ui-button--theme;
+}
+
 .ui-selectcheckboxmenu-panel {
   @include z-2;
 }

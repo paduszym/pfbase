@@ -1,3 +1,7 @@
+.ui-selectonemenu .ui-selectonemenu-trigger {
+  @include ui-button--theme;
+}
+
 .ui-selectonemenu-panel .ui-selectonemenu-filter-container {
   border-color: $p-common-widget-header-border-color;
   background: $p-common-widget-header-bg;
