@@ -1,12 +1,17 @@
-.ui-tabs > .ui-tabs-panels {
-  border-color: $p-common-widget-content-border-color;
-}
-
-.ui-tabs .ui-tabs-nav,
-.ui-tabs > .ui-tabs-panels {
+.ui-tabs .ui-tabs-nav li,
+.ui-tabs .ui-tabs-panels,
+.ui-tabs-scrollable .ui-tabs-navscroller-btn {
   @include z-1;
 }
 
 .ui-tabs .ui-tabs-nav li a {
   color: inherit;
+}
+
+.ui-tabs .ui-tabs-panels {
+  border-color: $p-common-widget-content-border-color;
+}
+
+.ui-tabs-scrollable .ui-tabs-navscroller-btn {
+  @include ui-button--theme;
 }

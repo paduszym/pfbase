@@ -1,6 +1,7 @@
 .ui-tabs {
   display: flex;
   align-items: flex-start;
+  margin: $p-tab-view-margin;
   border: 0;
 }
 
@@ -19,18 +20,7 @@
   position: relative;
   padding: 0;
   white-space: nowrap;
-}
-
-.ui-tabs .ui-tabs-nav li a {
-  display: block;
-  padding: .8rem 1.1rem;
-  text-decoration: none;
-  outline: 0;
-  cursor: inherit;
-}
-
-.ui-tabs .ui-tabs-nav li .ui-icon {
-  padding: .8rem;
+  cursor: pointer;
 }
 
 .ui-tabs .ui-tabs-nav li.ui-tabs-selected,
@@ -38,12 +28,55 @@
   cursor: default;
 }
 
+.ui-tabs .ui-tabs-nav li a,
+.ui-tabs .ui-tabs-nav li .ui-icon {
+  cursor: inherit;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+  display: block;
+  padding: ($p-tab-view-header-vertical-padding - .1rem) ($p-tab-view-header-horizontal-padding - .1rem);
+  text-decoration: none;
+  outline: 0;
+}
+
+.ui-tabs .ui-tabs-nav li .ui-icon {
+  padding: $p-tab-view-header-vertical-padding - .1rem;
+  margin-left: -.5 * $p-tab-view-header-horizontal-padding;
+}
+
 .ui-tabs > .ui-tabs-panels {
+  position: relative;
+  align-self: stretch;
+  flex: 1;
   border: 1px solid;
+  overflow: hidden;
+  @include border-radius($p-common-corner-radius);
+}
+
+.ui-tabs.ui-tabs-top > .ui-tabs-panels {
+  @include border-radius-lt(0);
+  @include border-radius-rt(0);
+}
+
+.ui-tabs.ui-tabs-bottom > .ui-tabs-panels {
+  @include border-radius-lb(0);
+  @include border-radius-rb(0);
+}
+
+.ui-tabs.ui-tabs-left > .ui-tabs-panels {
+  @include border-radius-lt(0);
+  @include border-radius-lb(0);
+}
+
+.ui-tabs.ui-tabs-right > .ui-tabs-panels {
+  @include border-radius-rt(0);
+  @include border-radius-rb(0);
 }
 
 .ui-tabs .ui-tabs-panel {
   border: 0;
+  @include border-radius(0);
 }
 
 .ui-tabs.ui-tabs-left {
@@ -69,51 +102,87 @@
   max-width: 100%;
 }
 
-.ui-tabs > .ui-tabs-panels {
-  align-self: stretch;
-}
-
-.ui-tabs.ui-tabs-left > .ui-tabs-panels {
-  margin-left: -1px;
-}
-
+.ui-tabs.ui-tabs-left > .ui-tabs-panels,
 .ui-tabs.ui-tabs-right > .ui-tabs-nav {
   margin-left: -1px;
 }
 
-.ui-tabs.ui-tabs-top > .ui-tabs-panels {
+.ui-tabs.ui-tabs-top > .ui-tabs-panels,
+.ui-tabs.ui-tabs-bottom > .ui-tabs-nav,
+.ui-tabs.ui-tabs-bottom > .ui-tabs-navscroller {
   margin-top: -1px;
-}
-
-.ui-tabs.ui-tabs-bottom > .ui-tabs-nav {
-  margin-top: -1px;
-}
-
-.ui-tabs-scrollable .ui-tabs-nav {
-  width: 9999rem;
 }
 
 .ui-tabs-scrollable .ui-tabs-navscroller {
-  display: flex;
+  position: relative;
+  padding: 0 $p-tab-view-scroll-button-width !important;
+  width: 100%;
   overflow: hidden;
 }
 
+.ui-tabs-scrollable.ui-tabs-left,
+.ui-tabs-scrollable.ui-tabs-right {
+
+  .ui-tabs-navscroller-btn {
+    display: none;
+  }
+
+  .ui-tabs-navscroller {
+    padding: 0 !important;
+    width: auto;
+    overflow: visible;
+  }
+}
+
+.ui-tabs-scrollable.ui-tabs-top .ui-tabs-navscroller,
+.ui-tabs-scrollable.ui-tabs-top .ui-tabs-navscroller-btn {
+  @include border-radius-lt($p-common-corner-radius);
+  @include border-radius-rt($p-common-corner-radius);
+}
+
+.ui-tabs-scrollable.ui-tabs-bottom .ui-tabs-navscroller,
+.ui-tabs-scrollable.ui-tabs-bottom .ui-tabs-navscroller-btn {
+  @include border-radius-lb($p-common-corner-radius);
+  @include border-radius-rb($p-common-corner-radius);
+}
+
 .ui-tabs-scrollable .ui-tabs-navscroller-btn {
+  position: absolute;
+  width: $p-tab-view-scroll-button-width;
+  padding: ($p-tab-view-header-vertical-padding - .1rem) 0;
+  text-decoration: none;
   cursor: pointer;
-  display: none;
+  z-index: 1;
 }
 
 .ui-tabs-scrollable .ui-tabs-navscroller-btn-left {
+  left: 0;
 }
 
-.ui-tabs-scrollable .ui-tabs-nav {
+.ui-tabs-scrollable.ui-tabs-top .ui-tabs-navscroller-btn-left {
+  @include border-radius-rb(0);
+}
+
+.ui-tabs-scrollable.ui-tabs-bottom .ui-tabs-navscroller-btn-left {
+  @include border-radius-rt(0);
 }
 
 .ui-tabs-scrollable .ui-tabs-navscroller-btn-right {
+  right: 0;
+}
+
+.ui-tabs-scrollable.ui-tabs-top .ui-tabs-navscroller-btn-right {
+  @include border-radius-lb(0);
+}
+
+.ui-tabs-scrollable.ui-tabs-bottom .ui-tabs-navscroller-btn-right {
+  @include border-radius-lt(0);
 }
 
 .ui-tabs-scrollable .ui-tabs-navscroller-btn-left .ui-icon,
 .ui-tabs-scrollable .ui-tabs-navscroller-btn-right .ui-icon {
+  display: block;
+  text-align: center;
 }
 
 .ui-tabs-outline {
