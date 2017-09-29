@@ -137,4 +137,38 @@ td.number {
   table td.sedn-dtc-punktacja {
     text-align: right;
   }
+
+  /**/
+  thead th.sedn-dtc-actions {
+    text-align: center;
+    width: bl(10);
+  }
+
+  table td.sedn-dtc-actions {
+    text-align: center;
+  }
+
+  /**/
+  thead th.sedn-dtc-icon-only {
+    text-align: center;
+    width: bl(8);
+  }
+
+  table td.sedn-dtc-icon-only {
+    text-align: center;
+
+    .fa,
+    .ui-icon {
+      vertical-align: top;
+    }
+  }
+}
+
+/**/
+.ui-paginator .ui-paginator-current {
+  margin-right: auto;
+}
+
+.ui-paginator .ui-paginator-rpp-label {
+  margin-left: auto;
 }

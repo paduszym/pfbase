@@ -5,3 +5,19 @@
 .ui-datatable table {
   border-color: $p-common-widget-content-border-color;
 }
+
+.ui-datatable-empty-message td {
+  color: rgba($p-common-state-default-color, .65);
+}
+
+.ui-datatable-odd {
+  background: darken($p-common-state-default-bg, 2%);
+
+  &.ui-state-hover {
+    background: $p-common-state-hover-bg;
+  }
+
+  &.ui-state-highlight {
+    background: $p-common-state-highlight-bg;
+  }
+}

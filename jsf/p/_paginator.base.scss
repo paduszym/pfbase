@@ -3,41 +3,34 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: ($p-paginator-padding - .1rem);
+  padding: ($p-paginator-vertical-padding - .1rem) ($p-paginator-horizontal-padding - .1rem);
+}
+
+.ui-paginator > * {
+  margin-right: $p-paginator-item-horizontal-margin;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .ui-paginator.ui-paginator-top {
   border-bottom: 0;
-  padding-bottom: $p-paginator-padding;
+  padding-bottom: $p-paginator-vertical-padding;
 }
 
 .ui-paginator.ui-paginator-bottom {
   border-top: 0;
-  padding-top: $p-paginator-padding;
+  padding-top: $p-paginator-vertical-padding;
 }
 
 .ui-paginator .ui-paginator-pages {
   display: inline-flex;
   padding: 0 $p-paginator-pages-horizontal-padding;
-}
 
-.ui-paginator .ui-paginator-page,
-.ui-paginator .ui-paginator-next,
-.ui-paginator .ui-paginator-last,
-.ui-paginator .ui-paginator-first,
-.ui-paginator .ui-paginator-prev,
-.ui-paginator .ui-paginator-current {
-  display: inline-block;
-  vertical-align: top;
-  padding: 0 ($p-paginator-button-horizontal-padding - .1rem);
-  margin: 0 $p-paginator-button-horizontal-margin;
-  text-decoration: none;
-  outline: 0;
-  min-width: $p-paginator-button-size;
-  height: $p-paginator-button-size;
-  white-space: nowrap;
-  font-size: $p-paginator-button-font-size;
-  line-height: ($p-paginator-button-size - .2rem);
+  &:empty {
+    display: none;
+  }
 }
 
 .ui-paginator .ui-paginator-page,
@@ -45,12 +38,25 @@
 .ui-paginator .ui-paginator-last,
 .ui-paginator .ui-paginator-first,
 .ui-paginator .ui-paginator-prev {
+  margin: 0 $p-paginator-button-horizontal-margin;
+  padding: 0 ($p-paginator-button-horizontal-padding - .1rem);
+  text-decoration: none;
+  outline: 0;
+  min-width: $p-paginator-button-size;
+  height: $p-paginator-button-size;
+  white-space: nowrap;
+  font-size: $p-paginator-button-font-size;
   cursor: pointer;
+  line-height: ($p-paginator-button-size - .2rem);
 }
 
-.ui-paginator .ui-paginator-current,
+.ui-paginator .ui-paginator-rpp-label {
+  display: block;
+}
+
 .ui-paginator .ui-paginator-rpp-options {
   height: $p-paginator-button-size;
+  @include border-radius($p-common-corner-radius);
 }
 
 .ui-paginator .ui-paginator-next .ui-icon,

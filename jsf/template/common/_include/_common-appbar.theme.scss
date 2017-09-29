@@ -3,3 +3,17 @@
   color: $sedn-appbar-color;
   @include z-2;
 }
+
+#sedn-appbar-actions {
+
+  a,
+  a:link,
+  a:visited {
+    color: $sedn-appbar-actions-link-color;
+  }
+
+  a:hover,
+  a:focus {
+    background: $sedn-appbar-actions-link-bg-hover;
+  }
+}

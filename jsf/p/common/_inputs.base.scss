@@ -4,3 +4,18 @@
   font-size: $p-common-input-font-size;
   line-height: $p-common-input-line-height;
 }
+
+.ui-inputgroup {
+  display: inline-flex;
+}
+
+.ui-inputgroup .ui-inputfield:first-child {
+  @include border-radius-rt(0);
+  @include border-radius-rb(0);
+}
+
+.ui-inputgroup .ui-button:last-child {
+  border-left-width: 0;
+  @include border-radius-lt(0);
+  @include border-radius-lb(0);
+}

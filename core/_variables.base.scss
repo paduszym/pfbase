@@ -166,11 +166,13 @@ $p-data-table-cell-horizontal-padding: bl(2);
 /**
  * p:paginator
  */
-$p-paginator-padding: bl(1);
+$p-paginator-vertical-padding: bl(1);
+$p-paginator-horizontal-padding: bl(2);
 $p-paginator-pages-horizontal-padding: bl(2);
+$p-paginator-item-horizontal-margin: bl(.5);
 $p-paginator-button-size: bl(4);
 $p-paginator-button-horizontal-padding: bl(.5);
-$p-paginator-button-horizontal-margin: bl(.25);
+$p-paginator-button-horizontal-margin: .1rem;
 $p-paginator-button-font-size: $_font-size-small;
 
 /**
@@ -257,6 +259,7 @@ $p-rating-star-font-size: bl(3);
 /** _include/common-appbar.xhtml */
 $sedn-appbar-zindex: 2;
 $sedn-appbar-height: bl(9);
+$sedn-appbar-actions-link-padding-horizontal: bl(3);
 
 /** _include/common-content.xhtml */
 $sedn-content-zindex: 1;

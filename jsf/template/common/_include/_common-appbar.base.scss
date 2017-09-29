@@ -1,4 +1,5 @@
 #sedn-appbar {
+  display: flex;
   position: fixed;
   z-index: $sedn-appbar-zindex;
   left: 0;
@@ -23,5 +24,23 @@ body.ui-dialog-opened #sedn-appbar {
 
   &:empty {
     display: none;
+  }
+}
+
+#sedn-appbar-actions {
+  display: flex;
+  margin-left: auto;
+
+  a {
+    padding: 0 $sedn-appbar-actions-link-padding-horizontal;
+    line-height: $sedn-appbar-height;
+    white-space: nowrap;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    &:focus {
+      outline: 0;
+    }
   }
 }

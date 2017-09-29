@@ -89,6 +89,8 @@ $p-tooltip-color: #fff;
 /** _include/common-appbar.xhtml */
 $sedn-appbar-bg: $_sedn-brand-color;
 $sedn-appbar-color: #fff;
+$sedn-appbar-actions-link-color: #fff;
+$sedn-appbar-actions-link-bg-hover: rgba(#000, .25);
 
 /** _include/common-cookies.xhtml */
 $sedn-cookies-bg: #f8e19a;
@@ -116,4 +118,3 @@ $sedn-logged-sidebar-menu-item-hover-bg: rgba(#000, .5);
 
 /** _include/logged-sidebar-accountInfo.xhtml */
 $sedn-logged-sidebar-account-info-bg: rgba(#000, .25);
-$sedn-logged-sidebar-account-info-action-link-color: lighten($link-color-default, 20%);
