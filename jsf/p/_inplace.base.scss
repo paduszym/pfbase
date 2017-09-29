@@ -1,16 +1,24 @@
 .ui-inplace .ui-inplace-display {
   cursor: pointer;
-  border: 0 none !important;
+  border: 0 !important;
 }
 
 .ui-inplace .ui-inplace-disabled {
-  cursor: default;
+  cursor: not-allowed;
 }
 
 .ui-inplace .ui-inplace-editor {
-  margin-left: .1em;
+  display: inline-flex;
+  padding-left: $p-inplace-editor-left-padding;
 }
 
-.ui-inplace .ui-inplace-editor .ui-button-icon-only .ui-button-text {
-  padding: 0;
+.ui-inplace .ui-inplace-editor .ui-button.ui-inplace-save {
+  border-right: 0;
+  @include border-radius-rt(0);
+  @include border-radius-rb(0);
+}
+
+.ui-inplace .ui-inplace-editor .ui-button.ui-inplace-cancel {
+  @include border-radius-lt(0);
+  @include border-radius-lb(0);
 }
