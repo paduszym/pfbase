@@ -88,6 +88,7 @@
     content: $fa-var-calendar;
   }
 
+  &-arrowthick-1-w::before,
   &-arrow-1-w::before {
     content: $fa-var-arrow-left;
   }
@@ -97,6 +98,7 @@
     border-left: 2px solid;
   }
 
+  &-arrowthick-1-e::before,
   &-arrow-1-e::before {
     content: $fa-var-arrow-right;
   }

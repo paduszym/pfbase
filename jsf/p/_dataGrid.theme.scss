@@ -1,0 +1,7 @@
+.ui-datagrid {
+  @include z-1;
+}
+
+.ui-datagrid-content-empty {
+  color: rgba($p-common-state-default-color, .65);
+}

@@ -1,3 +1,7 @@
+.ui-datascroller {
+  @include z-1;
+}
+
 .ui-datascroller .ui-datascroller-loading {
   border-color: $p-common-widget-content-border-color;
 
