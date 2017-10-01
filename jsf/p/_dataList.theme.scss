@@ -1,0 +1,7 @@
+.ui-datalist {
+  @include z-1;
+}
+
+.ui-datalist .ui-datalist-empty-message {
+  color: rgba($p-common-state-default-color, .65);
+}

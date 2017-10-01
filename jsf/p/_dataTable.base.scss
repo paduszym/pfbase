@@ -15,14 +15,16 @@
 
 .ui-datatable .ui-datatable-header,
 .ui-datatable .ui-datatable-footer {
-  padding: $p-data-table-header-vertical-padding ($p-data-table-header-horizontal-padding - .1rem) ($p-data-table-header-vertical-padding - .1rem);
+  text-align: left;
 }
 
 .ui-datatable .ui-datatable-header {
+  padding: $p-data-table-header-vertical-padding ($p-data-table-header-horizontal-padding - .1rem) ($p-data-table-header-vertical-padding - .1rem);
   border-bottom: 0;
 }
 
 .ui-datatable .ui-datatable-footer {
+  padding: ($p-data-table-header-vertical-padding - .1rem) ($p-data-table-header-horizontal-padding - .1rem) $p-data-table-header-vertical-padding;
   border-top: 0;
 }
 

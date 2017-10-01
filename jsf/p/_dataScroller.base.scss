@@ -1,11 +1,11 @@
-.ui-datascroller .ui-datascroller-header {
-  text-align: center;
-  padding: 4px 10px;
-  border-bottom: 0 none;
+.ui-datascroller {
+  margin: $p-data-table-margin;
 }
 
-.ui-datascroller .ui-datascroller-content {
-  padding: 4px 10px;
+.ui-datascroller .ui-datascroller-header {
+  text-align: left;
+  padding: $p-data-table-header-vertical-padding ($p-data-table-header-horizontal-padding - .1rem) ($p-data-table-header-vertical-padding - .1rem);
+  border-bottom: 0;
 }
 
 .ui-datascroller-inline .ui-datascroller-content {
@@ -23,15 +23,25 @@
 }
 
 .ui-datascroller .ui-datascroller-loader {
-  text-align: center;
-  padding: 4px 10px;
+  padding: 0 ($p-progress-bar-height - .1rem);
+  @include prevent-collapsing-margins;
 }
 
 .ui-datascroller .ui-datascroller-loading {
-  background: url(jsf-resource-url("primefaces", "datascroller/images/loading.gif")) center no-repeat;
-  width: 220px;
-  height: 19px;
-  padding: 0;
-  margin: 0;
-  display: inline-block;
+  border: 1px solid;
+  margin: $p-progress-bar-height auto;
+  max-width: 12 * $p-progress-bar-height;
+  height: $p-progress-bar-height;
+  position: relative;
+  overflow: hidden;
+  @include border-radius($p-common-corner-radius);
+
+  &::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    @include background-size((2 * $p-progress-bar-height) (2 * $p-progress-bar-height));
+    @include animation(ui-progressbar-animation 1.6s linear infinite);
+  }
 }

@@ -1,18 +1,24 @@
-.ui-datalist .ui-datalist-header, .ui-datalist .ui-datalist-footer {
-  text-align: center;
-  padding: 4px 10px;
+.ui-datalist {
+  margin: $p-data-table-margin;
+}
+
+.ui-datalist .ui-datalist-header,
+.ui-datalist .ui-datalist-footer {
+  text-align: left;
 }
 
 .ui-datalist .ui-datalist-header {
-  border-bottom: 0 none;
+  padding: $p-data-table-header-vertical-padding ($p-data-table-header-horizontal-padding - .1rem) ($p-data-table-header-vertical-padding - .1rem);
+  border-bottom: 0;
 }
 
 .ui-datalist .ui-datalist-footer {
-  border-top: 0 none;
+  padding: ($p-data-table-header-vertical-padding - .1rem) ($p-data-table-header-horizontal-padding - .1rem) $p-data-table-header-vertical-padding;
+  border-top: 0;
 }
 
 .ui-datalist .ui-datalist-empty-message {
-  padding: 4px 10px;
+  padding: ($p-data-table-header-vertical-padding - .1rem) ($p-data-table-header-horizontal-padding - .1rem);
 }
 
 .ui-datalist .ui-datalist-nobullets {

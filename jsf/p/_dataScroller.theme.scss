@@ -1,0 +1,8 @@
+.ui-datascroller .ui-datascroller-loading {
+  border-color: $p-common-widget-content-border-color;
+
+  &::after {
+    background-color: $p-common-state-highlight-bg;
+    @include background-gradient(-45deg, $p-common-state-highlight-bg 25%, transparent 25%, transparent 50%, $p-common-state-highlight-bg 50%, rgba(255, 255, 255, .25) 75%, transparent 75%, transparent);
+  }
+}
