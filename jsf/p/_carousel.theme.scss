@@ -1,0 +1,31 @@
+.ui-carousel {
+  @include z-1;
+}
+
+.ui-carousel .ui-carousel-button {
+  border-color: $p-common-state-default-border-color;
+  background: $p-common-state-default-bg;
+  color: $p-common-state-default-color;
+
+  &:hover {
+    border-color: $p-common-state-hover-border-color;
+    background: $p-common-state-hover-bg;
+    color: $p-common-state-hover-color;
+  }
+}
+
+.ui-carousel .ui-carousel-page-link {
+  color: $p-common-state-default-border-color;
+
+  &.ui-icon-radio-off.ui-icon-radio-on {
+    color: $p-common-state-highlight-bg;
+  }
+
+  &:hover {
+    color: $p-common-state-hover-border-color;
+  }
+
+  &:focus {
+    color: $p-common-state-focus-border-color;
+  }
+}

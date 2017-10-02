@@ -1,21 +1,23 @@
 .ui-carousel {
   position: relative;
-  padding: 1px;
+  margin: $p-data-table-margin;
 }
 
 .ui-carousel .ui-carousel-viewport .ui-carousel-items {
-  list-style: none outside none;
+  list-style: none;
   margin: 0;
   padding: 0;
   position: relative;
-  width: 32000px;
+  width: 9999rem;
   left: 0;
 }
 
 .ui-carousel .ui-carousel-viewport .ui-carousel-items .ui-carousel-item {
-  margin: 1px;
-  padding: 0;
   float: left;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  @include border-radius(0);
 }
 
 .ui-carousel .ui-carousel-viewport {
@@ -24,66 +26,68 @@
   border: 0;
 }
 
-.ui-carousel .ui-carousel-footer {
-  margin: 1px 1px 0 1px;
-  padding-top: 9px;
-  padding-bottom: 6px;
-  padding-right: 10px;
-  padding-left: 10px;
-  overflow: hidden;
-}
-
 .ui-carousel .ui-carousel-header {
-  margin: 0 1px;
+  display: flex;
+  align-items: center;
+  padding: $p-data-table-header-vertical-padding ($p-data-table-header-horizontal-padding - .1rem) ($p-data-table-header-vertical-padding - .1rem);
+  border-width: 0 0 1px;
   overflow: hidden;
-  padding-top: 7px;
-  padding-bottom: 8px;
-  padding-right: 10px;
-  padding-left: 10px;
+  @include border-radius(0);
 }
 
 .ui-carousel .ui-carousel-header .ui-carousel-header-title {
-  display: inline-block;
-  width: 30%;
-  padding-top: 2px;
+  flex: 1;
+  order: 0;
+  padding: 0 $p-data-table-header-horizontal-padding 0 0;
+  text-overflow: ellipsis;
   overflow: hidden;
 }
 
-.ui-carousel .ui-carousel-dropdown, .ui-carousel .ui-carousel-mobiledropdown {
-  float: right;
-  margin: 0 10px;
-  background-image: none;
+.ui-carousel .ui-carousel-dropdown,
+.ui-carousel .ui-carousel-mobiledropdown {
+  height: $p-panel-header-line-height;
+  @include border-radius($p-common-corner-radius);
 }
 
-.ui-carousel .ui-carousel-dropdown option, .ui-carousel .ui-carousel-mobiledropdown option {
-  background-image: none;
-  border: 0;
-  box-shadow: none;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-}
-
+.ui-carousel .ui-carousel-page-link,
 .ui-carousel .ui-carousel-button {
-  float: right;
-  margin: 2px;
+  cursor: pointer;
+  text-align: center;
+  width: $p-panel-header-line-height;
 }
 
 .ui-carousel .ui-carousel-page-link {
-  float: left;
-  margin: 0 2px;
+  text-decoration: none;
 }
 
-.ui-carousel .ui-carousel-page-link, .ui-carousel .ui-carousel-button {
-  cursor: pointer;
+.ui-carousel .ui-carousel-button {
+  border: 1px solid;
+  line-height: $p-panel-header-line-height - .2rem;
+  @include border-radius($p-common-corner-radius);
+}
+
+.ui-carousel .ui-carousel-prev-button {
+  margin-left: 2 * $p-panel-header-icon-horizontal-margin;
+  order: 2;
+}
+
+.ui-carousel .ui-carousel-next-button {
+  margin-left: $p-panel-header-icon-horizontal-margin;
+  order: 3;
 }
 
 .ui-carousel .ui-carousel-page-links {
-  margin: 0 9px;
-  margin-top: 1px;
-  display: inline-table;
-  float: right;
+  display: flex;
+  order: 1;
 }
 
 .ui-carousel .ui-carousel-mobiledropdown {
   display: none;
+}
+
+.ui-carousel .ui-carousel-footer {
+  padding: ($p-data-table-header-vertical-padding - .1rem) ($p-data-table-header-horizontal-padding - .1rem) $p-data-table-header-vertical-padding;
+  border-width: 1px 0 0;
+  overflow: hidden;
+  @include border-radius(0);
 }
