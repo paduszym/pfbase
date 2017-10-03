@@ -1,0 +1,10 @@
+.ui-picklist .ui-picklist-list {
+  @include d-1;
+}
+
+.ui-picklist {
+
+  .ui-picklist-item.ui-state-highlight + .ui-picklist-item.ui-state-highlight {
+    @include box-shadow(0 1px 0 0 $p-common-state-default-bg inset);
+  }
+}
