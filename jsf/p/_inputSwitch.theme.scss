@@ -1,0 +1,17 @@
+.ui-inputswitch-on.ui-state-active {
+  border-color: $p-common-state-highlight-border-color;
+  background: $p-common-state-highlight-bg;
+  color: $p-common-state-highlight-color;
+}
+
+.ui-inputswitch .ui-inputswitch-handle {
+  @include ui-button--theme;
+
+  &.ui-state-default {
+    @include box-shadow(1px 0 0 $p-common-state-default-border-color, -1px 0 0 $p-common-state-default-border-color);
+  }
+
+  &.ui-state-focus {
+    @include box-shadow(1px 0 0 $p-common-state-focus-border-color, -1px 0 0 $p-common-state-focus-border-color);
+  }
+}

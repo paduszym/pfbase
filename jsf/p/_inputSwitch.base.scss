@@ -1,0 +1,45 @@
+.ui-inputswitch {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  height: $p-input-switch-height;
+  @include user-select(none);
+}
+
+.ui-inputswitch .ui-inputswitch-on,
+.ui-inputswitch .ui-inputswitch-off {
+  display: block;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  height: $p-input-switch-height - .2rem;
+  border-width: 0;
+  @include user-select(none);
+
+  span {
+    display: inline-block;
+    text-align: center;
+    line-height: $p-input-switch-height - .2rem;
+    padding: 0 $p-input-switch-height-label-horizontal-padding;
+  }
+}
+
+.ui-inputswitch .ui-inputswitch-off {
+  right: 0;
+  text-align: right;
+}
+
+.ui-inputswitch .ui-inputswitch-on {
+  left: 0;
+}
+
+.ui-inputswitch .ui-inputswitch-handle {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: $p-input-switch-height - .2rem;
+  border: 0;
+}
