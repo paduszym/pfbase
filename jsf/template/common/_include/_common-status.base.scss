@@ -1,5 +1,5 @@
 #sedn-status-overlay {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -36,6 +36,18 @@
 
   .spinner .rect5 {
     @include animation-delay(-0.8s);
+  }
+}
+
+body.sedn-status-active {
+
+  #sedn-status-overlay {
+    display: flex;
+  }
+
+  #sedn-sidebar-overlay,
+  .ui-dialog-mask {
+    display: none !important;
   }
 }
 

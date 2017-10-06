@@ -289,8 +289,15 @@
 
 .ui-datatable-reflow .ui-reflow-label,
 .ui-datatable-reflow .ui-reflow-dropdown {
-  margin-bottom: 10px;
   display: none;
+}
+
+.ui-datatable-reflow .ui-reflow-label {
+  margin-right: bl(1);
+}
+
+.ui-datatable-reflow .ui-reflow-dropdown {
+  margin: 0 0 bl(2);
 }
 
 .ui-datatable .ui-rowgroup-header > td > a.ui-rowgroup-toggler {
@@ -305,35 +312,47 @@
   margin: auto 0;
 }
 
-@media (max-width: 640px) {
+/**/
+@media (max-width: 768px) {
 
-  .ui-datatable-reflow thead th, .ui-datatable-reflow tfoot td {
+  .ui-datatable-reflow {
+    thead,
+    tbody,
+    tfoot,
+    tr,
+    td,
+    th {
+      display: block;
+    }
+  }
+
+  .ui-datatable-reflow thead th,
+  .ui-datatable-reflow tfoot td {
     display: none;
   }
 
   .ui-datatable-reflow .ui-datatable-data td[role="gridcell"] {
     text-align: left;
     display: block;
-    border: 0;
+    border-width: 0;
     width: 100%;
-    float: left;
-    clear: left;
+  }
+
+  .ui-datatable-reflow table {
+    border-top: 0;
   }
 
   .ui-datatable-reflow .ui-datatable-data.ui-widget-content {
-    border: 0;
+    border-width: 0;
   }
 
   .ui-datatable-reflow .ui-datatable-data tr.ui-widget-content {
-    border-left: 0;
-    border-right: 0;
+    padding: $p-data-table-cell-vertical-padding 0;
+    border-width: 1px 0 0;
   }
 
   .ui-datatable-reflow .ui-datatable-data td[role="gridcell"] .ui-column-title {
-    padding: .4em;
-    min-width: 30%;
-    display: inline-block;
-    margin: -.4em 1em -.4em -.4em;
+    display: block;
   }
 
   .ui-datatable-reflow .ui-reflow-label,
@@ -341,15 +360,9 @@
     display: inline-block;
   }
 
-  .ui-datatable-reflow .ui-reflow-dropdown {
-    margin-left: 5px;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-  }
-
   .ui-datatable-reflow tr.ui-datatable-empty-message > td {
     display: block;
-    border: 0;
+    border-width: 0;
   }
 }
 

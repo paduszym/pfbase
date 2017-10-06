@@ -13,7 +13,7 @@ $_font-size-xxlarge: 1.38 * $_font-size-base;
 //----------------------------------------------------------------------------------------------------------------------
 
 // <body>
-$body-min-width: 64rem;
+$body-min-width: 32rem;
 $body-font-family: $_font-family-sans;
 $body-font-size: $_font-size-base;
 $body-line-height: bl(3);
@@ -276,6 +276,29 @@ $p-slider-vertical-default-height: 10rem;
 $p-input-switch-height: bl(4);
 $p-input-switch-height-label-horizontal-padding: bl(1);
 
+/**
+ * p:dialog
+ */
+$p-dialog-header-vertical-padding: bl(1);
+$p-dialog-header-horizontal-padding: bl(2);
+$p-dialog-content-vertical-padding: bl(2);
+$p-dialog-content-horizontal-padding: bl(2);
+$p-dialog-titlebar-icon-size: bl(3);
+$p-dialog-titlebar-icon-horizontal-margin: bl(.5);
+
+/**
+ * p:confirmDialog
+ */
+$p-confirm-dialog-severity-icon-size: bl(4);
+$p-confirm-dialog-severity-icon-right-margin: bl(1.5);
+
+//----------------------------------------------------------------------------------------------------------------------
+
+/**
+ * sedn:zdarzenieDetailsField
+ */
+$sedn-zdarzenie-details-field-label-width: bl(42);
+
 //----------------------------------------------------------------------------------------------------------------------
 
 /**
@@ -285,7 +308,10 @@ $p-input-switch-height-label-horizontal-padding: bl(1);
 /** _include/common-appbar.xhtml */
 $sedn-appbar-zindex: 2;
 $sedn-appbar-height: bl(9);
-$sedn-appbar-actions-link-padding-horizontal: bl(3);
+$sedn-appbar-actions-link-horizontal-padding: bl(3);
+$sedn-appbar-sidebar-toggler-size: bl(6);
+$sedn-appbar-sidebar-toggler-icon-width: bl(3);
+$sedn-appbar-sidebar-toggler-icon-bar-height: bl(.5);
 
 /** _include/common-content.xhtml */
 $sedn-content-zindex: 1;
@@ -302,7 +328,8 @@ $sedn-footer-version-font-size: $_font-size-small;
 
 /** _include/common-sidebar.xhtml */
 $sedn-sidebar-zindex: 3;
-$sedn-sidebar-width: bl(39);
+$sedn-sidebar-width: bl(44);
+$sedn-sidebar-collapse-breakpoint: 80em; // 1280px
 
 /** _include/common-status.xhtml */
 $sedn-status-indicator-size: bl(15);

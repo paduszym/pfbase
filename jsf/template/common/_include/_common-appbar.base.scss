@@ -1,5 +1,6 @@
 #sedn-appbar {
   display: flex;
+  align-items: center;
   position: fixed;
   z-index: $sedn-appbar-zindex;
   left: 0;
@@ -7,17 +8,27 @@
   right: 0;
   min-width: $body-min-width;
   min-height: $sedn-appbar-height;
-  border-left: $sedn-sidebar-width solid transparent;
-
-  + #sedn-sidebar + #sedn-content,
-  + #sedn-content {
-    border-top-width: $sedn-appbar-height;
-  }
+  border-left: 0 solid transparent;
 }
 
-body.ui-dialog-opened #sedn-appbar {
-  overflow-x: hidden;
-  overflow-y: scroll;
+#sedn-appbar-sidebar-toggler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin: 0 0 0 ($sedn-appbar-actions-link-horizontal-padding - .5 * ($sedn-appbar-sidebar-toggler-size - $sedn-appbar-sidebar-toggler-icon-width));
+  text-decoration: none;
+  width: $sedn-appbar-sidebar-toggler-size;
+  height: $sedn-appbar-sidebar-toggler-size;
+  @include border-radius($p-common-corner-radius);
+
+  &::before {
+    content: "";
+    border-top: $sedn-appbar-sidebar-toggler-icon-bar-height solid;
+    border-bottom: (3 * $sedn-appbar-sidebar-toggler-icon-bar-height) double;
+    width: $sedn-appbar-sidebar-toggler-icon-width;
+    height: 5 * $sedn-appbar-sidebar-toggler-icon-bar-height;
+  }
 }
 
 #sedn-appbar-title {
@@ -27,20 +38,43 @@ body.ui-dialog-opened #sedn-appbar {
   }
 }
 
+body.sedn-body-with-sidebar #sedn-appbar-title {
+  margin-left: .25 * $headings-margin;
+}
+
 #sedn-appbar-actions {
   display: flex;
+  align-self: stretch;
   margin-left: auto;
 
   a {
-    padding: 0 $sedn-appbar-actions-link-padding-horizontal;
-    line-height: $sedn-appbar-height;
+    display: flex;
+    align-items: center;
+    padding: 0 $sedn-appbar-actions-link-horizontal-padding;
     white-space: nowrap;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
+    @include border-radius($p-common-corner-radius);
 
     &:focus {
       outline: 0;
     }
+  }
+}
+
+/**/
+@media (min-width: $sedn-sidebar-collapse-breakpoint) {
+
+  body.sedn-body-with-sidebar #sedn-appbar {
+    border-left-width: $sedn-sidebar-width;
+  }
+
+  body.sedn-body-with-sidebar #sedn-appbar-title {
+    margin-left: $headings-margin;
+  }
+
+  #sedn-appbar-sidebar-toggler {
+    display: none;
   }
 }

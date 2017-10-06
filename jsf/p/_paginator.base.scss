@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   padding: ($p-paginator-vertical-padding - .1rem) ($p-paginator-horizontal-padding - .1rem);
 }
 
@@ -25,12 +24,18 @@
 }
 
 .ui-paginator .ui-paginator-pages {
-  display: inline-flex;
+  display: none;
+  margin: 0;
   padding: 0 $p-paginator-pages-horizontal-padding;
+  text-align: center;
 
   &:empty {
     display: none;
   }
+}
+
+.ui-paginator .ui-paginator-current {
+  display: none;
 }
 
 .ui-paginator .ui-paginator-page,
@@ -46,12 +51,15 @@
   height: $p-paginator-button-size;
   white-space: nowrap;
   font-size: $p-paginator-button-font-size;
-  cursor: pointer;
   line-height: ($p-paginator-button-size - .2rem);
+  text-align: center;
+  cursor: pointer;
 }
 
 .ui-paginator .ui-paginator-rpp-label {
   display: block;
+  text-align: right;
+  margin-right: 2 * $p-paginator-item-horizontal-margin;
 }
 
 .ui-paginator .ui-paginator-rpp-options {
@@ -72,3 +80,14 @@
   }
 }
 
+/**/
+@media (min-width: 768px) {
+
+  .ui-paginator .ui-paginator-current {
+    display: block;
+  }
+
+  .ui-paginator .ui-paginator-pages {
+    display: inline-flex;
+  }
+}

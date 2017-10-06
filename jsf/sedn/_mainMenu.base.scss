@@ -1,0 +1,17 @@
+.ui-mainmenu {
+
+  .ui-menu-parent[aria-expanded="false"] > .ui-menu-list {
+    display: none !important;
+  }
+
+  .ui-menu-parent[aria-expanded="true"] {
+
+    > .ui-menu-list {
+      display: block !important;
+    }
+
+    > .ui-submenu-link .ui-icon.ui-menuitem-icon-arrow::before {
+      content: $fa-var-caret-down;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.sedn-notice {
+  @include z-1;
+}
+
+.ui-panel-content .sedn-notice {
+  @include z-0;
+}

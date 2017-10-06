@@ -1,5 +1,13 @@
+.display-block {
+  display: block;
+}
+
 .hide {
   display: none;
+}
+
+.normal {
+  font-weight: 400;
 }
 
 .strong {
@@ -10,13 +18,15 @@
   font-weight: 700;
 }
 
-.text-right,
-thead th.text-right {
+.italic {
+  font-style: italic;
+}
+
+.text-right {
   text-align: right;
 }
 
-.text-left,
-thead th.text-left {
+.text-left {
   text-align: left;
 }
 
@@ -28,31 +38,20 @@ thead th.text-left {
   text-align: justify;
 }
 
-.key {
-  background: #fafafa;
-  font-weight: bold;
-  width: 250px;
+.font-small {
+  font-size: $_font-size-base;
 }
 
-.index {
-  text-align: right;
-  width: 40px;
+.font-base {
+  font-size: $_font-size-base;
 }
 
-.n {
-  width: 80px;
+.font-large {
+  font-size: $_font-size-large;
 }
 
-td.n {
-  text-align: right;
-}
-
-.bool {
-  width: 80px;
-}
-
-td.number {
-  text-align: right;
+.font-xlarge {
+  font-size: $_font-size-xlarge;
 }
 
 //----
@@ -91,18 +90,48 @@ td.number {
   @include pct-width-class(10 + $i*5);
 }
 
+/**/
+.sedn-size-xs {
+  max-width: 24rem;
+}
+
+.sedn-size-sm {
+  max-width: 36rem;
+}
+
+.sedn-size-md {
+  max-width: 48rem;
+}
+
+.sedn-size-lg {
+  max-width: 72rem;
+}
+
 //---
 // Table cell classes
 //---
 .ui-datatable,
 .ui-treetable {
 
-  thead th.sedn-dtc-id {
+  /**/
+  thead th.sedn-dtc-idx {
+    text-align: right;
+    width: bl(10);
+  }
+
+  table td.sedn-dtc-idx {
+    text-align: right;
+  }
+
+  /**/
+  thead th.sedn-dtc-id,
+  thead th.sedn-dtc-event-id {
     text-align: right;
     width: bl(19);
   }
 
-  table td.sedn-dtc-id {
+  table td.sedn-dtc-id,
+  table td.sedn-dtc-event-id {
     text-align: right;
   }
 
@@ -142,6 +171,10 @@ td.number {
   thead th.sedn-dtc-actions {
     text-align: center;
     width: bl(10);
+
+    &.with-label {
+      width: bl(16);
+    }
   }
 
   table td.sedn-dtc-actions {
@@ -162,6 +195,166 @@ td.number {
       vertical-align: top;
     }
   }
+
+  /**/
+  thead th.sedn-dtc-user-active {
+    text-align: center;
+    width: bl(15);
+  }
+
+  table td.sedn-dtc-user-active {
+    text-align: center;
+  }
+
+  /**/
+  thead th.sedn-dtc-prac-inztech {
+    text-align: center;
+    width: bl(15);
+  }
+
+  table td.sedn-dtc-prac-inztech {
+    text-align: center;
+  }
+
+  /**/
+  thead th.sedn-dtc-nnumber {
+    text-align: right;
+    width: bl(10);
+  }
+
+  table td.sedn-dtc-nnumber {
+    text-align: right;
+  }
+
+  /**/
+  thead th.sedn-dtc-ko-point {
+    text-align: right;
+    width: bl(8);
+
+    &.with-label {
+      width: bl(12);
+    }
+  }
+
+  table td.sedn-dtc-ko-point {
+    text-align: right;
+  }
+
+  /**/
+  thead th.sedn-dtc-ko-achievements-count {
+    text-align: right;
+    width: bl(22);
+  }
+
+  table td.sedn-dtc-ko-achievements-count {
+    text-align: right;
+  }
+
+  /**/
+  thead th.sedn-dtc-ko-points {
+    text-align: right;
+    width: bl(17);
+  }
+
+  table td.sedn-dtc-ko-points {
+    text-align: right;
+  }
+
+  /**/
+  thead th.sedn-dtc-ko-science-group {
+    text-align: center;
+    width: bl(17);
+  }
+
+  table td.sedn-dtc-ko-science-group {
+    text-align: center;
+  }
+
+  /**/
+  thead th.sedn-dtc-ko-id {
+    text-align: right;
+    width: bl(20);
+  }
+
+  table td.sedn-dtc-ko-id {
+    text-align: right;
+  }
+
+  /**/
+  thead th.sedn-dtc-ko-status {
+    text-align: center;
+    width: bl(33);
+  }
+
+  table td.sedn-dtc-ko-status {
+    text-align: center;
+  }
+
+  /**/
+  thead th.sedn-dtc-science-degree {
+    text-align: right;
+    width: bl(19);
+  }
+
+  table td.sedn-dtc-science-degree {
+    text-align: right;
+  }
+
+  /**/
+  thead th.sedn-dtc-appeal-create-date {
+    text-align: center;
+    width: bl(25);
+  }
+
+  table td.sedn-dtc-appeal-create-date {
+    text-align: center;
+  }
+
+  /**/
+  thead th.sedn-dtc-event-type {
+    width: bl(30);
+  }
+
+  /**/
+  thead th.sedn-dtc-event-decision {
+    width: bl(46);
+  }
+}
+
+/**/
+.ui-datatable-headless thead {
+
+  &,
+  th,
+  tr {
+    border-width: 0 !important;
+    padding: 0 !important;
+    height: 0 !important;
+  }
+}
+
+/**/
+.ui-datatable {
+
+  .ui-datalist {
+    margin: 0;
+    @include box-shadow(none);
+  }
+
+  .ui-datalist-content {
+    border: 0;
+    background: none;
+    color: inherit;
+    @include border-radius(0);
+  }
+
+  ul.ui-datalist-data {
+    margin: 0;
+  }
+
+  .ui-datalist .ui-datalist-empty-message {
+    padding: 0;
+  }
 }
 
 /**/
@@ -171,4 +364,14 @@ td.number {
 
 .ui-paginator .ui-paginator-rpp-label {
   margin-left: auto;
+}
+
+/**/
+.ui-button + .ui-button {
+  margin-left: $p-toolbar-item-margin;
+}
+
+/**/
+.sedn-actions-panel > .ui-panel-content {
+  padding: bl(1) bl(2);
 }

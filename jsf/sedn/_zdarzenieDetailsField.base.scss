@@ -1,10 +1,31 @@
 .sedn-zdarzenie-details-field {
 
+  &-label {
+    font-weight: 700;
+    width: $sedn-zdarzenie-details-field-label-width;
+  }
+
   &.TABLE .sedn-zdarzenie-details-field-content {
     padding: 0;
 
     .ui-datatable {
       margin: -1px;
+    }
+  }
+
+  &.LIST .sedn-zdarzenie-details-field-content {
+
+    .ui-datalist,
+    ul.ui-datalist-data {
+      margin: 0;
+    }
+
+    .ui-datalist-content {
+      border: 0;
+    }
+
+    .ui-datalist-empty-message {
+      padding: 0;
     }
   }
 
@@ -14,9 +35,43 @@
     .ui-accordion {
       margin: -1px;
     }
+
+    .ui-accordion .ui-accordion-header {
+      @include border-radius(0);
+    }
+
+    .ui-accordion .ui-datalist {
+      margin: 0;
+    }
+
+    .ui-accordion .ui-datalist-content {
+      border: 0;
+    }
+
+    .ui-accordion dl.ui-datalist-data {
+      margin: 0;
+      padding: (2 * $p-panel-grid-cell-vertical-padding - .1rem) ($p-panel-grid-cell-horizontal-padding - .1rem);
+
+      dd,
+      dt {
+        margin: 0;
+      }
+
+      dt {
+        font-weight: 700;
+      }
+
+      dd {
+        margin-bottom: 2 * $p-panel-grid-cell-vertical-padding;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 }
 
-.sedn-zdarzenie-details-field-label {
-  width: 250px;
+.key {
+  @extend .sedn-zdarzenie-details-field-label;
 }

@@ -1,19 +1,54 @@
 /**/
-@mixin ui-button--theme {
+@mixin ui-button--theme($default-bg: $p-common-state-default-bg,
+                        $default-border-color: $p-common-state-default-border-color,
+                        $default-color: $p-common-state-default-color,
+                        $hover-bg: $p-common-state-hover-bg,
+                        $hover-border-color: $p-common-state-hover-border-color,
+                        $hover-color: $p-common-state-hover-color,
+                        $active-bg: $p-common-state-active-bg,
+                        $active-border-color: $p-common-state-active-border-color,
+                        $active-color: $p-common-state-active-color,
+                        $focus-bg: $p-common-state-focus-bg,
+                        $focus-border-color: $p-common-state-focus-border-color,
+                        $focus-color: $p-common-state-focus-color) {
 
   &.ui-state-default {
-    @include background-gradient(to bottom, $p-common-state-default-bg 0, darken($p-common-state-default-bg, 5%) 100%);
+    @include background-gradient(to bottom, $default-bg 0, darken($default-bg, 5%) 100%);
+    @if $default-border-color != $p-common-state-default-border-color {
+      border-color: $default-border-color;
+    }
+    @if $default-color != $p-common-state-default-color {
+      color: $default-color;
+    }
   }
 
   &.ui-state-hover {
-    @include background-gradient(to bottom, $p-common-state-hover-bg 0, darken($p-common-state-hover-bg, 5%) 100%);
+    @include background-gradient(to bottom, $hover-bg 0, darken($hover-bg, 5%) 100%);
+    @if $hover-border-color != $p-common-state-hover-border-color {
+      border-color: $hover-border-color;
+    }
+    @if $hover-color != $p-common-state-hover-color {
+      color: $hover-color;
+    }
   }
 
   &.ui-state-active {
-    @include background-gradient(to bottom, $p-common-state-active-bg 0, darken($p-common-state-active-bg, 5%) 100%);
+    @include background-gradient(to bottom, $active-bg 0, darken($active-bg, 5%) 100%);
+    @if $active-border-color != $p-common-state-active-border-color {
+      border-color: $active-border-color;
+    }
+    @if $active-color != $p-common-state-active-color {
+      color: $active-color;
+    }
   }
 
   &.ui-state-focus {
-    @include background-gradient(to bottom, $p-common-state-focus-bg 0, darken($p-common-state-focus-bg, 5%) 100%);
+    @include background-gradient(to bottom, $focus-bg 0, darken($focus-bg, 5%) 100%);
+    @if $focus-border-color != $p-common-state-focus-border-color {
+      border-color: $focus-border-color;
+    }
+    @if $focus-color != $p-common-state-focus-color {
+      color: $focus-color;
+    }
   }
 }

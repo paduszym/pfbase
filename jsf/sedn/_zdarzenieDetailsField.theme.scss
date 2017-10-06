@@ -1,7 +1,8 @@
 .sedn-zdarzenie-details-field {
 
   &-label {
-    background: #fafafa;
+    background: $sedn-zdarzenie-details-field-label-bg;
+    color: $sedn-zdarzenie-details-field-label-color;
   }
 
   &.TABLE .sedn-zdarzenie-details-field-content {
@@ -11,10 +12,22 @@
     }
   }
 
-  &.PANEL .sedn-zdarzenie-details-field-content {
+  &.LIST .sedn-zdarzenie-details-field-content {
 
-    .ui-accordion {
+    .ui-datalist {
       @include z-0;
     }
   }
+
+  &.PANEL .sedn-zdarzenie-details-field-content {
+
+    .ui-accordion,
+    .ui-accordion .ui-datalist {
+      @include z-0;
+    }
+  }
+}
+
+.key {
+  @extend .sedn-zdarzenie-details-field-label;
 }

@@ -1,0 +1,24 @@
+.ui-dialog .ui-dialog-titlebar-icon {
+  border-color: $p-common-state-default-border-color;
+  background: $p-common-state-default-bg;
+  color: $p-common-state-default-color;
+
+  &.ui-state-hover {
+    border-color: $p-common-state-hover-border-color;
+    background: $p-common-state-hover-bg;
+    color: $p-common-state-hover-color;
+  }
+
+  &.ui-state-focus {
+    border-color: $p-common-state-focus-border-color;
+    background: $p-common-state-focus-bg;
+    color: $p-common-state-focus-color;
+  }
+}
+
+.ui-dialog .ui-dialog-buttonpane,
+.ui-dialog .ui-dialog-footer {
+  border-color: $p-common-widget-header-border-color;
+  background: $p-common-widget-header-bg;
+  color: $p-common-widget-header-color;
+}

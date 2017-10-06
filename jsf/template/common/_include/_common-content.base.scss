@@ -9,8 +9,8 @@
   border-left: 0 solid transparent;
 }
 
-body.ui-dialog-opened #sedn-content {
-  z-index: auto;
+body.sedn-body-with-appbar #sedn-content {
+  border-top-width: $sedn-appbar-height;
 }
 
 .sedn-content-wrapper {
@@ -24,4 +24,12 @@ body.ui-dialog-opened #sedn-content {
 .sedn-content-holder {
   display: table-cell;
   vertical-align: top;
+}
+
+/**/
+@media (min-width: $sedn-sidebar-collapse-breakpoint) {
+
+  body.sedn-body-with-sidebar #sedn-content {
+    border-left-width: $sedn-sidebar-width;
+  }
 }

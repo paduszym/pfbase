@@ -1,3 +1,18 @@
 .ui-button {
   @include ui-button--theme;
+
+  &.ui-button-success {
+    @include ui-button--theme($p-button-success-default-bg,
+                              $p-button-success-default-border-color,
+                              $p-button-success-default-color,
+                              $p-button-success-hover-bg,
+                              $p-button-success-hover-border-color,
+                              $p-button-success-hover-color,
+                              $p-button-success-active-bg,
+                              $p-button-success-active-border-color,
+                              $p-button-success-active-color,
+                              $p-button-success-focus-bg,
+                              $p-button-success-focus-border-color,
+                              $p-button-success-focus-color);
+  }
 }

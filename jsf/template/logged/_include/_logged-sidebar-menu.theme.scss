@@ -1,19 +1,30 @@
 #sedn-logged-sidebar-menu {
   background: none;
 
-  li.ui-widget-header,
   .ui-menuitem-link {
     color: $sedn-sidebar-color;
   }
 
-  li.ui-widget-header {
-    background: none;
-    border: 0;
-  }
-
-  li.ui-widget-header.ui-state-hover,
   .ui-state-hover {
     background: $sedn-logged-sidebar-menu-item-hover-bg;
     color: $sedn-sidebar-color;
+  }
+
+  /**/
+  > .ui-menu-list > .ui-menuitem > .ui-menuitem-link {
+    border-top-color: $sedn-logged-sidebar-menu-item-border-color;
+    @include box-shadow(0 -1px 0 $sedn-logged-sidebar-menu-item-shadow-color inset);
+  }
+
+  > .ui-menu-list > .ui-menuitem > .ui-menuchild {
+    background: $sedn-logged-sidebar-menu-submenu-bg;
+  }
+
+  > .ui-menu-list > .ui-menuitem > .ui-menuchild > .ui-menuitem {
+    border-bottom-color: $sedn-logged-sidebar-menu-submenu-item-border-color;
+
+    > .ui-menuchild > .ui-menuitem::after {
+      background: $sedn-logged-sidebar-menu-submenu-item-border-color;
+    }
   }
 }

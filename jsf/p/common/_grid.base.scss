@@ -5,7 +5,7 @@
   margin: 0
 }
 
-.ui-grid:before,.ui-grid:after {
+.ui-grid:before, .ui-grid:after {
   content: "";
   display: table
 }
@@ -29,7 +29,7 @@
   display: table
 }
 
-.ui-grid-col-1,.ui-grid-col-2,.ui-grid-col-3,.ui-grid-col-4,.ui-grid-col-5,.ui-grid-col-6,.ui-grid-col-7,.ui-grid-col-8,.ui-grid-col-9,.ui-grid-col-10,.ui-grid-col-11,.ui-grid-col-12 {
+.ui-grid-col-1, .ui-grid-col-2, .ui-grid-col-3, .ui-grid-col-4, .ui-grid-col-5, .ui-grid-col-6, .ui-grid-col-7, .ui-grid-col-8, .ui-grid-col-9, .ui-grid-col-10, .ui-grid-col-11, .ui-grid-col-12 {
   float: left;
   box-sizing: border-box
 }
@@ -83,42 +83,46 @@
 }
 
 @media(min-width: 480px) {
+
   .ui-grid-fixed {
-    width:480px
+    width: 480px
   }
 }
 
 @media(min-width: 768px) {
+
   .ui-grid-fixed {
-    width:768px
+    width: 768px
   }
 }
 
 @media(min-width: 960px) {
+
   .ui-grid-fixed {
-    width:960px
+    width: 960px
   }
 }
 
 @media(min-width: 1024px) {
+
   .ui-grid-fixed {
-    width:1024px
+    width: 1024px
   }
 }
 
 @media(max-width: 640px) {
+
   .ui-grid-responsive .ui-grid-row {
-    display:block
+    display: block
   }
 
-  .ui-grid-responsive .ui-grid-col-1,.ui-grid-responsive .ui-grid-col-2,.ui-grid-responsive .ui-grid-col-3,.ui-grid-responsive .ui-grid-col-4,.ui-grid-responsive .ui-grid-col-5,.ui-grid-responsive .ui-grid-col-6,.ui-grid-responsive .ui-grid-col-7,.ui-grid-responsive .ui-grid-col-8,.ui-grid-responsive .ui-grid-col-9,.ui-grid-responsive .ui-grid-col-10,.ui-grid-responsive .ui-grid-col-11,.ui-grid-responsive .ui-grid-col-12 {
+  .ui-grid-responsive .ui-grid-col-1, .ui-grid-responsive .ui-grid-col-2, .ui-grid-responsive .ui-grid-col-3, .ui-grid-responsive .ui-grid-col-4, .ui-grid-responsive .ui-grid-col-5, .ui-grid-responsive .ui-grid-col-6, .ui-grid-responsive .ui-grid-col-7, .ui-grid-responsive .ui-grid-col-8, .ui-grid-responsive .ui-grid-col-9, .ui-grid-responsive .ui-grid-col-10, .ui-grid-responsive .ui-grid-col-11, .ui-grid-responsive .ui-grid-col-12 {
     width: 100%;
     float: none
   }
 }
 
 /**/
-
 .ui-g {
   @include display-flex;
   flex-wrap: wrap;

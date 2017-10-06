@@ -1,0 +1,17 @@
+.ui-confirm-dialog .ui-dialog-content {
+  display: flex;
+}
+
+.ui-confirm-dialog-severity.ui-icon {
+  align-self: flex-start;
+  width: $p-confirm-dialog-severity-icon-size;
+  height: $p-confirm-dialog-severity-icon-size;
+  margin-right: $p-confirm-dialog-severity-icon-right-margin;
+  font-size: .9 * $p-confirm-dialog-severity-icon-size;
+  line-height: $p-confirm-dialog-severity-icon-size;
+  text-align: center;
+}
+
+.ui-confirm-dialog-message {
+  align-self: center;
+}

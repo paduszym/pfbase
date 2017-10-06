@@ -1,5 +1,8 @@
 #sedn-sidebar {
   background: $sedn-sidebar-bg;
-  border-right-color: $sedn-sidebar-border-color;
   color: $sedn-sidebar-color;
+}
+
+#sedn-sidebar-overlay {
+  background: $p-common-overlay-bg;
 }

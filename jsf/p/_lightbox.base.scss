@@ -10,7 +10,6 @@
   position: relative;
   margin: 0;
   padding: 0;
-  background-color: #000;
 }
 
 .ui-lightbox-nav-right, .ui-lightbox-nav-left {
@@ -28,7 +27,7 @@
 }
 
 .ui-lightbox-loading {
-  background: url(jsf-resource-url("primefaces", "lightbox/images/loading.gif")) #000 center center no-repeat;
+
 }
 
 .ui-lightbox-caption {

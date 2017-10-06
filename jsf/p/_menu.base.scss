@@ -1,5 +1,5 @@
 .ui-menu {
-  width: 12.5em;
+  min-width: 12.5em;
   position: relative;
 
   &::after {
@@ -87,7 +87,7 @@
 
 .ui-menu-parent .ui-menu-child {
   display: none;
-  width: 12.5em;
+  min-width: 12.5em;
   padding: 0;
   position: absolute;
   margin: 0;

@@ -230,12 +230,12 @@
   color: inherit;
   border: 0;
   outline: 0;
-  border-bottom: solid 1px #555;
+  border-bottom: 1px solid;
   width: 95%;
 }
 
 .ui-timepicker-div .ui_tpicker_time .ui_tpicker_time_input:focus {
-  border-bottom-color: #aaa;
+
 }
 
 .ui-timepicker-rtl {

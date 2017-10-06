@@ -16,11 +16,11 @@
 }
 
 .ui-menu.ui-megamenu .ui-menu-child .ui-menu-list {
-  width: 12.5em;
+  min-width: 12.5em;
 }
 
 .ui-menu.ui-megamenu.ui-megamenu-vertical {
-  width: 12.5em;
+  min-width: 12.5em;
 
   > .ui-menu-list {
     flex-direction: column;

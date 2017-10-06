@@ -1,20 +1,51 @@
 #sedn-sidebar {
   position: fixed;
   z-index: $sedn-sidebar-zindex;
-  left: 0;
+  left: -$sedn-sidebar-width;
   top: 0;
   bottom: 0;
   width: $sedn-sidebar-width;
-  border-right: 1px solid;
+  border-right: 1px solid transparent;
   overflow: hidden;
-
-  + #sedn-content {
-    border-left-width: $sedn-sidebar-width;
-  }
+  @include transition(left .3s);
 }
 
 #sedn-sidebar-content {
   max-height: 100%;
   overflow: auto;
   width: $sedn-sidebar-width;
+}
+
+#sedn-sidebar-overlay {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: $sedn-sidebar-zindex - 1;
+}
+
+body.sedn-sidebar-opened {
+
+  #sedn-sidebar {
+    left: 0;
+  }
+
+  #sedn-sidebar-overlay {
+    display: block;
+  }
+}
+
+/**/
+@media (min-width: $sedn-sidebar-collapse-breakpoint) {
+
+  #sedn-sidebar {
+    left: 0;
+    @include transition(none);
+  }
+
+  #sedn-sidebar-overlay {
+    display: none;
+  }
 }

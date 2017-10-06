@@ -3,55 +3,62 @@
   width: auto;
   @include border-radius(0);
 
-  .ui-widget-header h3 {
-    font-weight: inherit;
-  }
-
-  .ui-submenu-child {
-    display: none;
+  .ui-menuitem-link {
+    padding-left: 1.5 * $p-menu-item-horizontal-padding + $p-menu-item-icon-width;
   }
 
   .ui-menuitem-text {
     white-space: normal;
   }
 
-  .ui-submenu-child .ui-menuitem-text {
-    padding-left: $p-menu-item-horizontal-padding;
+  .ui-menu-list .ui-menu-list .ui-menu-list {
+
+    .ui-menuitem-icon {
+      margin-left: $p-menu-item-horizontal-padding;
+    }
+
+    .ui-menuitem-text {
+      border-left: $p-menu-item-horizontal-padding solid transparent;
+    }
   }
 
-  .ui-state-highlight {
-    font-weight: 700;
+  > .ui-menu-list > .ui-menuitem > .ui-menuitem-link {
+    border-top: 1px solid;
+    padding-bottom: 1.5 * $p-menu-item-vertical-padding;
+    padding-top: 1.5 * $p-menu-item-vertical-padding - .1rem;
+    font-size: $_font-size-large;
+
+    .ui-icon {
+      margin-top: .5 * $p-menu-item-vertical-padding - .1rem;
+    }
   }
-}
 
-#sedn-menu-item-zdarzenia {
+  > .ui-menu-list > .ui-menuitem > .ui-menuchild > .ui-menuitem {
+    border-bottom: 1px solid;
 
-  .ui-icon-triangle-1-s::before,
-  .ui-icon-triangle-1-e::before {
-    content: $fa-var-flag;
-  }
-}
+    > .ui-menuitem-link {
+      padding-bottom: $p-menu-item-vertical-padding - .1rem;
+    }
 
-#sedn-menu-item-anj {
+    &:last-child {
+      border-bottom: 0;
 
-  .ui-icon-triangle-1-s::before,
-  .ui-icon-triangle-1-e::before {
-    content: $fa-var-pencil-square-o;
-  }
-}
+      > .ui-menuitem-link {
+        padding-bottom: $p-menu-item-vertical-padding;
+      }
+    }
 
-#sedn-menu-item-wniosek {
+    > .ui-menuchild > .ui-menuitem {
+      position: relative;
 
-  .ui-icon-triangle-1-s::before,
-  .ui-icon-triangle-1-e::before {
-    content: $fa-var-bolt;
-  }
-}
-
-#sedn-menu-item-admin {
-
-  .ui-icon-triangle-1-s::before,
-  .ui-icon-triangle-1-e::before {
-    content: $fa-var-wrench;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: ($p-menu-item-horizontal-padding + $p-menu-item-icon-width);
+        right: 0;
+        height: 1px;
+      }
+    }
   }
 }
