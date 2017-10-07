@@ -124,7 +124,7 @@
 
 /**/
 .ui-g {
-  @include display-flex;
+  display: flex;
   flex-wrap: wrap;
 }
 
