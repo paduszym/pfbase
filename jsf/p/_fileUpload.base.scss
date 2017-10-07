@@ -127,8 +127,8 @@
 .ui-fileupload-simple {
   position: relative;
   overflow: hidden;
-  display: inline-block;
-  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
 }
 
 .ui-fileupload-simple input[type="file"] {
@@ -147,5 +147,5 @@
 }
 
 .ui-fileupload-simple .ui-fileupload-filename {
-  margin-left: .5em;
+  margin-left: $p-file-upload-simple-filename-margin-left;
 }

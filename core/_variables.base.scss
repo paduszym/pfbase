@@ -179,6 +179,7 @@ $p-paginator-button-font-size: $_font-size-small;
 /**
  * p:menu
  */
+$p-menu-min-width: bl(27);
 $p-menu-item-vertical-padding: bl(1);
 $p-menu-item-horizontal-padding: bl(2);
 $p-menu-item-icon-width: bl(3.5);
@@ -239,6 +240,7 @@ $p-progress-bar-height: bl(3);
 /**
  * p:fileUpload
  */
+$p-file-upload-simple-filename-margin-left: bl(1);
 $p-file-upload-progress-bar-width: bl(20);
 $p-file-upload-item-padding: bl(1);
 $p-file-upload-image-preview-size: bl(5);
