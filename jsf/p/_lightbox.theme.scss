@@ -1,0 +1,23 @@
+.ui-lightbox {
+  background: $p-common-widget-content-bg;
+  border-color: $p-common-widget-content-border-color;
+  color: $p-common-widget-content-color;
+}
+
+a.ui-lightbox-close {
+  background: $p-common-state-default-bg;
+  border-color: $p-common-state-default-border-color;
+  color: $p-common-state-default-color;
+
+  &.ui-state-hover {
+    background: $p-common-state-hover-bg;
+    border-color: $p-common-state-hover-border-color;
+    color: $p-common-state-hover-color;
+  }
+
+  &.ui-state-focus {
+    background: $p-common-state-focus-bg;
+    border-color: $p-common-state-focus-border-color;
+    color: $p-common-state-focus-color;
+  }
+}

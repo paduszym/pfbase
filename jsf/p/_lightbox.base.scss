@@ -1,28 +1,51 @@
 .ui-lightbox {
   position: fixed;
+  overflow: hidden;
+  border: 1px solid;
 }
 
-.ui-lightbox-content-wrapper {
+.ui-lightbox-content-wrapper,
+.ui-lightbox-content {
   position: relative;
 }
 
 .ui-lightbox-content {
-  position: relative;
-  margin: 0;
-  padding: 0;
+  @include border-radius(0);
 }
 
-.ui-lightbox-nav-right, .ui-lightbox-nav-left {
+.ui-lightbox-content img {
+  max-width: none;
+}
+
+a.ui-lightbox-nav-right,
+a.ui-lightbox-nav-left {
   position: absolute;
   top: 50%;
+  margin-top: -.5 * $p-paginator-button-size;
+  width: $p-paginator-button-size;
+  height: $p-paginator-button-size;
+  text-decoration: none;
   cursor: pointer;
+
+  .ui-icon {
+    display: block;
+    font-size: 0;
+    line-height: $p-paginator-button-size - .2rem;
+    text-align: center;
+
+    &::before {
+      font-size: $p-paginator-button-font-size;
+    }
+  }
 }
 
 .ui-lightbox-nav-left {
+  border-left: 0;
   left: 0;
 }
 
 .ui-lightbox-nav-right {
+  border-right: 0;
   right: 0;
 }
 
@@ -31,21 +54,31 @@
 }
 
 .ui-lightbox-caption {
-  padding: .2em .4em;
-  display: none;
+  display: flex;
+  padding: ($p-data-table-header-vertical-padding - .1rem) ($p-data-table-header-horizontal-padding - .1rem) $p-data-table-header-vertical-padding;
+  border-width: 1px 0 0;
 }
 
 .ui-lightbox-caption-text {
-  margin: .3em 0 .1em 0;
-  float: left;
+  flex: 1;
 }
 
-.ui-lightbox-close {
-  float: right;
-  margin: 0;
-  padding: 1px;
+a.ui-lightbox-close {
+  flex-shrink: 0;
+  margin-left: $p-light-box-close-button-margin-left;
+  width: $p-light-box-close-button-size;
+  height: $p-light-box-close-button-size;
+  line-height: $p-light-box-close-button-size - .2rem;
+  border: 1px solid;
+  outline: 0;
+  text-decoration: none;
+
+  .ui-icon {
+    display: block;
+    text-align: center;
+  }
 }
 
-.ui-lightbox-close.ui-state-hover {
-  padding: 0;
+.ui-lightbox-caption-text:empty + a.ui-lightbox-close {
+  margin-left: 0;
 }
