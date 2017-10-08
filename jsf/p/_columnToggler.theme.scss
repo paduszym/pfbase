@@ -1,0 +1,17 @@
+.ui-columntoggler .ui-columntoggler-close {
+  background: $p-common-state-default-bg;
+  border-color: $p-common-state-default-border-color;
+  color: $p-common-state-default-color;
+
+  &:hover {
+    background: $p-common-state-hover-bg;
+    border-color: $p-common-state-hover-border-color;
+    color: $p-common-state-hover-color;
+  }
+
+  &:focus {
+    background: $p-common-state-focus-bg;
+    border-color: $p-common-state-focus-border-color;
+    color: $p-common-state-focus-color;
+  }
+}

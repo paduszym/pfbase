@@ -1,57 +1,51 @@
 .ui-columntoggler {
-  padding: 0;
   position: absolute;
-  overflow: auto;
   display: none;
 }
 
 .ui-columntoggler .ui-columntoggler-items {
-  border: 0;
-  padding: .4em;
   margin: 0;
+  padding: (.5 * $p-overlay-panel-close-size) ($p-select-checkbox-menu-panel-padding - .1rem) ($p-select-checkbox-menu-panel-padding - .1rem);
 }
 
 .ui-columntoggler .ui-columntoggler-item {
-  border: 0;
+  display: flex;
+  align-items: center;
   cursor: pointer;
   font-weight: 400;
-  margin: 1px 0;
-  padding: 3px 5px;
-  text-align: left;
   white-space: nowrap;
-  display: block;
-  position: relative;
 }
 
 .ui-columntoggler .ui-columntoggler-item .ui-chkbox {
-  position: absolute;
-  top: 50%;
-  margin-top: -8px;
+  flex-shrink: 0;
 }
 
 .ui-columntoggler .ui-columntoggler-item label {
-  display: block;
-  padding-left: 2.2em;
+  flex: 1;
+  padding: 0 $p-checkbox-label-horizontal-padding;
+  cursor: inherit;
 }
 
 .ui-columntoggler .ui-columntoggler-close {
-  float: right;
-  margin-top: 1px;
-  margin-right: 1px;
-}
-
-.ui-columntoggler .ui-columntoggler-close:focus {
-  outline: dotted thin;
-}
-
-.ui-columntoggler .ui-columntoggler-items {
-  padding: 1em .4em .4em .4em;
+  position: absolute;
+  right: -.5 * $p-overlay-panel-close-size;
+  top: -.5 * $p-overlay-panel-close-size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  width: $p-overlay-panel-close-size;
+  height: $p-overlay-panel-close-size;
+  text-decoration: none;
+  outline: 0;
+  @include border-radius(50%);
 }
 
 @media only all {
   .ui-columntoggler .ui-columntoggler-item.ui-column-p-1, .ui-columntoggler .ui-columntoggler-item.ui-column-p-2, .ui-columntoggler .ui-columntoggler-item.ui-column-p-3, .ui-columntoggler .ui-columntoggler-item.ui-column-p-4, .ui-columntoggler .ui-columntoggler-item.ui-column-p-5, .ui-columntoggler .ui-columntoggler-item.ui-column-p-6 {
     display: none;
   }
+
   th.ui-helper-hidden, td.ui-helper-hidden {
     display: none;
   }
