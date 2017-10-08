@@ -1,35 +1,41 @@
-.ui-tabmenu {
-  position: relative;
+.ui-tabmenu.ui-widget-content {
+  border-width: 0 0 1px;
+  background: none;
+  @include border-radius(0);
 }
 
 .ui-tabmenu .ui-tabmenu-nav {
+  display: inline-flex;
+  flex-wrap: nowrap;
   margin: 0;
-  padding: .2em .2em 0;
+  border: 0;
+  background: none;
+  list-style-type: none;
 }
 
 .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem {
-  list-style: none;
-  float: left;
+  display: flex;
+  align-items: center;
   position: relative;
-  margin: 0 .2em 1px 0;
   padding: 0;
   white-space: nowrap;
-  display: block;
   border-bottom: 0;
-  top: 1px;
+  cursor: pointer;
 }
 
 .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a {
-  float: left;
-  padding: .5em 1em;
+  display: block;
+  padding: ($p-tab-view-header-vertical-padding - .1rem) ($p-tab-view-header-horizontal-padding - .1rem);
   text-decoration: none;
+  outline: 0;
 }
 
 .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem-hasicon a {
-  padding: .5em 1em .5em .2em;
+  padding-left: ($p-tab-view-header-horizontal-padding + $p-menu-item-icon-width - .1rem)
 }
 
-.ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem .ui-icon {
-  float: left;
+.ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem .ui-menuitem-icon {
   cursor: pointer;
+  left: $p-tab-view-header-horizontal-padding;
+  top: $p-tab-view-header-vertical-padding - .1rem;
 }
