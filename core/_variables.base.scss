@@ -36,10 +36,6 @@ $pre-and-code-font-family: $_font-family-mono;
 
 $code-padding: bl(2);
 
-// <fieldset>
-$fieldset-margin: bl(2);
-$fieldset-padding: bl(2);
-
 // misc
 $text-block-margin: bl(3);
 
@@ -294,6 +290,13 @@ $p-dialog-titlebar-icon-horizontal-margin: bl(.5);
  */
 $p-confirm-dialog-severity-icon-size: bl(4);
 $p-confirm-dialog-severity-icon-right-margin: bl(1.5);
+
+/**
+ * p:fieldset
+ */
+$p-fieldset-margin: bl(3);
+$p-fieldset-content-padding: bl(2);
+
 
 //----------------------------------------------------------------------------------------------------------------------
 

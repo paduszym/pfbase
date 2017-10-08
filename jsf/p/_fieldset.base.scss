@@ -1,4 +1,14 @@
+fieldset.ui-fieldset {
+  margin: $p-fieldset-margin;
+  padding: 0 ($p-fieldset-content-padding - .1rem) ($p-fieldset-content-padding - .1rem);
+
+  @include moz-only {
+    display: table-column;
+  }
+}
+
 .ui-fieldset .ui-fieldset-legend {
+  display: inline-block;
   position: relative;
   padding: 0 ($p-button-horizontal-padding - .1rem);
   line-height: $p-button-height - .2rem;
@@ -12,4 +22,12 @@
 .ui-fieldset-toggleable .ui-fieldset-legend {
   cursor: pointer;
   padding-left: ($p-button-horizontal-padding + $p-button-icon-width - .1rem);
+}
+
+.ui-fieldset .ui-fieldset-content {
+  padding-top: $p-fieldset-content-padding - .1rem;
+}
+
+.ui-fieldset .ui-fieldset-legend + .ui-fieldset-content {
+  padding-top: $p-fieldset-content-padding;
 }
