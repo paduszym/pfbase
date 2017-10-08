@@ -1,31 +1,16 @@
-.ui-wizard {
-  margin: 0;
-  padding: 0;
-}
-
-.ui-wizard-content {
-  margin: 3px 0;
-}
-
+.ui-wizard-step-titles,
 .ui-wizard-navbar {
-  text-align: right;
+  display: flex;
+
+  &::after {
+    display: none;
+  }
 }
 
-.ui-wizard-nav-back, .ui-wizard-nav-next {
-  cursor: pointer;
-}
-
-.ui-wizard-nav-back {
-  float: left;
-}
-
-.ui-wizard-nav-next {
-  float: right;
+.ui-wizard-nav-next.ui-button {
+  margin-left: auto;
 }
 
 .ui-wizard-step-title {
-  font-size: 18px;
-  margin: 0 3px 0 0;
-  padding: .4em;
-  float: left;
+
 }
