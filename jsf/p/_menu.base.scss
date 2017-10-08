@@ -87,7 +87,7 @@
 
 .ui-menu-parent .ui-menu-child {
   display: none;
-  min-width: 12.5em;
+  min-width: $p-menu-min-width;
   padding: 0;
   position: absolute;
   margin: 0;
