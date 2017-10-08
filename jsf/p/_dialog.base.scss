@@ -45,10 +45,30 @@
     text-align: center;
     line-height: $p-dialog-titlebar-icon-size - .2rem;
   }
-}
 
-.ui-dialog .ui-dialog-title + .ui-dialog-titlebar-icon {
-  margin-left: 2 * $p-dialog-titlebar-icon-horizontal-margin;
+  &.ui-dialog-titlebar-minimize {
+    order: 0;
+
+    .ui-icon::before {
+      content: $fa-var-window-minimize;
+    }
+  }
+
+  &.ui-dialog-titlebar-maximize {
+    order: 1;
+
+    .ui-icon.ui-icon-extlink::before {
+      content: $fa-var-window-maximize;
+    }
+
+    .ui-icon.ui-icon-newwin::before {
+      content: $fa-var-window-restore;
+    }
+  }
+
+  &.ui-dialog-titlebar-close {
+    order: 2;
+  }
 }
 
 .ui-dialog .ui-dialog-content {
