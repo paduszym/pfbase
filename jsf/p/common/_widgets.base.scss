@@ -1,3 +1,18 @@
+.ui-widget {
+  font-family: $p-common-widget-font-family;
+  font-size: $p-common-widget-font-size;
+  line-height: $p-common-widget-line-height;
+
+  &,
+  &::before,
+  &::after,
+  *,
+  *::before,
+  *::after {
+    @include box-sizing(border-box);
+  }
+}
+
 .ui-widget-header,
 .ui-widget-content {
   border: 1px solid;

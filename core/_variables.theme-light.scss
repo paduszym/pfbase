@@ -1,16 +1,8 @@
 //----------------------------------------------------------------------------------------------------------------------
-$_sedn-brand-color: #00a0dc;
+$_brand-color: #00a0dc;
+$_shadow-color: #000;
 
 //----------------------------------------------------------------------------------------------------------------------
-
-// <a>
-$link-color-default: darken($_sedn-brand-color, 5%);
-$link-color-hover: darken($_sedn-brand-color, 2.5%);
-$link-color-visited: $link-color-default;
-
-// <body>
-$body-color: #222;
-$body-bg: #f5f5f5;
 
 // <pre>, <code>
 $code-bg: #424242;
@@ -45,8 +37,8 @@ $p-common-state-active-border-color: #bac8cd;
 $p-common-state-active-bg: #d3e1e6;
 $p-common-state-active-color: #2a2e35;
 
-$p-common-state-highlight-border-color: darken($_sedn-brand-color, 3%);
-$p-common-state-highlight-bg: $_sedn-brand-color;
+$p-common-state-highlight-border-color: darken($_brand-color, 3%);
+$p-common-state-highlight-bg: $_brand-color;
 $p-common-state-highlight-color: #fff;
 
 $p-common-state-error-color: #b94a48;
@@ -65,17 +57,24 @@ $p-common-messages-warn-border-color: #d6c3a0;
 
 $p-common-messages-error-color: #b94a48;
 $p-common-messages-error-bg: #f2dede;
-$p-common-messages-error-border-color: #eed3d7;
+$p-common-messages-error-border-color: #d2b7bb;
 
 $p-common-messages-fatal-color: #b94a48;
 $p-common-messages-fatal-bg: #f2dede;
-$p-common-messages-fatal-border-color: #eed3d7;
+$p-common-messages-fatal-border-color: #d2b7bb;
+
+/**
+ * p:link
+ */
+$p-link-color-default: darken($_brand-color, 5%);
+$p-link-color-hover: darken($_brand-color, 2.5%);
+$p-link-color-visited: $p-link-color-default;
 
 /**
  * p:button
  */
-$p-button-success-default-bg: $_sedn-brand-color;// #40b66b;
-$p-button-success-default-border-color: darken($_sedn-brand-color, 2%);
+$p-button-success-default-bg: $_brand-color;
+$p-button-success-default-border-color: darken($_brand-color, 2%);
 $p-button-success-default-color: #fff;
 $p-button-success-hover-bg: darken($p-button-success-default-bg, 2%);
 $p-button-success-hover-border-color: darken($p-button-success-default-border-color, 2%);
@@ -113,15 +112,20 @@ $sedn-zdarzenie-details-field-label-color: $p-common-widget-content-color;
  * template:* commons
  */
 
+/** common.xhtml */
+$sedn-body-color: $p-common-widget-content-color;
+$sedn-body-bg: #f5f5f5;
+
 /** _include/common-appbar.xhtml */
-$sedn-appbar-bg: $_sedn-brand-color;
+$sedn-appbar-bg: $_brand-color;
 $sedn-appbar-color: #fff;
 $sedn-appbar-link-color: #fff;
 $sedn-appbar-link-bg-hover: rgba(#000, .25);
 
 /** _include/common-cookies.xhtml */
-$sedn-cookies-bg: #f8e19a;
-$sedn-cookies-color: #424242;
+$sedn-cookies-bg: #000;
+$sedn-cookies-color: #fff;
+$sedn-cookies-more-link-color: #ffe358;
 
 /** _include/common-footer.xhtml */
 $sedn-footer-bg: $p-common-widget-content-bg;

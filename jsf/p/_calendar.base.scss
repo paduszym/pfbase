@@ -82,7 +82,7 @@
 .ui-datepicker th {
   padding: (2 * $p-calendar-button-padding) $p-calendar-button-padding;
   text-align: center;
-  font-weight: 700;
+  font-weight: $_font-weight-bold;
 }
 
 .ui-datepicker td {

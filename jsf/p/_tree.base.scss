@@ -48,7 +48,7 @@
 }
 
 .ui-tree .ui-treenode-label.ui-state-hover, .ui-tree .ui-treenode-label.ui-state-highlight {
-  font-weight: 400;
+  font-weight: $_font-weight-normal;
   border: 0;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .ui-tree-horizontal .ui-treenode-content {
-  font-weight: 400;
+  font-weight: $_font-weight-normal;
 }
 
 .ui-tree-horizontal .ui-treenode-content.ui-tree-selectable {
@@ -95,7 +95,7 @@
 }
 
 .ui-tree-horizontal .ui-treenode-parent .ui-treenode-content {
-  font-weight: 400;
+  font-weight: $_font-weight-normal;
   white-space: nowrap;
 }
 

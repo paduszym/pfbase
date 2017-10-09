@@ -16,3 +16,13 @@
   position: absolute;
   width: 0;
 }
+
+/**/
+@mixin ui-prevent-collapsing-margins {
+
+  &::before,
+  &::after {
+    content: "";
+    display: table;
+  }
+}

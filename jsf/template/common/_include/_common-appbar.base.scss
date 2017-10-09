@@ -6,7 +6,7 @@
   left: 0;
   top: 0;
   right: 0;
-  min-width: $body-min-width;
+  min-width: $sedn-body-min-width;
   min-height: $sedn-appbar-height;
   border-left: 0 solid transparent;
 }
@@ -50,6 +50,7 @@ body.sedn-body-with-sidebar #sedn-appbar-title {
   a {
     display: flex;
     align-items: center;
+    margin: 0;
     padding: 0 $sedn-appbar-actions-link-horizontal-padding;
     white-space: nowrap;
     text-decoration: none;

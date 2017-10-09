@@ -1,5 +1,3 @@
-@import "jsf/placeholders-jsf.theme";
-
 @import "jsf/p/common/shadows.theme";
 @import "jsf/p/common/overlays.theme";
 @import "jsf/p/common/widgets.theme";
@@ -35,6 +33,7 @@
 @import "jsf/p/inputText.theme";
 @import "jsf/p/inputTextarea.theme";
 @import "jsf/p/lightbox.theme";
+@import "jsf/p/link.theme";
 @import "jsf/p/megaMenu.theme";
 @import "jsf/p/menu.theme";
 @import "jsf/p/menubar.theme";
@@ -83,6 +82,7 @@
 
 @import "jsf/sedn/mainMenu.theme";
 @import "jsf/sedn/input.theme";
+@import "jsf/sedn/error.theme";
 @import "jsf/sedn/tooltipIcon.theme";
 @import "jsf/sedn/notice.theme";
 @import "jsf/sedn/filters.theme";

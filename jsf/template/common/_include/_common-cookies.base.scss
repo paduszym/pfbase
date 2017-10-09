@@ -1,0 +1,40 @@
+#sedn-cookies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: $sedn-cookies-zindex;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 0 $sedn-cookies-horizontal-padding;
+  height: $sedn-cookies-height;
+  text-align: center;
+  white-space: nowrap;
+
+  + #sedn-appbar,
+  + #sedn-appbar + #sedn-sidebar {
+    top: $sedn-cookies-height;
+  }
+
+  + #sedn-content,
+  + #sedn-sidebar + #sedn-content {
+    border-top-width: $sedn-cookies-height;
+  }
+
+  + #sedn-appbar + #sedn-sidebar + #sedn-content {
+    border-top-width: $sedn-appbar-height + $sedn-cookies-height;
+  }
+}
+
+#sedn-cookies-info {
+  flex: 1;
+}
+
+#sedn-cookies-close-link {
+  margin-left: auto;
+  display: block;
+  width: $sedn-cookies-close-button-size;
+  height: $sedn-cookies-close-button-size;
+  font-size: .9 * $sedn-cookies-close-button-size;
+}

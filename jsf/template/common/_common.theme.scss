@@ -1,3 +1,8 @@
+#sedn-body {
+  background: $sedn-body-bg;
+  color: $sedn-body-color;
+}
+
 @import "_include/common-appbar.theme";
 @import "_include/common-sidebar.theme";
 @import "_include/common-content.theme";

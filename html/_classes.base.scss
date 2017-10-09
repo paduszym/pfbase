@@ -7,15 +7,12 @@
 }
 
 .normal {
-  font-weight: 400;
+  font-weight: $_font-weight-normal;
 }
 
-.strong {
-  font-weight: 500;
-}
-
+.strong,
 .bold {
-  font-weight: 700;
+  font-weight: $_font-weight-bold;
 }
 
 .italic {
@@ -52,42 +49,6 @@
 
 .font-xlarge {
   font-size: $_font-size-xlarge;
-}
-
-//----
-// Generate "_Xpx" util classes (X -- width in pixels)
-//----
-
-// 5 10 ... 20 25
-@for $i from 0 through 4 {
-  @include px-width-class(5 + 5*$i);
-}
-
-// 50 75 ... 225 250
-@for $i from 0 through 8 {
-  @include px-width-class(50 + 25*$i);
-}
-
-// 300 350 ... 1200 1250
-@for $i from 0 through 19 {
-  @include px-width-class(300 + 50*$i);
-}
-
-//----
-// Generate "_Xpct" util classes (X -- width in percents)
-//----
-
-// 1 2 3 4 5
-@for $i from 1 through 5 {
-  @include pct-width-class($i);
-}
-
-// 8
-@include pct-width-class(8);
-
-// 10 15 ... 95 100
-@for $i from 0 through 18 {
-  @include pct-width-class(10 + $i*5);
 }
 
 /**/
@@ -367,11 +328,33 @@
 }
 
 /**/
-.ui-button + .ui-button {
-  margin-left: $p-toolbar-item-margin;
+.ui-button,
+.ui-link,
+.ui-commandlink {
+
+  + .ui-button {
+    margin-left: $p-toolbar-item-margin;
+  }
+
+  + .ui-link,
+  + .ui-commandlink {
+    margin-left: $p-toolbar-item-margin + $p-button-horizontal-padding;
+  }
+}
+
+/**/
+.sedn-actions-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /**/
 .sedn-actions-panel > .ui-panel-content {
   padding: bl(1) bl(2);
+}
+
+/**/
+.ui-panel-content .ui-messages {
+  margin: bl(2);
 }

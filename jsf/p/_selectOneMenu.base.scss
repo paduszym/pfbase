@@ -59,7 +59,7 @@
 .ui-selectonemenu-panel .ui-selectonemenu-item {
   cursor: pointer;
   border: 0;
-  font-weight: 400;
+  font-weight: $_font-weight-normal;
   text-align: left;
   white-space: nowrap;
 }
@@ -78,7 +78,7 @@
 
 .ui-selectonemenu-panel .ui-selectonemenu-item-group {
   padding-left: .5 * $p-auto-complete-item-horizontal-padding;
-  font-weight: 700;
+  font-weight: $_font-weight-bold;
 }
 
 .ui-selectonemenu-panel .ui-selectonemenu-table {

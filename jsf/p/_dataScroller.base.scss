@@ -24,7 +24,7 @@
 
 .ui-datascroller .ui-datascroller-loader {
   padding: 0 ($p-progress-bar-height - .1rem);
-  @include prevent-collapsing-margins;
+  @include ui-prevent-collapsing-margins;
 }
 
 .ui-datascroller .ui-datascroller-loading {

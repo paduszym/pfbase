@@ -1,3 +1,42 @@
+form {
+  margin-top: 0; // fix for <!DOCTYPE composition>
+  margin-bottom: 0; // fix for <!DOCTYPE composition>
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+}
+
+table {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: inherit; // fix for <!DOCTYPE composition>
+  font-size: inherit; // fix for <!DOCTYPE composition>
+  line-height: inherit; // fix for <!DOCTYPE composition>
+}
+
+tbody,
+thead,
+tfoot,
+tr,
+td,
+th {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+th {
+  font-weight: inherit;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: $headings-margin;
   font-weight: $headings-font-weight;

@@ -1,41 +1,4 @@
 /**/
-@mixin screen-reader-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-}
-
-/**/
-@mixin prevent-collapsing-margins {
-
-  &::before,
-  &::after {
-    content: "";
-    display: table;
-  }
-}
-
-/**/
-@mixin px-width-class($width) {
-
-  ._#{$width}px, td._#{$width}px, th._#{$width}px {
-    width: $width * .1rem;
-  }
-}
-
-/**/
-@mixin pct-width-class($width) {
-  ._#{$width}pct, td._#{$width}pct, th._#{$width}pct {
-    width: $width * 1%;
-  }
-}
-
-/**/
 @mixin border-radius($radius) {
   border-radius: $radius;
 }
@@ -107,11 +70,6 @@
 /**/
 @mixin transform($transform...) {
   transform: $transform;
-}
-
-/**/
-@mixin display-flex {
-  display: flex;
 }
 
 /**/

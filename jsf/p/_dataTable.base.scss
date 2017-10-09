@@ -45,7 +45,7 @@
 }
 
 .ui-column-title {
-  font-weight: 700;
+  font-weight: $_font-weight-bold;
 }
 
 .ui-datatable tbody.ui-datatable-data {
@@ -111,7 +111,7 @@
 }
 
 .ui-datatable-scrollable .ui-datatable-scrollable-header td {
-  font-weight: 400;
+  font-weight: $_font-weight-normal;
 }
 
 .ui-datatable .ui-datatable-scrollable-body {

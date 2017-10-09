@@ -1,5 +1,3 @@
-@import "jsf/placeholders-jsf.base";
-
 @import "jsf/p/common/helpers.base";
 @import "jsf/p/common/resizables.base";
 @import "jsf/p/common/corners.base";
@@ -39,6 +37,7 @@
 @import "jsf/p/inputText.base";
 @import "jsf/p/inputTextarea.base";
 @import "jsf/p/lightbox.base";
+@import "jsf/p/link.base";
 @import "jsf/p/megaMenu.base";
 @import "jsf/p/menu.base";
 @import "jsf/p/menubar.base";
@@ -87,6 +86,7 @@
 
 @import "jsf/sedn/mainMenu.base";
 @import "jsf/sedn/input.base";
+@import "jsf/sedn/error.base";
 @import "jsf/sedn/tooltipIcon.base";
 @import "jsf/sedn/notice.base";
 @import "jsf/sedn/filters.base";

@@ -1,0 +1,17 @@
+.ui-link,
+.ui-commandlink {
+  color: $p-link-color-default;
+
+  &:hover,
+  &:active {
+    color: $p-link-color-hover;
+  }
+}
+
+.ui-link:visited {
+  color: $p-link-color-visited;
+}
+
+.ui-commandlink:visited {
+  color: $p-link-color-default;
+}

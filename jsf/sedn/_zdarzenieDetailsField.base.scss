@@ -1,7 +1,7 @@
 .sedn-zdarzenie-details-field {
 
   &-label {
-    font-weight: 700;
+    font-weight: $_font-weight-bold;
     width: $sedn-zdarzenie-details-field-label-width;
   }
 
@@ -58,7 +58,7 @@
       }
 
       dt {
-        font-weight: 700;
+        font-weight: $_font-weight-bold;
       }
 
       dd {

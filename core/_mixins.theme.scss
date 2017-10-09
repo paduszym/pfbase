@@ -1,4 +1,29 @@
 /**/
+@mixin d-1($color: $_shadow-color, $alpha: .13) {
+  @include box-shadow(0 0 2px 1px rgba($color, $alpha) inset);
+}
+
+/**/
+@mixin z-0 {
+  @include box-shadow(none);
+}
+
+/**/
+@mixin z-1($color: $_shadow-color) {
+  @include box-shadow(0 1px 2px rgba($color, .13));
+}
+
+/**/
+@mixin z-2($color: $_shadow-color) {
+  @include box-shadow(0 1px 8px 0 rgba($color, .13), 0 3px 4px 0 rgba($color, .13), 0 3px 3px -2px rgba($color, .13));
+}
+
+/**/
+@mixin z-3($color: $_shadow-color) {
+  @include box-shadow(0 3px 5px -1px rgba($color, .13), 0 6px 10px 0 rgba($color, .13), 0 1px 18px 0 rgba($color, .13));
+}
+
+/**/
 @mixin ui-button--theme($default-bg: $p-common-state-default-bg,
                         $default-border-color: $p-common-state-default-border-color,
                         $default-color: $p-common-state-default-color,

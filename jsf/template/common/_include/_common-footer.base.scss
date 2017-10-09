@@ -1,7 +1,7 @@
 #sedn-footer {
   display: block;
   border-top: 1px solid;
-  @include prevent-collapsing-margins;
+  @include ui-prevent-collapsing-margins;
 }
 
 #sedn-footer-version {

@@ -42,7 +42,7 @@
 }
 
 .ui-growl-title {
-  font-weight: 700;
+  font-weight: $_font-weight-bold;
   padding: 0 0 7px 0;
   display: block;
 }
@@ -80,5 +80,5 @@
 }
 
 .ui-growl-message p {
-  font-weight: 400;
+  font-weight: $_font-weight-normal;
 }

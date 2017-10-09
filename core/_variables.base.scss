@@ -1,8 +1,8 @@
 //----------------------------------------------------------------------------------------------------------------------
 $_baseline: .6rem;
 
-$_font-family-sans: "Roboto", Arial, Helvetica, Tahoma;
-$_font-family-mono: Consolas, "Courier New";
+$_font-family-sans: "Fira Sans", "Roboto", Arial, Helvetica, Tahoma;
+$_font-family-mono: "Fira Mono", Consolas, "Courier New";
 $_font-size-base: 1.3rem;
 
 $_font-size-small: .92 * $_font-size-base;
@@ -10,15 +10,12 @@ $_font-size-large: 1.15 * $_font-size-base;
 $_font-size-xlarge: 1.23 * $_font-size-base;
 $_font-size-xxlarge: 1.38 * $_font-size-base;
 
+$_font-weight-normal: 400;
+$_font-weight-bold: 600;
+
 $_infinity: 9999rem;
 
 //----------------------------------------------------------------------------------------------------------------------
-
-// <body>
-$body-min-width: 32rem;
-$body-font-family: $_font-family-sans;
-$body-font-size: $_font-size-base;
-$body-line-height: bl(3);
 
 // <h1>, ..., <h6>
 $headings-margin: bl(3);
@@ -46,6 +43,10 @@ $text-block-margin: bl(3);
 /**
  * p:* commons
  */
+$p-common-widget-font-family: $_font-family-sans;
+$p-common-widget-font-size: $_font-size-base;
+$p-common-widget-line-height: bl(3);
+
 $p-common-corner-radius: 3px;
 
 $p-common-grid-columns: 12;
@@ -64,7 +65,7 @@ $p-common-state-disabled-opacity: .5;
 $p-panel-margin: bl(3);
 $p-panel-header-vertical-padding: bl(1);
 $p-panel-header-horizontal-padding: bl(2);
-$p-panel-header-line-height: $body-line-height;
+$p-panel-header-line-height: $p-common-widget-line-height;
 $p-panel-header-icon-horizontal-margin: bl(.5);
 
 /**
@@ -325,6 +326,9 @@ $sedn-zdarzenie-details-field-label-width: bl(42);
  * template:* commons
  */
 
+/** common.xhtml */
+$sedn-body-min-width: 32rem;
+
 /** _include/common-appbar.xhtml */
 $sedn-appbar-zindex: 2;
 $sedn-appbar-height: bl(9);
@@ -338,8 +342,8 @@ $sedn-content-zindex: 1;
 
 /** _include/common-cookies.xhtml */
 $sedn-cookies-zindex: 3;
-$sedn-cookies-height: bl(2);
-$sedn-cookies-padding: bl(3);
+$sedn-cookies-height: bl(6);
+$sedn-cookies-horizontal-padding: bl(3);
 $sedn-cookies-close-button-size: bl(3);
 
 /** _include/common-footer.xhtml */
@@ -362,4 +366,3 @@ $sedn-status-indicator-bar-spacing: bl(.5);
 /** _include/logged-nav.xhtml */
 $sedn-logged-nav-vertical-padding: bl(1.5);
 $sedn-logged-nav-item-horizontal-padding: bl(3);
-
