@@ -29,11 +29,11 @@
 }
 
 .ui-toolbar .ui-separator {
-  width: 1px;
-  height: $p-toolbar-item-separator-height;
+  width: 3 * $p-toolbar-item-separator-dot-size;
+  height: 9 * $p-toolbar-item-separator-dot-size;
   margin: 0 (2 * $p-toolbar-item-margin) 0 $p-toolbar-item-margin;
   border: 0;
-  border-left: 2px dotted;
-  border-right: 2px dotted;
+  border-left: $p-toolbar-item-separator-dot-size dotted;
+  border-right: $p-toolbar-item-separator-dot-size dotted;
   @include border-radius(0);
 }

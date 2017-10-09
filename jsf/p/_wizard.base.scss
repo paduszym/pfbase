@@ -1,10 +1,27 @@
+.ui-wizard {
+  border: 1px solid;
+  margin: $p-data-table-margin;
+  overflow: hidden;
+  @include border-radius($p-common-corner-radius);
+}
+
+.ui-wizard-content {
+  @include ui-prevent-collapsing-margins;
+}
+
 .ui-wizard-step-titles,
 .ui-wizard-navbar {
   display: flex;
+  align-items: center;
 
   &::after {
     display: none;
   }
+}
+
+.ui-wizard-navbar {
+  border-top: 1px solid;
+  padding: ($p-data-table-header-vertical-padding - .1rem) ($p-data-table-header-horizontal-padding - .1rem) $p-data-table-header-vertical-padding;
 }
 
 .ui-wizard-nav-next.ui-button {
@@ -12,5 +29,14 @@
 }
 
 .ui-wizard-step-title {
+  flex: 1;
+  padding: ($p-data-table-header-vertical-padding - .1rem) ($p-data-table-header-horizontal-padding - .1rem) $p-data-table-header-vertical-padding $p-data-table-header-horizontal-padding;
+  border-width: 0 1px 1px 0;
+  text-align: center;
+  @include border-radius(0);
 
+  &:last-child {
+    padding-right: $p-data-table-header-horizontal-padding;
+    border-right-width: 0;
+  }
 }
