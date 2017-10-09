@@ -1,7 +1,3 @@
-a.ui-menuitem-link {
-  color: $p-common-widget-content-color;
-
-  &.ui-state-hover {
-    color: $p-common-state-hover-color;
-  }
+.ui-menuitem-link {
+  color: inherit;
 }
