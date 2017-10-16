@@ -13,14 +13,9 @@
 }
 
 .ui-state-disabled {
-  opacity: $p-common-state-disabled-opacity;
 
   &,
   * {
     cursor: not-allowed !important;
   }
-}
-
-.ui-state-disabled .ui-state-disabled {
-  opacity: 1;
 }

@@ -45,7 +45,7 @@ body.sedn-sidebar-opened {
     @include transition(none);
   }
 
-  #sedn-sidebar-overlay {
+  body.sedn-sidebar-opened #sedn-sidebar-overlay {
     display: none;
   }
 }

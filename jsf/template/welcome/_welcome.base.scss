@@ -1,0 +1,11 @@
+body.sedn-template-welcome {
+
+  #sedn-appbar-title {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    img {
+      height: $sedn-welcome-appbar-logo-height;
+    }
+  }
+}

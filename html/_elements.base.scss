@@ -11,6 +11,11 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
+b,
+strong {
+  font-weight: $_font-weight-bolder;
+}
+
 table {
   margin: 0;
   padding: 0;
@@ -93,13 +98,6 @@ ol {
   }
 }
 
-p + ul,
-p + ol,
-ul + p,
-ol + p {
-  margin-top: -$text-block-margin;
-}
-
 q, blockquote {
   quotes: none;
 
@@ -114,7 +112,7 @@ small {
 }
 
 sup, sub {
-  font-size: .8em;
+  font-size: 80%;
 }
 
 label[for] {
@@ -122,29 +120,9 @@ label[for] {
 }
 
 pre, code {
-  display: block;
-  font-family: $pre-and-code-font-family;
+  font-family: $_font-family-mono;
 }
 
 pre {
   white-space: pre-wrap;
-}
-
-code {
-  padding: .5*$code-padding $code-padding;
-}
-
-h1, h2, h3, h4, h5, h6,
-p, q, blockquote, li {
-
-  pre,
-  code {
-    display: inline;
-    margin: 0;
-  }
-
-  code {
-    padding: .125*$code-padding .25*$code-padding;
-    @include border-radius(2px);
-  }
 }

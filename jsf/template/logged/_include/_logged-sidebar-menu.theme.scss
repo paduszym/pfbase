@@ -1,9 +1,6 @@
 #sedn-logged-sidebar-menu {
   background: none;
-
-  .ui-menuitem-link {
-    color: $sedn-sidebar-color;
-  }
+  color: inherit;
 
   .ui-state-hover {
     background: $sedn-logged-sidebar-menu-item-hover-bg;

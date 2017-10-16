@@ -63,7 +63,6 @@
 
   &:empty::before {
     content: "Nie wybrano plików.";
-    opacity: $p-common-state-disabled-opacity;
   }
 }
 

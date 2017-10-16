@@ -1,0 +1,16 @@
+.sedn-login-top {
+  background: $sedn-login-top-bg;
+  color: $sedn-login-top-color;
+
+  a,
+  a:hover,
+  a:focus,
+  a:visited {
+    color: $sedn-login-top-link-color;
+  }
+}
+
+.sedn-login-top-info {
+  background: $sedn-login-top-info-bg;
+  color: $sedn-login-top-info-color;
+}

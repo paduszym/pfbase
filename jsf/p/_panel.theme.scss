@@ -4,6 +4,6 @@
 
 .ui-panel .ui-panel-footer {
   border-color: $p-common-widget-header-border-color;
-  background: lighten($p-common-widget-header-bg, 1.5%);
+  background: ui-lighten($p-common-widget-header-bg, 1.5%);
   color: $p-common-widget-header-color;
 }

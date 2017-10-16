@@ -1,0 +1,19 @@
+/**/
+@function ui-darken($color, $amount) {
+  @if $theme == "light" {
+    @return darken($color, $amount);
+  }
+  @else {
+    @return lighten($color, $amount);
+  }
+}
+
+/**/
+@function ui-lighten($color, $amount) {
+  @if $theme == "light" {
+    @return lighten($color, $amount);
+  }
+  @else {
+    @return darken($color, $amount);
+  }
+}

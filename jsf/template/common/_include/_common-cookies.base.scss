@@ -22,6 +22,7 @@
     border-top-width: $sedn-cookies-height;
   }
 
+  + #sedn-appbar + #sedn-content,
   + #sedn-appbar + #sedn-sidebar + #sedn-content {
     border-top-width: $sedn-appbar-height + $sedn-cookies-height;
   }

@@ -1,0 +1,6 @@
+.ui-fileupload-files > div {
+
+  &:empty::before {
+    opacity: $p-common-state-disabled-opacity;
+  }
+}

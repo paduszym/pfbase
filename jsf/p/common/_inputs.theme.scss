@@ -13,3 +13,24 @@
     @include d-1($p-common-state-highlight-border-color, .39);
   }
 }
+
+.ui-selectonemenu {
+
+  &.ui-state-hover,
+  &.ui-state-focus {
+    border-color: $p-common-state-default-border-color;
+
+    > .ui-inputfield {
+      background: $p-common-state-default-bg;
+      color: $p-common-state-default-color;
+    }
+  }
+
+  &.ui-state-focus {
+    border-color: $p-common-state-highlight-border-color;
+
+    > .ui-inputfield {
+      @include d-1($p-common-state-highlight-border-color, .39);
+    }
+  }
+}

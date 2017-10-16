@@ -39,3 +39,11 @@ a.ui-state-error {
   background: $p-common-state-error-bg;
   color: $p-common-state-error-color;
 }
+
+.ui-state-disabled {
+  opacity: $p-common-state-disabled-opacity;
+}
+
+.ui-state-disabled .ui-state-disabled {
+  opacity: 1;
+}

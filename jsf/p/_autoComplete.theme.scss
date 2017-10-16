@@ -1,15 +1,15 @@
 .ui-autocomplete-panel .ui-autocomplete-moretext,
 .ui-autocomplete-emptyMessage {
-  color: rgba($p-common-state-default-color, .85);
+  color: rgba($p-common-state-default-color, $p-common-state-disabled-opacity);
 }
 
 .ui-autocomplete-panel .ui-autocomplete-moretext {
 
   &.ui-state-hover {
-    color: rgba($p-common-state-hover-color, .85);
+    color: rgba($p-common-state-hover-color, $p-common-state-disabled-opacity);
   }
 
   &.ui-state-highlight {
-    color: rgba($p-common-state-highlight-color, .85);
+    color: rgba($p-common-state-highlight-color, $p-common-state-disabled-opacity);
   }
 }

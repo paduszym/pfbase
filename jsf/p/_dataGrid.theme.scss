@@ -3,5 +3,5 @@
 }
 
 .ui-datagrid-content-empty {
-  color: rgba($p-common-state-default-color, .65);
+  color: rgba($p-common-state-default-color, $p-common-state-disabled-opacity);
 }

@@ -15,3 +15,7 @@
 .ui-confirm-dialog-message {
   align-self: center;
 }
+
+.ui-confirm-dialog .ui-dialog-buttonpane {
+  justify-content: flex-end;
+}

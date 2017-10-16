@@ -56,7 +56,6 @@ body.sedn-body-with-sidebar #sedn-appbar-title {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
-    @include border-radius($p-common-corner-radius);
 
     &:focus {
       outline: 0;

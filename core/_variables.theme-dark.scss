@@ -3,45 +3,45 @@
 /**
  * p:* commons
  */
-$p-common-widget-header-border-color: $_gray400;
-$p-common-widget-header-bg: $_gray200;
-$p-common-widget-header-color: $_gray900;
+$p-common-widget-header-border-color: $_gray500;
+$p-common-widget-header-bg: $_gray700;
+$p-common-widget-header-color: $_gray50;
 
-$p-common-widget-content-border-color: $_gray400;
-$p-common-widget-content-bg: $_white;
-$p-common-widget-content-color: $_gray900;
+$p-common-widget-content-border-color: $_gray500;
+$p-common-widget-content-bg: $_black;
+$p-common-widget-content-color: $_gray50;
 
-$p-common-state-default-border-color: $_gray400;
-$p-common-state-default-bg: $_white;
-$p-common-state-default-color: $_gray900;
+$p-common-state-default-border-color: $_gray500;
+$p-common-state-default-bg: $_black;
+$p-common-state-default-color: $_gray50;
 
-$p-common-state-hover-border-color: $_gray400;
-$p-common-state-hover-bg: $_gray100;
-$p-common-state-hover-color: $_gray900;
+$p-common-state-hover-border-color: yellow;
+$p-common-state-hover-bg: yellow;
+$p-common-state-hover-color: $_black;
 
-$p-common-state-focus-border-color: $_gray400;
-$p-common-state-focus-bg: $_primary50;
-$p-common-state-focus-color: $_gray900;
+$p-common-state-focus-border-color: yellow;
+$p-common-state-focus-bg: yellow;
+$p-common-state-focus-color: $_black;
 
-$p-common-state-active-border-color: $_primary400;
-$p-common-state-active-bg: $_primary50;
-$p-common-state-active-color: $_primary900;
+$p-common-state-active-border-color: yellow;
+$p-common-state-active-bg: yellow;
+$p-common-state-active-color: $_black;
 
-$p-common-state-highlight-border-color: $_primary900;
-$p-common-state-highlight-bg: $_primary800;
-$p-common-state-highlight-color: $_white;
+$p-common-state-highlight-border-color: yellow;
+$p-common-state-highlight-bg: yellow;
+$p-common-state-highlight-color: $_black;
 
-$p-common-state-error-color: $_error900;
-$p-common-state-error-bg: $_error50;
-$p-common-state-error-border-color: $_error200;
+$p-common-state-error-color: $_error50;
+$p-common-state-error-bg: $_error900;
+$p-common-state-error-border-color: $_error700;
 
-$p-common-messages-info-color: $_info900;
-$p-common-messages-info-bg: $_info50;
-$p-common-messages-info-border-color: $_info200;
+$p-common-messages-info-color: $_info50;
+$p-common-messages-info-bg: $_info900;
+$p-common-messages-info-border-color: $_info700;
 
-$p-common-messages-warn-color: $_warn900;
-$p-common-messages-warn-bg: $_warn50;
-$p-common-messages-warn-border-color: $_warn200;
+$p-common-messages-warn-color: $_warn50;
+$p-common-messages-warn-bg: $_warn900;
+$p-common-messages-warn-border-color: $_warn700;
 
 $p-common-messages-error-color: $p-common-state-error-color;
 $p-common-messages-error-bg: $p-common-state-error-bg;
@@ -51,26 +51,26 @@ $p-common-messages-fatal-color: $p-common-state-error-color;
 $p-common-messages-fatal-bg: $p-common-state-error-bg;
 $p-common-messages-fatal-border-color: $p-common-state-error-border-color;
 
-$p-common-overlay-bg: rgba($_black, .5);
+$p-common-overlay-bg: rgba($_white, .5);
 
-$p-common-state-disabled-opacity: .54;
+$p-common-state-disabled-opacity: .46;
 
 /**
  * p:link
  */
-$p-link-color-default: $_primary700;
-$p-link-color-hover: $_primary600;
+$p-link-color-default: yellow;
+$p-link-color-hover: yellow;
 $p-link-color-visited: $p-link-color-default;
 
 /**
  * p:button
  */
-$p-button-success-default-bg: $_primary500;
-$p-button-success-default-border-color: $_primary700;
-$p-button-success-default-color: $_white;
-$p-button-success-hover-bg: $_primary400;
-$p-button-success-hover-border-color: $_primary600;
-$p-button-success-hover-color: $_white;
+$p-button-success-default-bg: $_primary200;
+$p-button-success-default-border-color: $_primary600;
+$p-button-success-default-color: $_black;
+$p-button-success-hover-bg: $_primary300;
+$p-button-success-hover-border-color: $_primary700;
+$p-button-success-hover-color: $_black;
 $p-button-success-active-bg: $p-button-success-hover-bg;
 $p-button-success-active-border-color: $p-button-success-hover-border-color;
 $p-button-success-active-color: $p-button-success-hover-color;
@@ -81,21 +81,21 @@ $p-button-success-focus-color: $p-button-success-hover-color;
 /**
  * p:tooltip
  */
-$p-tooltip-bg: $_gray900;
-$p-tooltip-color: $_white;
+$p-tooltip-bg: $_gray50;
+$p-tooltip-color: $_black;
 
 //----------------------------------------------------------------------------------------------------------------------
 
 /**
  * sedn:tooltipIcon
  */
-$sedn-tooltip-icon-bg: $_primary800;
-$sedn-tooltip-icon-color: $_white;
+$sedn-tooltip-icon-bg: $_primary100;
+$sedn-tooltip-icon-color: $_black;
 
 /**
  * sedn:zdarzenieDetailsField
  */
-$sedn-zdarzenie-details-field-label-bg: $_gray50;
+$sedn-zdarzenie-details-field-label-bg: $_gray900;
 $sedn-zdarzenie-details-field-label-color: $p-common-widget-content-color;
 
 //----------------------------------------------------------------------------------------------------------------------
@@ -106,13 +106,13 @@ $sedn-zdarzenie-details-field-label-color: $p-common-widget-content-color;
 
 /** common.xhtml */
 $sedn-body-color: $p-common-widget-content-color;
-$sedn-body-bg: $_gray100;
+$sedn-body-bg: $_gray800;
 
 /** _include/common-appbar.xhtml */
-$sedn-appbar-bg: $_primary500;
+$sedn-appbar-bg: $_black;
 $sedn-appbar-color: $_white;
 $sedn-appbar-link-color: $_white;
-$sedn-appbar-link-bg-hover: rgba($_black, .25);
+$sedn-appbar-link-bg-hover: rgba($_white, .25);
 
 /** _include/common-cookies.xhtml */
 $sedn-cookies-bg: $_black;
@@ -122,20 +122,20 @@ $sedn-cookies-more-link-color: $_primary200;
 /** _include/common-footer.xhtml */
 $sedn-footer-bg: $p-common-widget-content-bg;
 $sedn-footer-border-color: $p-common-widget-content-border-color;
-$sedn-footer-version-color: $_gray600;
+$sedn-footer-version-color: $_gray300;
 
 /** _include/common-sidebar.xhtml */
-$sedn-sidebar-bg: $_secondary500;
+$sedn-sidebar-bg: $_secondary900;
 $sedn-sidebar-color: $_white;
 
 /** _include/common-status.xhtml */
-$sedn-status-indicator-bar-bg: $_white;
+$sedn-status-indicator-bar-bg: $_black;
 
 /**
  * template:welcome
  */
-$sedn-welcome-appbar-bg: $_white;
-$sedn-welcome-appbar-color: $_primary500;
+$sedn-welcome-appbar-bg: $_black;
+$sedn-welcome-appbar-color: $_primary400;
 
 /**
  * template:logged
@@ -156,8 +156,8 @@ $sedn-logged-sidebar-account-info-bg: rgba($_black, .25);
 /**
  * /logowanie/login.xhtml
  */
-$sedn-login-top-bg: $_secondary500;
-$sedn-login-top-color: $_white;
-$sedn-login-top-link-color: $_primary200;
-$sedn-login-top-info-bg: #286ba1;
-$sedn-login-top-info-color: $_white;
+$sedn-login-top-bg: $_secondary50;
+$sedn-login-top-color: $_black;
+$sedn-login-top-link-color: $_primary800;
+$sedn-login-top-info-bg: $_white;
+$sedn-login-top-info-color: $_black;

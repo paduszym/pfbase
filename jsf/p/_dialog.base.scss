@@ -97,7 +97,22 @@
 }
 
 .ui-dialog .ui-dialog-buttonpane {
-  text-align: right;
+  display: flex;
+  align-items: center;
+
+  .ui-button,
+  .ui-link,
+  .ui-commandlink {
+
+    + .ui-button {
+      margin-left: $p-toolbar-item-margin;
+    }
+
+    + .ui-link,
+    + .ui-commandlink {
+      margin-left: $p-toolbar-item-margin + $p-button-horizontal-padding;
+    }
+  }
 }
 
 .ui-dialog-docking-zone {

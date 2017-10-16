@@ -1,0 +1,53 @@
+#sedn-logged-nav {
+  padding: bl(2) (bl(3) - .1rem) (bl(2) - .1rem) (bl(3) - .1rem);
+  border-bottom: 1px solid;
+
+  &:empty {
+    display: none;
+  }
+
+  .ui-button + .ui-button {
+    margin-left: $p-toolbar-item-margin;
+  }
+}
+
+/**/
+body.sedn-view {
+
+  // 960px
+  &--wynikEwaluacji,
+  &--szczegoly-zdarzenia,
+  &--daneJednostki,
+  &--pracownik,
+  &--szczegolyWnioskuAktywny,
+  &--szczegolyWnioskuBrak,
+  &--szczegolyWnioskuWyslany,
+  &--adm--dodaj-role,
+  &--adm--zmien-role {
+
+    #sedn-logged-content {
+      max-width: bl(160);
+    }
+  }
+
+  &--karta-oceny .ui-treetable,
+  &--zgloszone-osiagniecia .ui-treetable {
+    max-width: bl(160);
+  }
+
+  // 768px
+  &--odwolanie {
+
+    #sedn-logged-content {
+      max-width: bl(128);
+    }
+  }
+
+  // 320px
+  &--adm--zmien-haslo {
+
+    #sedn-logged-content {
+      max-width: bl(60);
+    }
+  }
+}

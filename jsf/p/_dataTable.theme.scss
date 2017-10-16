@@ -7,11 +7,11 @@
 }
 
 .ui-datatable-empty-message td {
-  color: rgba($p-common-state-default-color, .65);
+  color: rgba($p-common-state-default-color, $p-common-state-disabled-opacity);
 }
 
 .ui-datatable-odd {
-  background: darken($p-common-state-default-bg, 2%);
+  background: ui-darken($p-common-state-default-bg, 2%);
 
   &.ui-state-hover {
     background: $p-common-state-hover-bg;

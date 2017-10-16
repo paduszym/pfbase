@@ -11,7 +11,8 @@ $_font-size-xlarge: 1.23 * $_font-size-base;
 $_font-size-xxlarge: 1.38 * $_font-size-base;
 
 $_font-weight-normal: 400;
-$_font-weight-bold: 600;
+$_font-weight-bold: 500;
+$_font-weight-bolder: 600;
 
 $_infinity: 9999rem;
 
@@ -29,11 +30,6 @@ $h5-font-size: $_font-size-small;
 
 // <small>
 $small-font-size: $_font-size-small;
-
-// <pre>, <code>
-$pre-and-code-font-family: $_font-family-mono;
-
-$code-padding: bl(2);
 
 // misc
 $text-block-margin: bl(3);
@@ -56,8 +52,6 @@ $p-common-input-font-size: $_font-size-base;
 $p-common-input-line-height: bl(3);
 $p-common-input-vertical-padding: bl(1);
 $p-common-input-horizontal-padding: bl(1);
-
-$p-common-state-disabled-opacity: .5;
 
 /**
  * p:panel
@@ -364,6 +358,11 @@ $sedn-sidebar-collapse-breakpoint: 80em; // 1280px
 /** _include/common-status.xhtml */
 $sedn-status-indicator-size: bl(15);
 $sedn-status-indicator-bar-spacing: bl(.5);
+
+/**
+ * template:welcome
+ */
+$sedn-welcome-appbar-logo-height: bl(5);
 
 /**
  * template:logged

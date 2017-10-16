@@ -1,0 +1,17 @@
+#sedn-appbar-timer-desc {
+  text-transform: none;
+  padding-right: bl(1.5);
+}
+
+#sedn-appbar-timer-time {
+  font-family: $_font-family-mono;
+}
+
+#sedn-appbar-timer-warn-dialog .sedn-notice {
+  margin: 0;
+}
+
+#sedn-appbar-timer-warn-dialog .sedn-notice .ui-messages-warn-detail > span {
+  display: block;
+  font-family: $_font-family-mono;
+}
